@@ -1,12 +1,10 @@
-import { images } from "@/helpers/images";
+import iconos from '../../assets/img/icons/iconos.png'
 import Image from "next/image";
 
 const ImgGallery = () => {
   return (
-    <div className="relative flex">
-      {images.map((img, index) => (
-        <Image key={index} src={images[index]} alt="Imagen 1" className="" />
-      ))}
+    <div className="flex justify-center">
+      <Image src={iconos} />
     </div>
   );
 };
