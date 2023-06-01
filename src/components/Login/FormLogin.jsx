@@ -2,7 +2,7 @@ import React from "react";
 
 const FormLogin = () => {
   return (
-    <div className="w-1/2 bg-white flex flex-col px-10 pt-16 rounded-[57px]">
+    <div className="w-1/2 bg-white flex flex-col px-10 pt-16  rounded-[57px]">
       <div>
         <h2 className="text-[30px] font-[700] text-title">
           Iniciar Sesión en Takiven
@@ -26,7 +26,7 @@ const FormLogin = () => {
           </label>
           <input type="text" className="border-2 border-[#e3dada]  rounded-md h-[63px] " />
         </div>
-        <p className=" text-[24px] text-green font-[700]">
+        <p className=" text-[24px] text-green font-[700] pb-5">
           Olvidaste tu contraseña
         </p>
         <button className=" bg-green text-[24px] text-white w-[350px]  py-3 rounded-lg mx-auto">
