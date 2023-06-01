@@ -1,4 +1,4 @@
-import iconos from './../../assets/img/icons/iconos.png'
+import iconos from '../../assets/img/icons/Iconos.png'
 import Image from "next/image";
 
 const ImgGallery = () => {
