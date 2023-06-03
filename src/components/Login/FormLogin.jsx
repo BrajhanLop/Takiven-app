@@ -9,7 +9,7 @@ const FormLogin = ({ toggle }) => {
   }
 
   return (
-    <div className="w-full md:w-[80%] lg:w-1/2 bg-[#f2f6fb] md:bg-white flex flex-col md:px-10 md:pt-16 pb-10   md:rounded-[57px]">
+    <div className="w-full lg:w-1/2 bg-[#f2f6fb] md:bg-white flex flex-col md:px-10 md:pt-16 pb-10   md:rounded-[57px]">
       <div>
         <h2 className="text-[30px] font-[700] text-title">
           Iniciar Sesión en Takiven
