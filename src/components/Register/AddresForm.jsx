@@ -22,7 +22,7 @@ const AddresForm = () => {
   };
   return (
     <div className="max-w-[350px] sm:max-w-[450px]    bg-[#f2f6fb] md:max-w-[550px] md:bg-white flex flex-col gap-3 md:px-10 md:pt-16 pb-10   md:rounded-[57px]">
-      <div className="flex justify-center gap-2">
+      <div className="flex justify-center lg:justify-start gap-2">
         <Image src={left} alt="left" />
         <h2 className="text-[30px] font-[700] text-title">
           Dirección de entregas
