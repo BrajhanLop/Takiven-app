@@ -10,7 +10,7 @@ const Register = ({ toggle }) => {
   };
 
   return (
-    <div className="w-[90%] md:w-[80%] lg:w-1/2 bg-white flex flex-col md:px-10 md:pt-16 pb-10   md:rounded-[57px]">
+    <div className="w-[90%] md:w-[80%] lg:w-1/2 bg-[#f2f6fb] md:bg-white flex flex-col md:px-10 md:pt-16 pb-10   md:rounded-[57px]">
       <div>
         <h2 className="text-[30px] font-[700] text-title">
           Iniciar Sesión en Takiven
@@ -29,7 +29,7 @@ const Register = ({ toggle }) => {
             htmlFor=""
             className="text-[24px] md:text-[24px] md:font-[500]"
           >
-            Dirección de correo electronico
+            Correo electronico
           </label>
           <input
             className="border-2 border-[#e3dada] rounded-md h-[63px] text-[24px] "
