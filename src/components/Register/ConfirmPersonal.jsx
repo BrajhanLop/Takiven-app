@@ -2,6 +2,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import check from "../../assets/img/icons/check.png";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const ConfirmPersonal = ({ toggle, info }) => {
   const {
@@ -10,10 +11,11 @@ const ConfirmPersonal = ({ toggle, info }) => {
     reset,
     formState: { errors },
   } = useForm();
+  const router = useRouter();
 
   const submit = (data) => {
     console.log(data);
-    toggle();
+    router.push("/register/addres");
   };
 
   return (
@@ -66,10 +68,13 @@ const ConfirmPersonal = ({ toggle, info }) => {
           onSubmit={handleSubmit(submit)}
           className="flex flex-col gap-5 md:gap-5"
         >
-          <button className=" text-green text-[24px] border border-green w-[320px] md:w-[350px]  py-3 rounded-lg mx-auto">
+          <button 
+          onClick={()=> toggle()}
+          className=" text-green text-[24px] border border-green w-[320px] md:w-[350px]  py-3 rounded-lg mx-auto">
             Editar datos
           </button>
           <button
+
             type="submit"
             className=" bg-green text-[24px] text-white w-[320px] md:w-[350px]  py-3 rounded-lg mx-auto"
           >
