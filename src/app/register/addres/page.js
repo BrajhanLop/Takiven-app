@@ -1,8 +1,11 @@
-import React from 'react'
+import AddresForm from '@/components/Register/AddresForm'
+
 
 const page = () => {
   return (
-    <div>addres</div>
+    <main className='mx-auto'>
+      <AddresForm/>
+    </main>
   )
 }
 
