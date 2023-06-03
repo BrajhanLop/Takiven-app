@@ -11,7 +11,8 @@ module.exports = {
         title: '#3C4A5B',
         green: '#3FD077',
         yellow: '#F9DD8C',
-        fond: '#F5F7FA'
+        fond: '#F5F7FA',
+        subtext: '#535557'
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

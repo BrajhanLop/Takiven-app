@@ -6,7 +6,7 @@ const Register = ({ toggle }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    router.push("/register");
+    router.push("/register/personal");
   };
 
   return (
