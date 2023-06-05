@@ -1,8 +1,12 @@
+import UbicationInfo from '@/components/Register/UbicationInfo'
 import React from 'react'
 
 const page = () => {
   return (
-    <div>ubicacion</div>
+    <div className='mx-auto'>
+
+        <UbicationInfo/>
+    </div>
   )
 }
 
