@@ -19,9 +19,7 @@ const ConfirmPersonal = ({ toggle, info }) => {
   };
 
   return (
-<div className="fixed top-0 bottom-0 left-0 right-0 m-auto bg-slate-300/60  flex justify-center items-center">
-
-
+    <div className="fixed top-0 bottom-0 left-0 right-0 m-auto bg-slate-300/60  flex justify-center items-center">
       <div className=" w-[500px] rounded-[36px]  px-3 py-5  bg-white flex flex-col pb-10 md:px-10 md:pt-16    md:rounded-[57px]">
         <div className="flex justify-center">
           <h2 className="text-[24px] font-[700] text-title mb-3">
@@ -57,24 +55,35 @@ const ConfirmPersonal = ({ toggle, info }) => {
             </div>
           </div>
         </div>
-        <div className="flex  gap-2 mt-3 mb-8">
-          <input type="checkbox" className="w-[16px] h-[16px] mt-1" />
-          <p className="text-[18px] font-[300] leading-6 text-justify ">
-            Certifico que la información enviada anteriormente es legalmente
-            precisa y que esta es mi única cuenta de Takiven.
-          </p>
-        </div>
         <form
           onSubmit={handleSubmit(submit)}
           className="flex flex-col gap-5 md:gap-5"
         >
-          <button 
-          onClick={()=> toggle()}
-          className=" text-green text-[24px] border border-green w-[320px] md:w-[350px]  py-3 rounded-lg mx-auto">
+          <div className="flex  gap-2 mt-3 mb-0">
+            <input
+              type="checkbox"
+              className="w-[16px] h-[16px] mt-1"
+              {...register("contract", {
+                required: {
+                  value: true,
+                  message: "Debe certificar la información.",
+                },
+              })}
+            />
+
+            <p className="text-[18px] font-[300] leading-6 text-justify ">
+              Certifico que la información enviada anteriormente es legalmente
+              precisa y que esta es mi única cuenta de Takiven.
+            </p>
+          </div>
+          <p className=" text-[#FF5576]">{errors.contract?.message}</p>
+          <button
+            onClick={() => toggle()}
+            className=" text-green text-[24px] border border-green w-[320px] md:w-[350px]  py-3 rounded-lg mx-auto"
+          >
             Editar datos
           </button>
           <button
-
             type="submit"
             className=" bg-green text-[24px] text-white w-[320px] md:w-[350px]  py-3 rounded-lg mx-auto"
           >
@@ -82,7 +91,7 @@ const ConfirmPersonal = ({ toggle, info }) => {
           </button>
         </form>
       </div>
-      </div>
+    </div>
   );
 };
 

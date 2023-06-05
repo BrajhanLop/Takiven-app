@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 
@@ -21,13 +22,13 @@ const Register = ({ toggle }) => {
         </h2>
         <p className=" text-title text-[18px] md:text-[22px]">
           ¿Ya tienes cuenta?{" "}
-          <span className=" text-green font-[500]" onClick={toggle}>
+          <span className=" text-green font-[500] cursor-pointer" onClick={toggle}>
             Iniciar Sesion
           </span>
         </p>
       </div>
-      <hr className="mt-5 border-[#3FD07766] w-[80%] mx-auto mb-8" />
-      <form onSubmit={handleSubmit(submit)} className="flex flex-col gap-2 md:gap-5">
+      <hr className="mt-5 border-[#3FD07766] w-[80%] mx-auto mb-6" />
+      <form onSubmit={handleSubmit(submit)} className="flex flex-col gap-2 md:gap-4">
         <div className="flex flex-col">
           <label
             htmlFor=""
@@ -62,12 +63,11 @@ const Register = ({ toggle }) => {
             pattern: {
                 value: /^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$/i,
                 message: "La contraseña debe tener al entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula "
-            },
-            maxLength: 18 })}
+            }})}
           />
            <p className=" text-[#FF5576]">{errors.password?.message}</p>
         </div>
-        <p className=" text-[20px] leading-6 xl:pb-5">
+        <p className=" text-[20px] leading-6 xl:pb-3">
           La apertura de una cuenta Takiven está sujeta al estado, condiciones,
           controles de identidad y a personas mayores de 18 años.
         </p>
@@ -77,13 +77,13 @@ const Register = ({ toggle }) => {
             }})} />
           <p className="text-[20px] ">
             Acepto los{" "}
-            <span className=" text-green font-[500]">
+            <Link href='/' className=" text-green font-[500]">
               términos y condiciones
-            </span>{" "}
+            </Link>{" "}
             de Takiven y su{" "}
-            <span className=" text-green font-[500]">
+            <Link href='/' className=" text-green font-[500]">
               política de privacidad.
-            </span>
+            </Link>
           </p>
           
         </div>
