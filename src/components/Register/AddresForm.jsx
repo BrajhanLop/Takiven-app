@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useForm } from "react-hook-form";
 import left from "../../assets/img/icons/left.png";
-
+import { useRouter } from "next/navigation";
 
 const AddresForm = () => {
   const {
@@ -12,19 +12,17 @@ const AddresForm = () => {
     reset,
     formState: { errors },
   } = useForm();
- 
-
+  const router = useRouter();
 
   const submit = (data) => {
     console.log(data);
-
-  
+    router.push("/register/ubication");
   };
   return (
-    <div className="max-w-[350px] sm:max-w-[450px]    bg-[#f2f6fb] md:max-w-[550px] md:bg-white flex flex-col gap-3 md:px-10 md:pt-16 pb-10   md:rounded-[57px]">
+    <div className="max-w-[350px] sm:max-w-[450px]    bg-[#f2f6fb] md:max-w-[550px] md:bg-white flex flex-col gap-3  xl:gap-6 md:px-10 md:pt-16 pb-10   md:rounded-[57px]">
       <div className="flex justify-center lg:justify-start gap-2">
         <Image src={left} alt="left" />
-        <h2 className="text-[30px] font-[700] text-title">
+        <h2 className="text-[30px] font-[700] text-title ">
           Dirección de entregas
         </h2>
       </div>
@@ -63,7 +61,7 @@ const AddresForm = () => {
               required: {
                 value: true,
                 message: "El Distrito es requerido",
-              }
+              },
             })}
           />
           <p className=" text-[#FF5576]">{errors.dist?.message}</p>
@@ -102,7 +100,7 @@ const AddresForm = () => {
 
           <p className=" text-[#FF5576]">{errors.ref?.message}</p>
         </div>
-        <p className="text-[18px] xl:mb-10">
+        <p className="text-[18px] xl:mb-3">
           La direccion de entrega debe ser real y proporcionada de manera
           correcta por el usuario
         </p>

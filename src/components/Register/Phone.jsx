@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { useForm } from "react-hook-form";
 import left from "../../assets/img/icons/left.png";
+import { useRouter } from "next/navigation";
 
 const Phone = () => {
   const {
@@ -10,9 +11,11 @@ const Phone = () => {
     reset,
     formState: { errors },
   } = useForm();
+  const router = useRouter();
 
   const submit = (data) => {
     console.log(data);
+    router.push("/welcome");
   };
   return (
     <div className="max-w-[350px] sm:max-w-[450px]    bg-[#f2f6fb] md:max-w-[550px] md:bg-white flex flex-col gap-3 md:px-10 md:pt-16 pb-10   md:rounded-[57px]">

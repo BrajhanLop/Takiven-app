@@ -3,9 +3,9 @@ import React from "react";
 
 const FooterSec = () => {
   return (
-    <p className="hidden md:block text-[24px] text-title text-center">
-      Takiven 2023 -{" "}
-      <Link href="/">Términos y condiciones - Privacidad - Legal</Link>{" "}
+    <p className="hidden md:block text-[23px] text-title text-center mb-2">
+      Takiven 2023 - <Link href="/" className=" font-[500]">Términos y condiciones</Link> -{" "}
+      <Link href="/" className=" font-[500]">Privacidad</Link> - <Link href="/" className=" font-[500]">Legal</Link> {" "}
     </p>
   );
 };

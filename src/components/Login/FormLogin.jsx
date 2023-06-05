@@ -16,7 +16,7 @@ const FormLogin = ({ toggle }) => {
         </h2>
         <p className=" text-title text-[18px] md:text-[22px]">
           ¿No eres cliente?{" "}
-          <span className=" text-green font-[500]" onClick={toggle}>
+          <span className=" text-green font-[500] cursor-pointer" onClick={toggle}>
             Regístrate ahora
           </span>
         </p>
@@ -61,7 +61,7 @@ const FormLogin = ({ toggle }) => {
           />
           <p className=" text-[#FF5576]">{errors.password?.message}</p>
         </div>
-        <p className=" text-[24px] text-green font-[500] xl:pb-5">
+        <p className=" text-[24px] text-green font-[500] xl:pb-5 cursor-pointer">
           Olvidaste tu contraseña
         </p>
         <button type="submit" className=" bg-green text-[24px] text-white w-[320px] md:w-[350px]  py-3 rounded-lg mx-auto">

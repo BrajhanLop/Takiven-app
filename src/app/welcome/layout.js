@@ -1,3 +1,3 @@
 export default function WelcomeLayout({ children }) {
-  return <section>{children}</section>;
+  return <section className="mx-5">{children}</section>;
 }
