@@ -15,7 +15,7 @@ const Welcome = () => {
     console.log(data);
   };
   return (
-    <div className="max-w-[350px] h-full bg-white rounded-3xl sm:max-w-[450px]  md:max-w-[550px] xl:w-[619px] md:bg-white flex flex-col items-center justify-center gap-3 md:px-10 md:pt-16 pb-10   md:rounded-[57px]">
+    <div className="px-2 max-w-[350px] h-full bg-white rounded-3xl sm:max-w-[450px]  md:max-w-[550px] xl:w-[619px] md:bg-white flex flex-col items-center justify-center gap-3 md:px-10 md:pt-16 pb-10   md:rounded-[57px]">
       <div className="my-auto flex flex-col justify-center items-center lg:justify-start gap-2">
         <h2 className="text-[26px] font-[700] text-title">
           Te damos la Bienvenida en
