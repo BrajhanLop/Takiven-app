@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useForm } from "react-hook-form";
 import left from "../../assets/img/icons/left.png";
 import { useRouter } from "next/navigation";
+import ImageLeft from "./ImageLeft";
 
 const Phone = () => {
   const {
@@ -20,7 +21,8 @@ const Phone = () => {
   return (
     <div className="max-w-[350px] sm:max-w-[450px]    bg-[#f2f6fb] md:max-w-[550px] md:bg-white flex flex-col gap-3 md:px-10 md:pt-16 pb-10   md:rounded-[57px]">
       <div className="flex justify-center lg:justify-start gap-2">
-        <Image src={left} alt="left" />
+        {/* <Image src={left} alt="left" /> */}
+        <ImageLeft />
         <h2 className="text-[30px] font-[700] text-title">
           Número de Teléfono
         </h2>
@@ -39,15 +41,15 @@ const Phone = () => {
           </label>
           <input
             className="border-2 border-[#e3dada] rounded-xl h-[63px] text-[24px] px-3"
-            type="text"
-            {...register("addres", {
+            type="number"
+            {...register("contacto1", {
               required: {
                 value: true,
-                message: "La dirección es requerida",
+                message: "Este campo es obligatorio",
               },
             })}
           />
-          <p className=" text-[#FF5576]">{errors.addres?.message}</p>
+          <p className=" text-[#FF5576]">{errors.contacto1?.message}</p>
         </div>
         <div className="flex flex-col">
           <label htmlFor="" className="text-[24px] text-subtext  md:font-[400]">
@@ -56,14 +58,8 @@ const Phone = () => {
           <input
             type="text"
             className="border-2 border-[#e3dada] text-[24px]   rounded-xl h-[63px] px-3 "
-            {...register("dist", {
-              required: {
-                value: true,
-                message: "El Distrito es requerido",
-              },
-            })}
+            {...register("contacto2")}
           />
-          <p className=" text-[#FF5576]">{errors.dist?.message}</p>
         </div>
 
         <p className="text-[20px] xl:mb-10">

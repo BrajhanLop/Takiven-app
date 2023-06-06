@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useForm } from "react-hook-form";
 import left from "../../assets/img/icons/left.png";
 import { useRouter } from "next/navigation";
+import ImageLeft from "./ImageLeft";
 
 const UbicationInfo = () => {
   const {
@@ -20,7 +21,8 @@ const UbicationInfo = () => {
   return (
     <div className=" max-w-[350px] sm:max-w-[450px]    bg-[#f2f6fb] md:max-w-[550px] md:bg-white flex flex-col items-center gap-3 md:px-10 md:pt-16 pb-10   md:rounded-[57px]">
       <div className="flex justify-center lg:justify-start gap-2">
-        <Image src={left} alt="left" />
+        <ImageLeft />
+        {/* <Image src={left} alt="left" /> */}
         <h2 className="text-[30px] font-[700] text-title">
           Muestra tu Ubicación
         </h2>

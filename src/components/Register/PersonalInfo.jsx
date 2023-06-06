@@ -7,6 +7,7 @@ import useToggle from "@/hooks/useToggle";
 import ConfirmPersonal from "./ConfirmPersonal";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import ImageLeft from "./ImageLeft";
 
 const PersonalInfo = () => {
   const {
@@ -28,7 +29,8 @@ const PersonalInfo = () => {
     <>
       <div className="max-w-[350px] sm:max-w-[450px] bg-[#f2f6fb] md:max-w-[550px] md:bg-white flex flex-col md:px-10 md:pt-16 pb-10   md:rounded-[57px]">
         <div className="flex gap-2">
-          <Image src={left} alt="left" className=" cursor-pointer" onClick={()=>router.back()} />
+          {/* <Image src={left} alt="left" className=" cursor-pointer" onClick={()=>router.back()} /> */}
+          <ImageLeft />
           <h2 className="text-[30px] font-[700] text-title">
             Información Personal
           </h2>
