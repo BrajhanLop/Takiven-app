@@ -35,7 +35,14 @@ const UbicationInfo = () => {
         className="flex flex-col w-full mx-5 gap-5 md:gap-5"
       >
         <div className=" border-2 border-[#DADEE3] rounded-2xl h-[336px] flex justify-center items-center">
-          Google maps
+          <iframe
+            title="Google Maps"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124700.5977172744!2d-77.042793!3d-12.046374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDEyJzAyLjAiUyA3N8zCsDQwJzA3LjAiVw!5e0!3m2!1sen!2sus!4v1622987117024!5m2!1sen!2sus"
+            style={{ border: 0 }}
+            className="w-full h-full"
+            allowFullScreen=""
+            loading="lazy"
+          ></iframe>
         </div>
 
         <button
