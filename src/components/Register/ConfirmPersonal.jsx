@@ -59,10 +59,10 @@ const ConfirmPersonal = ({ toggle, info }) => {
           onSubmit={handleSubmit(submit)}
           className="flex flex-col gap-5 md:gap-5"
         >
-          <div className="flex  gap-2 mt-3 mb-0">
+          <div className="flex gap-1  mt-3 mb-0">
             <input
               type="checkbox"
-              className="w-[16px] h-[16px] mt-1"
+              className="form-checkbox mt-1 w-[16px] mb-auto"
               {...register("contract", {
                 required: {
                   value: true,
@@ -71,7 +71,7 @@ const ConfirmPersonal = ({ toggle, info }) => {
               })}
             />
 
-            <p className="text-[18px] font-[300] leading-6 text-justify ">
+            <p className="text-[18px] font-[300] leading-6 text-justify px-1 ">
               Certifico que la información enviada anteriormente es legalmente
               precisa y que esta es mi única cuenta de Takiven.
             </p>
