@@ -27,7 +27,7 @@ const PersonalInfo = () => {
   };
   return (
     <>
-      <div className="max-w-[350px] sm:max-w-[450px] bg-[#f2f6fb] md:max-w-[550px] md:bg-white flex flex-col md:px-10 md:pt-16 pb-10   md:rounded-[57px]">
+      <div className="max-w-[350px] sm:max-w-[450px] bg-[#f2f6fb] md:max-w-[550px] md:bg-white flex flex-col md:px-10 md:pt-16 pb-10 gap-4  md:rounded-[57px]">
         <div className="flex gap-2">
           {/* <Image src={left} alt="left" className=" cursor-pointer" onClick={()=>router.back()} /> */}
           <ImageLeft />
@@ -103,7 +103,7 @@ const PersonalInfo = () => {
 
             <p className=" text-[#FF5576]">{errors.fechnac?.message}</p>
           </div>
-          <p className="text-[18px] xl:mb-10">
+          <p className="text-[18px] xl:mb-5">
             La fecha de nacimiento debe coincidir con la de tu documento de
             identidad
           </p>

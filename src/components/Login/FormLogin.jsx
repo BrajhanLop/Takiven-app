@@ -85,7 +85,7 @@ const FormLogin = ({ toggle }) => {
 
         <button
           type="submit"
-          className=" bg-white text-[24px] text-green border border-green w-[320px] md:w-[350px]  py-3 rounded-lg mx-auto lg:w-full hover:bg-green hover:text-white"
+          className=" bg-white text-[24px] text-green border border-green w-[320px] md:w-[350px]  py-3 rounded-lg mx-auto lg:w-full hover:bg-green hover:text-white hover:duration-500"
         >
           Iniciar Sesion
         </button>
