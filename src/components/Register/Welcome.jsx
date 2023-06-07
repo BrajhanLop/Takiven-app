@@ -3,6 +3,8 @@
 import { useForm } from "react-hook-form";
 import Image from "next/image";
 import logo from "../../assets/img/logo/logo.png";
+import { useRouter } from "next/navigation";
+
 const Welcome = () => {
   const {
     register,
@@ -10,9 +12,11 @@ const Welcome = () => {
     reset,
     formState: { errors },
   } = useForm();
+  const router = useRouter();
 
   const submit = (data) => {
     console.log(data);
+    router.push("/dashboard");
   };
   return (
     <div className="px-2 max-w-[350px] h-full bg-white rounded-3xl sm:max-w-[450px]  md:max-w-[550px] xl:w-[619px] md:bg-white flex flex-col items-center justify-center gap-3 md:px-10 md:pt-16 pb-10   md:rounded-[57px]">
@@ -30,7 +34,7 @@ const Welcome = () => {
           type="submit"
           className=" bg-green text-[24px] text-white w-full md:w-[350px]  py-3 rounded-lg mx-auto"
         >
-          Siguiente
+          Empezar
         </button>
       </form>
     </div>

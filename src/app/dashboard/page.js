@@ -1,9 +1,12 @@
-import React from 'react'
+import NavbarDash from "@/components/Header/NavbarDash";
+import React from "react";
 
 const page = () => {
   return (
-    <div>dashboard</div>
-  )
-}
+    <div>
+      <NavbarDash />
+    </div>
+  );
+};
 
-export default page
+export default page;
