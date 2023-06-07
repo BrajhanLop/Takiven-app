@@ -1,6 +1,6 @@
 import Image from "next/image";
 import logo from "../../assets/img/logo/logo1.png";
-import menu from "../../assets/img/icons/menu.png";
+import menu from "../../assets/img/icons/Menu.png";
 import cart from "../../assets/img/icons/cart.png";
 import user from "../../assets/img/icons/user.png";
 const NavbarDash = () => {
