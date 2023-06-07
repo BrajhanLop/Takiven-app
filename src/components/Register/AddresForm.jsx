@@ -96,6 +96,7 @@ const AddresForm = () => {
               <option key={district} value={district}>
                 {district}
               </option>
+              
             ))}
           </select>
           <p className=" text-[#FF5576]">{errors.dist?.message}</p>
