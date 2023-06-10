@@ -7,11 +7,11 @@ const GamerSection = () => {
   return (
     <div className="max-w-[1200px] mx-auto">
       <div className="flex items-center gap-3 max-w-[1200px] mx-auto mt-10">
-        <Image src={play} className="w-[55px]" />
+        <Image src={play} className="w-[55px]" alt="play" />
 
         <p className="text-[#3FD077] text-[30px] font-[500]">Gamer</p>
         <hr className="mt-5 border-[#3FD07766] w-[80%] mx-auto " />
-        <Image src={cohete} className="w-[55px]" />
+        <Image src={cohete} className="w-[55px] " alt="cohete" />
         <p className="text-[#3FD077] text-[30px] font-[500]">Ver</p>
         <p className="text-[#3FD077] text-[30px] font-[500]">más</p>
       </div>

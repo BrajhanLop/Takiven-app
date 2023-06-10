@@ -12,43 +12,43 @@ const MenuCategories = () => {
     <div className=" bg-[#30F27B] w-[987px] h-[133px] flex justify-center gap-8 rounded rounded-b-[20px] pt-3">
       <div>
         <div className="p-3 border w-[80px] h-[80px] border-white rounded-full flex justify-center items-center">
-          <Image src={play} />
+          <Image src={play} alt="play" />
         </div>
         <p className="text-center text-white text-[20px]">Gamer</p>
       </div>
       <div>
         <div className="p-3 border border-white rounded-full   w-[80px] h-[80px] flex justify-center items-center">
-          <Image src={mascotas} className="m-0" />
+          <Image src={mascotas} alt="play" className="m-0" />
         </div>
         <p className="text-center text-white text-[20px]">Mascotas</p>
       </div>
       <div>
         <div className="p-3 border border-white rounded-full w-[80px] h-[80px] flex justify-center items-center">
-          <Image src={computer} />
+          <Image alt="play" src={computer} />
         </div>
         <p className="text-center text-white text-[20px]">Computo</p>
       </div>
       <div>
         <div className="p-3 border border-white rounded-full w-[80px] h-[80px] flex justify-center items-center">
-          <Image src={audio} />
+          <Image alt="play" src={audio} />
         </div>
         <p className="text-center text-white text-[20px]">Audio</p>
       </div>
       <div>
         <div className="p-3 border border-white rounded-full w-[80px] h-[80px] flex justify-center items-center">
-          <Image src={belleza} />
+          <Image alt="play" src={belleza} />
         </div>
         <p className="text-center text-white text-[20px]">Belleza</p>
       </div>
       <div>
         <div className="p-3 border border-white rounded-full w-[80px] h-[80px] flex justify-center items-center">
-          <Image src={world} />
+          <Image alt="play" src={world} />
         </div>
         <p className="text-center text-white text-[20px]">Mundo</p>
       </div>
       <div>
         <div className="p-3 border border-white rounded-full w-[80px] h-[80px] flex justify-center items-center">
-          <Image src={love} />
+          <Image alt="play" src={love} />
         </div>
         <p className="text-center text-white text-[20px]">Love</p>
       </div>
