@@ -8,15 +8,13 @@ import FooterDash from "@/components/Footer/FooterDash";
 
 const page = () => {
   return (
-    <div>
-      <NavbarDash />
+    <div className=" ">
       <main className="flex flex-col gap-10 items-center justify-center mt-10">
         <HeroDash />
       </main>
       {arrayCategorias.map((category) => (
         <GamerSection key={category.categoria} category={category} />
       ))}
-      <FooterDash/>
     </div>
   );
 };
