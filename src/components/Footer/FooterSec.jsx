@@ -10,4 +10,5 @@ const FooterSec = () => {
   );
 };
 
+
 export default FooterSec;
