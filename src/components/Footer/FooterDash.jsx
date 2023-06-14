@@ -1,4 +1,4 @@
-import "boxicons";
+// import "boxicons";
 import logo from "../../assets/img/logo/logo.png";
 import Image from "next/image";
 const FooterDash = () => {
@@ -6,32 +6,32 @@ const FooterDash = () => {
     <div>
       <div className="mt-5 bg-green text-white flex justify-center items-center gap-5 h-[59px]">
         <div className="flex gap-2">
-          <box-icon name="info-circle" type="solid" color="#ffffff"></box-icon>
+          {/* <box-icon name="info-circle" type="solid" color="#ffffff"></box-icon> */}
           <p className=" text-[20px] font-[500]">Acerca de Nosotros</p>
         </div>
         <div className="flex gap-2">
-          <box-icon name="file" color="#ffffff"></box-icon>
+          {/* <box-icon name="file" color="#ffffff"></box-icon> */}
           <p className=" text-[20px] font-[500]">Terminos y condiciones</p>
         </div>
 
         <div className="flex gap-2">
-          <box-icon type="solid" name="check-shield" color="#ffffff"></box-icon>
+          {/* <box-icon type="solid" name="check-shield" color="#ffffff"></box-icon> */}
           <p className=" text-[20px] font-[500]">Politicas de Privacidad</p>
         </div>
 
         <div className="flex gap-2">
-          <box-icon name="aperture" color="#ffffff"></box-icon>
+          {/* <box-icon name="aperture" color="#ffffff"></box-icon> */}
           <p className=" text-[20px] font-[500]">Cambios y Devoluciones</p>
         </div>
 
         <div className="flex gap-2">
-          <box-icon type="solid" name="offer" color="#ffffff"></box-icon>
+          {/* <box-icon type="solid" name="offer" color="#ffffff"></box-icon> */}
           <p className=" text-[20px] font-[500]">Oferta y Promociones</p>
         </div>
       </div>
       <div className="flex gap-5 ">
         <div className=" w-[30%] flex justify-end">
-          <div className="w-[294px] pr-6">
+          <div className="w-[294px] pr-6 pt-5">
             <div className="flex justify-center">
               <Image src={logo} alt="logo" className="w-[250px]" />
             </div>
@@ -55,19 +55,19 @@ const FooterDash = () => {
           </p>
           <div className="ml-5 flex flex-col gap-2">
             <div className="flex gap-1">
-              <box-icon name="phone" type="solid" color="#29e197"></box-icon>
+              {/* <box-icon name="phone" type="solid" color="#29e197"></box-icon> */}
               <p className=" text-[18px] font-[300]">
                 Llamanos al (01) 679-9828
               </p>
             </div>
             <div className="flex  gap-1">
-              <box-icon name="envelope" type="solid" color="#29e197"></box-icon>
+              {/* <box-icon name="envelope" type="solid" color="#29e197"></box-icon> */}
               <p className=" text-[18px] font-[300]">
                 Escribenos hola@takiven.com.pe
               </p>
             </div>
             <div className="flex  gap-1">
-              <box-icon type="solid" name="truck" color="#29e197"></box-icon>
+              {/* <box-icon type="solid" name="truck" color="#29e197"></box-icon> */}
               <p className=" text-[18px] font-[300]">
                 Sigue tu pedido en DINET
               </p>
@@ -87,7 +87,7 @@ const FooterDash = () => {
               Conoce los beneficios y dejános tus datos
             </p>
             <div className="flex mb-14">
-              <box-icon
+              {/* <box-icon
                 name="facebook-circle"
                 type="logo"
                 color="#29e197"
@@ -99,7 +99,7 @@ const FooterDash = () => {
                 type="logo"
                 color="#29e197"
                 size="50px"
-              ></box-icon>
+              ></box-icon> */}
             </div>
             <div>
               <p className=" text-[18px] font-[300]">
