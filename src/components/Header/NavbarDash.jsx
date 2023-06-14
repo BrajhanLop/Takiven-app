@@ -7,10 +7,12 @@ import user from "../../assets/img/icons/user.png";
 import CuentMenu from "../Dashboard/CuentMenu";
 import useToggle from "@/hooks/useToggle";
 import CartMenu from "../Dashboard/CartMenu";
+import MenuCategories from "../Dashboard/MenuCategories";
 
 const NavbarDash = () => {
   const { isToggle, toggle } = useToggle();
   const { isToggle: isCart, toggle: toggleCart } = useToggle();
+  const { isToggle: isCat, toggle: toggleCat } = useToggle();
 
   return (
     <>
@@ -19,7 +21,13 @@ const NavbarDash = () => {
           <Image src={logo} alt="logo" />
         </div>
         <div>
-          <Image src={menu} alt="menu" />
+          <Image
+            src={menu}
+            alt="menu"
+            onClick={toggleCat}
+            className="w-[40px]"
+          />
+          {isCat && <MenuCategories />}
         </div>
         <div className="w-[50%] h-[57px] ">
           <input
@@ -38,7 +46,7 @@ const NavbarDash = () => {
             />
             {isCart && <CartMenu />}
           </div>
-          <span className="text-white text-[40px] font-[300] ">0</span>
+          <span className="text-white text-[35px] font-[300] ">0</span>
         </div>
         <div className="relative">
           <Image

@@ -1,5 +1,5 @@
 import "./globals.css";
-import FooterSec from "@/components/Footer/FooterSec";
+
 
 export const metadata = {
   title: "Create Next App",
@@ -10,8 +10,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className=" min-h-screen bg-[#f2f6fb] md:bg-[#f2f6fb]  flex flex-col md:justify-between">
-        {children}
-        <FooterSec />
+        {children}        
       </body>
     </html>
   );

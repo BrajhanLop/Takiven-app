@@ -12,11 +12,11 @@ const CardProduct = () => {
         <button className="bg-[#ECEEF0] text-white text-[20px] font-[700px] rounded-[10px]  px-5 py-2">
           S/. 148.00
         </button>
-        <button className="bg-[#30F27B] text-white text-[20px] font-[700px] rounded-[10px] px-5 py-2">
+        <button className="bg-[#29E197] text-white text-[20px] font-[700px] rounded-[10px] px-5 py-2">
           S/. 108.00
         </button>
       </div>
-      <button className="bg-white text-[#30F27B] border border-[#30F27B] text-[20px] font-[700px] rounded-[10px] px-8 py-2 hover:bg-green hover:text-white hover:duration-500">
+      <button className="bg-white text-[#29E197] border border-[#29E197] text-[20px] font-[700px] rounded-[10px] px-8 py-2 hover:bg-green hover:text-white hover:duration-500">
         Agregar
       </button>
     </div>

@@ -1,4 +1,5 @@
 "use client";
+import FooterSec from "@/components/Footer/FooterSec";
 import Navbar from "@/components/Header/Navbar";
 import HeroSection from "@/components/Hero/HeroSection";
 import FormLogin from "@/components/Login/FormLogin";
@@ -23,6 +24,7 @@ export default function Home() {
           {/* <Register/> */}
         </div>
       </main>
+      <FooterSec />
     </>
   );
 }
