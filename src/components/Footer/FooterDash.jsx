@@ -1,3 +1,8 @@
+"use client";
+import { MdFacebook } from "react-icons/md";
+import { AiFillInstagram } from "react-icons/ai";
+// import { BiPhone } from "react-icons/bi";
+
 import info from "../../assets/img/icons/info.png";
 import terminos from "../../assets/img/icons/terminos.png";
 import politicas from "../../assets/img/icons/politicas.png";
@@ -87,6 +92,7 @@ const FooterDash = () => {
             <div className="flex gap-1">
               <div>
                 <Image src={phone} alt="info" />
+                {/* <BiPhone /> */}
               </div>
               <p className=" text-[18px] font-[300]">
                 Llamanos{" "}
@@ -134,10 +140,13 @@ const FooterDash = () => {
             </p>
             <div className="flex mb-14">
               <div>
-                <Image src={inst} alt="info" className="w-[50px]" />
+                {/* <Image src={inst} alt="info" className="w-[50px]" /> */}
+
+                <AiFillInstagram className="text-[50px] text-[#29E197]" />
               </div>
               <div>
-                <Image src={face} alt="info" className="w-[50px] " />
+                {/* <Image src={face} alt="info" className="w-[50px] " /> */}
+                <MdFacebook className="text-[50px] text-[#29E197]" />
               </div>
             </div>
             <div className="flex items-center gap-1">
