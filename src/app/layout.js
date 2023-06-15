@@ -10,7 +10,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className=" min-h-screen bg-[#f2f6fb] md:bg-[#f2f6fb]  flex flex-col md:justify-between">
         {children}
-        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
       </body>
     </html>
   );

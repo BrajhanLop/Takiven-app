@@ -137,13 +137,7 @@ const FooterDash = () => {
                 <Image src={inst} alt="info" className="w-[50px]" />
               </div>
               <div>
-                {/* <Image src={face} alt="info" className="w-[50px]" /> */}
-                <box-icon
-                  name="facebook-circle"
-                  type="logo"
-                  color="#29e197"
-                  size="50px"
-                ></box-icon>
+                <Image src={face} alt="info" className="w-[50px] " />
               </div>
             </div>
             <div className="flex items-center gap-1">
