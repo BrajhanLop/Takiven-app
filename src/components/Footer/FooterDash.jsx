@@ -6,8 +6,8 @@ import offer from "../../assets/img/icons/offer.png";
 import phone from "../../assets/img/icons/phone.png";
 import mail from "../../assets/img/icons/mail.png";
 import pedido from "../../assets/img/icons/pedido.png";
-import inst from "../../assets/img/icons/inst.png";
-import face from "../../assets/img/icons/face.png";
+import inst from "../../assets/img/svg/inst.svg";
+import face from "../../assets/img/svg/face.svg";
 import mark from "../../assets/img/icons/mark.png";
 import logo from "../../assets/img/logo/logo.png";
 import visa from "../../assets/img/tarjetas/visa.png";
@@ -19,6 +19,9 @@ import culqui from "../../assets/img/tarjetas/culqui.png";
 
 import Image from "next/image";
 const FooterDash = () => {
+  const isBrowser = () => typeof window !== "undefined";
+
+  isBrowser();
   return (
     <div>
       <div className="mt-5 bg-green text-white flex justify-center items-center gap-5 h-[59px]">
@@ -134,7 +137,13 @@ const FooterDash = () => {
                 <Image src={inst} alt="info" className="w-[50px]" />
               </div>
               <div>
-                <Image src={face} alt="info" className="w-[50px]" />
+                {/* <Image src={face} alt="info" className="w-[50px]" /> */}
+                <box-icon
+                  name="facebook-circle"
+                  type="logo"
+                  color="#29e197"
+                  size="50px"
+                ></box-icon>
               </div>
             </div>
             <div className="flex items-center gap-1">

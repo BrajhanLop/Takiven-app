@@ -2,9 +2,12 @@ import puser from "../../assets/img/icons/puser.png";
 import extend from "../../assets/img/icons/extend.png";
 import obs from "../../assets/img/icons/obs.png";
 import Image from "next/image";
-const CuentMenu = () => {
+const CuentMenu = ({ catRef }) => {
   return (
-    <div className=" bg-[#3FD077] absolute  top-[86px] right-0 rounded rounded-b-[20px] w-[228px] h-[160px] text-white">
+    <div
+      ref={catRef}
+      className=" bg-[#3FD077] absolute  top-[86px] right-0 rounded rounded-b-[20px] w-[228px] h-[160px] text-white"
+    >
       <div>
         <p className=" text-[20px] font-[500] text-center bg-[#30F27B] py-4">
           Hola, Paulo Abad
