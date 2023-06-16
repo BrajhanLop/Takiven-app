@@ -2,7 +2,7 @@ import React from "react";
 
 const DatosSocio = () => {
   return (
-    <div className=" max-w-[1200px]">
+    <div className=" max-w-[1200px] mt-24">
       <div>
         <h2 className=" text-[40px] font-[700] text-green">Datos de socio</h2>
         <hr className="mb-3" />
@@ -125,6 +125,53 @@ const DatosSocio = () => {
               />
             </div>
           </div>
+        </div>
+        <div className="flex gap-4 bg-[#F6F6F6] px-5 py-3 rounded-[20px]">
+          <input type="checkbox" className="w-[27px]" />
+          <p className="text-[#3C4A5B] text-[20px]">
+            Acepto recibir promociones, descuentos y publicidad de Cineplanet
+            mediante el uso de datos personales brindados
+          </p>
+        </div>
+        <div className="flex justify-center">
+          <button className="text-white bg-[#C7C9CD] px-5 py-3 text-[26px] rounded-[20px] mt-5">
+            GUARDAR
+          </button>
+        </div>
+      </div>
+
+      <div className="mt-10">
+        <h2 className=" text-[40px] font-[700] text-green">
+          Cambiar contraseña
+        </h2>
+        <hr className="mb-3" />
+        <div className="flex justify-center my-10">
+          <div className="flex gap-x-10 gap-y-5  flex-wrap w-[950px] justify-center">
+            <div className="w-[280px]">
+              <p className="text-[20px] font-[400] text-[#3C4A5B]">
+                Nueva Contraseña
+              </p>
+              <input
+                type="text"
+                className="border-b border-black w-[274px] h-[40px] bg-transparent focus:outline-none text-[#00000033]"
+              />
+            </div>
+            <div className="w-[280px]">
+              <p className="text-[20px] font-[400] text-[#3C4A5B]">
+                Confirmar contraseña
+              </p>
+              <input
+                type="text"
+                className="border-b border-black w-[274px] h-[40px] bg-transparent focus:outline-none text-[#00000033]"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className="flex justify-center">
+          <button className="text-white bg-[#C7C9CD] px-5 py-3 text-[26px] rounded-[20px] mt-5">
+            GUARDAR
+          </button>
         </div>
       </div>
     </div>

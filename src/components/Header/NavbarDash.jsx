@@ -1,9 +1,9 @@
 "use client";
 import Image from "next/image";
 import logo from "../../assets/img/logo/logo2.png";
-import menu from "../../assets/img/icons/Menu.png";
-import cart from "../../assets/img/icons/cart.png";
-import user from "../../assets/img/icons/user.png";
+import menu from "../../assets/img/svg/Menu.svg";
+import cart from "../../assets/img/svg/cart.svg";
+import user from "../../assets/img/svg/user.svg";
 import CuentMenu from "../Dashboard/CuentMenu";
 import useToggle from "@/hooks/useToggle";
 import CartMenu from "../Dashboard/CartMenu";
@@ -97,7 +97,7 @@ const NavbarDash = () => {
             onClick={handleUser}
             className="w-[40px] h-[40px] cursor-pointer"
           />
-          {isToggle && <CuentMenu catRef={catRef} />}
+          {isToggle && <CuentMenu catRef={catRef} isFalse={isFalse} />}
         </div>
       </nav>
     </>

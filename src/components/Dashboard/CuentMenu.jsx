@@ -2,7 +2,8 @@ import puser from "../../assets/img/icons/puser.png";
 import extend from "../../assets/img/icons/extend.png";
 import obs from "../../assets/img/icons/obs.png";
 import Image from "next/image";
-const CuentMenu = ({ catRef }) => {
+import Link from "next/link";
+const CuentMenu = ({ catRef, isFalse }) => {
   return (
     <div
       ref={catRef}
@@ -16,7 +17,9 @@ const CuentMenu = ({ catRef }) => {
       <div className=" h-[98px] ">
         <div className="flex justify-center items-center gap-4 text-[20px] h-1/2 font-[500]">
           <Image src={puser} alt="user" />
-          <p className="w-[111px]">Mi Cuenta</p>
+          <Link href="/dashboard/datos" onClick={isFalse}>
+            <p className="w-[111px]">Mi Cuenta</p>
+          </Link>
           <Image src={extend} alt="link" />
         </div>
         <div className="flex justify-center items-center gap-4 text-[20px] h-1/2 font-[500]">
