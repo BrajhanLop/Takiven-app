@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import logo from "../../assets/img/logo/logo2.png";
-import menu from "../../assets/img/svg/Menu.svg";
+import menu from "../../assets/img/svg/menu.svg";
 import cart from "../../assets/img/svg/cart.svg";
 import user from "../../assets/img/svg/user.svg";
 import CuentMenu from "../Dashboard/CuentMenu";
