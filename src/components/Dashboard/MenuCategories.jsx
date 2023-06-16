@@ -7,9 +7,12 @@ import belleza from "../../assets/img/icons/belleza.png";
 import world from "../../assets/img/icons/world.png";
 import love from "../../assets/img/icons/love.png";
 
-const MenuCategories = () => {
+const MenuCategories = ({ catRef }) => {
   return (
-    <div className="fixed top-24 bg-[#30F27B] w-[987px] h-[133px] flex justify-center gap-8 rounded rounded-b-[20px] pt-3">
+    <div
+      ref={catRef}
+      className="fixed top-24 bg-[#30F27B] px-20 h-[133px] w-[60%]  flex justify-center gap-8 rounded rounded-b-[20px] pt-3"
+    >
       <div>
         <div className="p-3 border w-[80px] h-[80px] border-white rounded-full flex justify-center items-center">
           <Image src={play} alt="play" />

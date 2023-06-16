@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import play from "../../assets/img/icons/play.png";
-import cohete from "../../assets/img/icons/rocket.png";
+import cohete from "../../assets/img/svg/rocket.svg";
 import CardProduct from "../Product/CardProduct";
 const GamerSection = ({ category }) => {
   return (
