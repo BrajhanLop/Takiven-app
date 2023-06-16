@@ -1,14 +1,19 @@
-import info from "../../assets/img/icons/info.png";
-import terminos from "../../assets/img/icons/terminos.png";
-import politicas from "../../assets/img/icons/politicas.png";
-import cambios from "../../assets/img/icons/cambios.png";
-import offer from "../../assets/img/icons/offer.png";
-import phone from "../../assets/img/icons/phone.png";
-import mail from "../../assets/img/icons/mail.png";
-import pedido from "../../assets/img/icons/pedido.png";
-import inst from "../../assets/img/icons/inst.png";
-import face from "../../assets/img/icons/face.png";
-import mark from "../../assets/img/icons/mark.png";
+"use client";
+import { MdFacebook } from "react-icons/md";
+import { AiFillInstagram } from "react-icons/ai";
+// import { BiPhone } from "react-icons/bi";
+
+import info from "../../assets/img/svg/info.svg";
+import terminos from "../../assets/img/svg/terminos.svg";
+import politicas from "../../assets/img/svg/poli.svg";
+import cambios from "../../assets/img/svg/cambios.svg";
+import offer from "../../assets/img/svg/offer.svg";
+import phone from "../../assets/img/svg/phone.svg";
+import mail from "../../assets/img/svg/mail.svg";
+import pedido from "../../assets/img/svg/truck.svg";
+import inst from "../../assets/img/svg/inst.svg";
+import face from "../../assets/img/svg/face.svg";
+import mark from "../../assets/img/svg/mark.svg";
 import logo from "../../assets/img/logo/logo.png";
 import visa from "../../assets/img/tarjetas/visa.png";
 import master from "../../assets/img/tarjetas/master.png";
@@ -18,7 +23,11 @@ import union from "../../assets/img/tarjetas/union.png";
 import culqui from "../../assets/img/tarjetas/culqui.png";
 
 import Image from "next/image";
+import Link from "next/link";
 const FooterDash = () => {
+  const isBrowser = () => typeof window !== "undefined";
+
+  isBrowser();
   return (
     <div>
       <div className="mt-5 bg-green text-white flex justify-center items-center gap-5 h-[59px]">
@@ -26,34 +35,44 @@ const FooterDash = () => {
           <div>
             <Image src={info} alt="info" />
           </div>
-          <p className=" text-[20px] font-[500]">Acerca de Nosotros</p>
+          <Link href="/">
+            <p className=" text-[20px] font-[500]">Acerca de Nosotros</p>
+          </Link>
         </div>
         <div className="flex items-center gap-2">
           <div>
             <Image src={terminos} alt="info" />
           </div>
-          <p className=" text-[20px] font-[500]">Terminos y condiciones</p>
+          <Link href="/">
+            <p className=" text-[20px] font-[500]">Terminos y condiciones</p>
+          </Link>
         </div>
 
         <div className="flex items-center gap-2">
           <div>
             <Image src={politicas} alt="info" />
           </div>
-          <p className=" text-[20px] font-[500]">Politicas de Privacidad</p>
+          <Link href="/">
+            <p className=" text-[20px] font-[500]">Politicas de Privacidad</p>
+          </Link>
         </div>
 
         <div className="flex items-center gap-2">
           <div>
             <Image src={cambios} alt="info" />
           </div>
-          <p className=" text-[20px] font-[500]">Cambios y Devoluciones</p>
+          <Link href="/">
+            <p className=" text-[20px] font-[500]">Cambios y Devoluciones</p>
+          </Link>
         </div>
 
         <div className="flex items-center gap-2">
           <div>
             <Image src={offer} alt="info" />
           </div>
-          <p className=" text-[20px] font-[500]">Oferta y Promociones</p>
+          <Link href="/">
+            <p className=" text-[20px] font-[500]">Oferta y Promociones</p>
+          </Link>
         </div>
       </div>
       <div className="flex gap-5 ">
@@ -84,6 +103,7 @@ const FooterDash = () => {
             <div className="flex gap-1">
               <div>
                 <Image src={phone} alt="info" />
+                {/* <BiPhone /> */}
               </div>
               <p className=" text-[18px] font-[300]">
                 Llamanos{" "}
@@ -131,10 +151,13 @@ const FooterDash = () => {
             </p>
             <div className="flex mb-14">
               <div>
-                <Image src={inst} alt="info" className="w-[50px]" />
+                {/* <Image src={inst} alt="info" className="w-[50px]" /> */}
+
+                <AiFillInstagram className="text-[50px] text-[#29E197]" />
               </div>
               <div>
-                <Image src={face} alt="info" className="w-[50px]" />
+                {/* <Image src={face} alt="info" className="w-[50px] " /> */}
+                <MdFacebook className="text-[50px] text-[#29E197]" />
               </div>
             </div>
             <div className="flex items-center gap-1">
