@@ -9,6 +9,7 @@ import useToggle from "@/hooks/useToggle";
 import CartMenu from "../Dashboard/CartMenu";
 import MenuCategories from "../Dashboard/MenuCategories";
 import { useEffect, useRef } from "react";
+import { useRouter } from "next/navigation";
 
 const NavbarDash = () => {
   const { isToggle, toggle, isFalse } = useToggle();
@@ -19,6 +20,7 @@ const NavbarDash = () => {
   } = useToggle();
   const { isToggle: isCat, toggle: toggleCat, isFalse: falseCat } = useToggle();
   const catRef = useRef(null);
+  const router = useRouter();
 
   const handleClickOutside = (event) => {
     if (catRef.current && !catRef.current.contains(event.target)) {
@@ -57,7 +59,10 @@ const NavbarDash = () => {
   return (
     <>
       <nav className="fixed  w-full bg-[#3FD077] flex justify-center items-center gap-4">
-        <div className="flex">
+        <div
+          className="flex cursor-pointer"
+          onClick={() => router.push("/dashboard")}
+        >
           <Image src={logo} alt="logo" className="" />
         </div>
         <div className="flex items-center w-[60%] gap-3">

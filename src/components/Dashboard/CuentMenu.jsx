@@ -24,7 +24,9 @@ const CuentMenu = ({ catRef, isFalse }) => {
         </div>
         <div className="flex justify-center items-center gap-4 text-[20px] h-1/2 font-[500]">
           <Image src={obs} alt="user" />
-          <p className="w-[111px]">Mis Pedidos</p>
+          <Link href="/dashboard/pedido" onClick={isFalse}>
+            <p className="w-[111px]">Mis Pedidos</p>
+          </Link>
           <Image src={extend} alt="link" />
         </div>
       </div>
