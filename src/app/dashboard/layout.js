@@ -4,11 +4,9 @@ import NavbarDash from "@/components/Header/NavbarDash";
 export default function DashboardLayout({ children }) {
   return (
     <div className="bg-white w-full">
-      <NavbarDash />
-      <section className="flex justify-center mx-auto mb-20">
-        {children}
-      </section>
-      <FooterDash />
+      {/* <NavbarDash /> */}
+      <section className="flex justify-center mb-20 w-full mt-[73px]">{children}</section>
+      {/* <FooterDash /> */}
     </div>
   );
 }

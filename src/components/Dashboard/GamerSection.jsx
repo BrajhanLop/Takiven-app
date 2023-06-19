@@ -5,8 +5,8 @@ import cohete from "../../assets/img/svg/rocket.svg";
 import CardProduct from "../Product/CardProduct";
 const GamerSection = ({ category }) => {
   return (
-    <div className="max-w-[1200px] mx-auto ">
-      <div className="flex items-center gap-3 max-w-[1200px] mx-auto mt-10">
+    <div className=" mx-auto overflow-hidden">
+      <div className="flex items-center gap-3 mx-auto mt-10">
         <Image src={category.img} className="w-[55px]" alt="play" />
 
         <p className="text-[#3FD077] text-[30px] font-[400] font-rock">

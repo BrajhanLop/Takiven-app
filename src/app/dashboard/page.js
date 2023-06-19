@@ -8,13 +8,15 @@ import FooterDash from "@/components/Footer/FooterDash";
 
 const page = () => {
   return (
-    <div className=" ">
-      <main className="flex flex-col gap-10 items-center justify-center mt-10">
+    <div className="flex flex-col">
+      <main className="py-5 lg:pt-10 w-full px-3 md:px-7 lg:max-w-[1000px] xl:max-w-[1200px] lg:px-0 mx-auto">
         <HeroDash />
       </main>
-      {arrayCategorias.map((category) => (
-        <GamerSection key={category.categoria} category={category} />
-      ))}
+      <div>
+        {arrayCategorias.map((category) => (
+          <GamerSection key={category.categoria} category={category} />
+        ))}
+      </div>
     </div>
   );
 };
