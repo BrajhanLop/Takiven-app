@@ -11,7 +11,7 @@ const MenuCategories = ({ catRef }) => {
   return (
     <div
       ref={catRef}
-      className="fixed top-24 bg-[#30F27B] px-20 h-[133px] w-[60%]  flex justify-center gap-8 rounded rounded-b-[20px] pt-3"
+      className="fixed top-[5rem] bg-[#30F27B] px-20 h-[133px] w-[60%]  flex justify-center gap-8 rounded rounded-b-[20px] pt-3"
     >
       <div>
         <div className="p-3 border w-[80px] h-[80px] border-white rounded-full flex justify-center items-center">

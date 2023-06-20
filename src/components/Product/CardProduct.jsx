@@ -1,7 +1,7 @@
 const CardProduct = () => {
   return (
-    <div className="border border-[#30F27B] h-[500px] w-[320px] rounded-[20px] flex flex-col gap-3 items-center">
-      <div className="border mt-3 flex justify-center items-center rounded-[20px] w-[293px] h-[264px]">
+    <div className=" border border-[#30F27B] h-[500px] rounded-[20px] flex flex-col gap-3 items-center ">
+      <div className="border mt-3 flex justify-center items-center rounded-[20px] w-[292px] mx-3 h-[264px]">
         IMG
       </div>
       <div>
