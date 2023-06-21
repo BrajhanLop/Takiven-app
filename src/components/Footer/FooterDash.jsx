@@ -30,15 +30,15 @@ const FooterDash = () => {
   isBrowser();
   return (
     <div>
-      <div className="mt-5 bg-green text-white flex justify-center items-center gap-5 h-[59px]">
-        <div className="flex items-center gap-2">
+      <div className="mt-5 bg-green text-white flex justify-center items-center gap-6 h-[59px]">
+        {/* <div className="flex items-center gap-2">
           <div>
             <Image src={info} alt="info" />
           </div>
           <Link href="/">
             <p className=" text-[20px] font-[500]">Acerca de Nosotros</p>
           </Link>
-        </div>
+        </div> */}
         <div className="flex items-center gap-2">
           <div>
             <Image src={terminos} alt="info" />
