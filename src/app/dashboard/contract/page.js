@@ -12,7 +12,7 @@ const page = () => {
         Estos Términos y Condiciones regulan el acceso y utilización por parte
         del Cliente de los servicios y facilidades que ofrece el Sitio Web o la
         Aplicación. La condición de Cliente es adquirida por la mera navegación
-        y/o utilización del Sitio Web o la Aplicación (en adelante, Sitio). El
+        y/o utilización del Sitio Web o la Aplicación en adelante, Sitio. El
         Cliente puede acceder y navegar por el Sitio libremente. Asimismo, el
         acceso y navegación por el Sitio por parte del Cliente implica la
         aceptación sin reservas de todas las disposiciones incluidas en los
@@ -32,7 +32,7 @@ const page = () => {
       <p className=" text-justify mb-5">
         El Cliente declara que para realizar cualquier transacción en el Sitio
         en cualquier canal electrónico, tales como: Un ordenador, PC, Tablet,
-        teléfono inteligente (Smartphone) u otro de similar naturaleza que posea
+        teléfono inteligente Smartphone u otro de similar naturaleza que posea
         el Cliente es necesario la aceptación de los términos y condiciones
         comprendidos en el presente documento que podrá realizar a través de un
         clic, SMS, el ingreso de la clave secreta, clave dinámica y/o cualquier
