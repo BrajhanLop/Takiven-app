@@ -19,18 +19,18 @@ const CuentMenu = ({ catRef, isFalse }) => {
       </div>
       <div className=" h-[98px] ">
         <div className="flex justify-center items-center gap-4 text-[20px] h-1/2 font-[500]">
-          <Image src={icono} alt="user" className="w-[30px]" />
+          <Image src={icono} alt="user" className="w-[30px] cursor-pointer" />
           <Link href="/dashboard/datos" onClick={isFalse}>
             <p className="w-[111px]">Mi Cuenta</p>
           </Link>
-          <Image src={icono3} alt="link" className="w-[20px]" />
+          <Image src={icono3} alt="link" className="w-[20px] cursor-pointer" />
         </div>
         <div className="flex justify-center items-center gap-4 text-[20px] h-1/2 font-[500]">
-          <Image src={icono2} alt="user" className="w-[30px]" />
+          <Image src={icono2} alt="user" className="w-[30px] cursor-pointer" />
           <Link href="/dashboard/pedido" onClick={isFalse}>
             <p className="w-[111px]">Mis Pedidos</p>
           </Link>
-          <Image src={icono3} alt="link" className="w-[20px]"/>
+          <Image src={icono3} alt="link" className="w-[20px] cursor-pointer"/>
         </div>
       </div>
     </div>

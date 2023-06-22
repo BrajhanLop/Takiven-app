@@ -1,10 +1,12 @@
 "use client";
 import Image from "next/image";
-import play from "../../assets/img/icons/play.png";
+import left from "../../assets/img/svg/left.svg";
+import rigth from "../../assets/img/svg/rigth.svg";
 import cohete from "../../assets/img/svg/rocket.svg";
 import CardProduct from "../Product/CardProduct";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 import { useRef } from "react";
+import Link from "next/link";
 const GamerSection = ({ category }) => {
   const sliderRef = useRef(null);
   const arr = [1, 2, 3, 4, 5, 6, 7, 8];
@@ -27,31 +29,36 @@ const GamerSection = ({ category }) => {
           {category.categoria}
         </p>
         <hr className="mt-5 border-[#3FD07766] w-[80%] mx-auto " />
-        <Image src={cohete} className="w-[55px] " alt="cohete" />
-        <p className="text-[#3FD077] text-[30px] font-[400] font-rock">Ver</p>
-        <p className="text-[#3FD077] text-[30px] font-[400] font-rock">más</p>
+        <Image src={cohete} className="w-[55px] cursor-pointer" alt="cohete" />
+        
+        <p className="text-[#3FD077] text-[30px] font-[400] font-rock cursor-pointer">Ver</p>
+        <p className="text-[#3FD077] text-[30px] font-[400] font-rock cursor-pointer">más</p>
+      
       </div>
       <div className="flex items-center ">
-      <div className="flex-none">
-        <button
+      <div className="flex-none cursor-pointer" onClick={handleScrollLeft}>
+
+        <Image src={left} alt="" className="w-[40px]" />
+        {/* <button
           className="bg-gray-200 rounded-full p-2"
           onClick={handleScrollLeft}
         >
           <MdChevronLeft size={24} />
-        </button>
+        </button> */}
       </div>
-        <div className="lg:max-w-[1000px] xl:max-w-[1200px] flex gap-4 mt-5 flex-row flex-nowrap overflow-auto scroll-smooth scrollbar-hide" ref={sliderRef}>
+        <div className="lg:max-w-[1000px] xl:max-w-[1200px] flex gap-4 mt-8 flex-row flex-nowrap overflow-auto scroll-smooth scrollbar-hide" ref={sliderRef}>
           {arr.map((ar, index) => (
             <CardProduct key={index} />
           ))}
         </div>
-        <div className="flex-none">
-        <button
+        <div className="flex-none cursor-pointer" onClick={handleScrollRight}>
+        {/* <button
           className="bg-gray-200 rounded-full p-2"
           onClick={handleScrollRight}
         >
           <MdChevronRight size={24} />
-        </button>
+        </button> */}
+        <Image src={rigth} alt="" className="w-[40px]"  />
       </div>
       </div>
     </div>
