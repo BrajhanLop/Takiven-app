@@ -4,8 +4,8 @@ const page = () => {
       <h1 className="text-[40px] font-[700] text-center mt-5 mb-10">
         Terminos y condiciones Generales
       </h1>
-      <h2 className="text-[24px] font-[500]">1. IDENTIFICACION</h2>
-      <h2 className="text-[24px] font-[500]">
+      <h2 className="text-[24px] font-[500] mb-10">1. IDENTIFICACION</h2>
+      <h2 className="text-[24px] font-[500] mb-5">
         2. ACCESO Y ACEPTACIÓN DEL CLIENTE
       </h2>
       <p className=" text-justify">
@@ -21,7 +21,7 @@ const page = () => {
         comprometiéndose a cumplir completamente con las condiciones
         establecidas.
       </p>
-      <p className=" text-justify">
+      {/* <p className=" text-justify">
         A través de este Sitio las empresas vendedoras realizarán ofertas de
         bienes y servicios, que podrán ser adquiridas a través de la aceptación
         vía electrónica y utilizando los mecanismos que el mismo sitio ofrece
@@ -819,7 +819,7 @@ const page = () => {
       <p>
         De no proporcionar los datos requeridos no se le podrá brindar el
         Servicio.
-      </p>
+      </p> */}
     </div>
   );
 };
