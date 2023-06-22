@@ -61,7 +61,7 @@ const page = () => {
         modificaciones mencionadas, podrá optar por no hacer uso de los
         servicios ofrecidos por el Marketplace TAKIVEN a través del Sitio.
       </p>
-      {/*
+
       <h2 className="text-[24px] font-[500]">
         5. MODIFICACIÓN DE LOS TÉRMINOS Y CONDICIONES
       </h2>
@@ -79,7 +79,7 @@ const page = () => {
         En consecuencia, será requisito para la formación del acuerdo, la
         confirmación y/o validación o verificación, por parte de la empresa
         vendedora u ofertante, de toda operación que se efectué en este sitio
-        del Marketplace "TAKIVEN".{" "}
+        del Marketplace TAKIVEN.{" "}
       </p>
       <h3> 5.2 Plazo y validez de la oferta y precios </h3>
       <p>
@@ -119,9 +119,9 @@ const page = () => {
         {" "}
         Queda claramente establecido que TAKIVEN permite a los ofertantes de los
         productos y/o servicios, ofrecer y vender sus productos en el
-        Marketplace "TAKIVEN". La página web de dichos ofertantes contendrá el
+        Marketplace TAKIVEN. La página web de dichos ofertantes contendrá el
         detalle de estos productos. A pesar de que TAKIVEN facilita las
-        transacciones a través del Marketplace "TAKIVEN", TAKIVEN no es ni el
+        transacciones a través del Marketplace TAKIVEN, TAKIVEN no es ni el
         comprador ni el vendedor de los productos ofrecidos por los referidos
         ofertantes. TAKIVEN simplemente facilita un espacio donde compradores y
         vendedores pueden efectuar sus transacciones. Por consiguiente, el
@@ -187,8 +187,8 @@ const page = () => {
       <h3>5.6 Despacho de productos </h3>
       <p>
         {" "}
-        Los productos adquiridos a través del Marketplace "TAKIVEN" se sujetarán
-        a las condiciones de despacho y entrega elegidas por el Cliente y
+        Los productos adquiridos a través del Marketplace TAKIVEN se sujetarán a
+        las condiciones de despacho y entrega elegidas por el Cliente y
         disponibles en el Sitio, de acuerdo a las políticas y plazos de despacho
         por parte de las empresas vendedoras. La información del lugar de envío
         es de exclusiva responsabilidad del Cliente. Los plazos elegidos para el
@@ -196,7 +196,7 @@ const page = () => {
         compra, de acuerdo a lo mencionado en el artículo 5.1. Marketplace
         TAKIVEN valida el pedido de compra y el medio de pago utilizado. El
         Cliente sólo podrá solicitar el cambio de dirección para el método de
-        despacho "Envío a domicilio" a través del Call Center o directamente con
+        despacho Envío a domicilio a través del Call Center o directamente con
         el Call Center de cada empresa vendedora dependiendo del estado del
         pedido de compra y la nueva dirección solicitada, en base a ello se
         determinará si es factible o no realizar el cambio de dirección de
@@ -261,10 +261,10 @@ const page = () => {
         la Resolución de Superintendencia N° 007-99 / SUNAT (RCP) y el Texto
         Único Ordenado de la Ley del Impuesto General a las Ventas e Impuesto
         Selectivo al Consumo, aprobado mediante Decreto Supremo N° 055-99-EF y
-        normas modificatorias (TUO del IGV): "No existe ningún procedimiento
+        normas modificatorias (TUO del IGV): No existe ningún procedimiento
         vigente que permita el canje de boletas de venta por facturas, más aún
         las notas de crédito no se encuentran previstas para modificar al
-        adquirente o usuario que figura en el comprobante de pago original".
+        adquirente o usuario que figura en el comprobante de pago original.
         Teniendo en cuenta esta resolución, es obligación del consumidor decidir
         correctamente el documento que solicitará como comprobante al momento de
         su compra, ya que según los párrafos citados no procederá cambio alguno.
@@ -281,7 +281,7 @@ const page = () => {
         diverso tipo, tales como programas de recompensa, canje, intercambio,
         comercialización, promoción y/o publicidad de productos y servicios
         propios y de terceros a través de portales web, aplicaciones de
-        telefonía celular (servicios Marketplace "TAKIVEN"). El Sitio podrá
+        telefonía celular (servicios Marketplace TAKIVEN). El Sitio podrá
         prestar servicios vinculados a tecnologías de información, servicios de
         asistencia en línea, gestión de productos y procesos informáticos y, en
         general, aquellos relacionados con todo tipo de soluciones informáticas.
@@ -307,7 +307,7 @@ const page = () => {
         forma, dañar los datos, programas o documentos electrónicos y demás que
         se encuentren en el Sitio. El Cliente se compromete a no obstaculizar el
         acceso a otros Clientes mediante el consumo masivo de los recursos
-        informáticos a través de los cuales Marketplace "TAKIVEN" presta el
+        informáticos a través de los cuales Marketplace TAKIVEN presta el
         servicio, así como a no realizar acciones que dañen, interrumpan o
         generen errores en dichos sistemas o servicios. El Cliente se compromete
         a no intentar penetrar o probar la vulnerabilidad de un sistema o de una
@@ -357,34 +357,34 @@ const page = () => {
         este de índole técnico, físico o producto de un caso fortuito o fuerza
         mayor que imposibilite, retrase, demore la ejecución o no permita la
         realización exitosa del servicio solicitado en el Sitio de Marketplace
-        "TAKIVEN". El Marketplace "TAKIVEN" recomienda al Cliente que no
-        comparta con terceros ningún tipo de información, contraseña u otro dato
-        de carácter personal, siendo el Cliente responsable por el mal uso de
-        dicha información y asumiendo la responsabilidad que pueda derivar de
-        dicha falta de diligencia. El responsable del manejo y administración
-        del Marketplace denominado TAKIVEN a la que acceden los Clientes, así
-        como de la comercialización de los productos y/o servicios a través de
-        la plataforma es "TAKIVEN". El uso de los bienes y servicios no
-        constituye ni significa que los titulares de dichos productos o
-        servicios participen o están involucrados -bajo ningún supuesto- en el
-        negocio Marketplace "TAKIVEN". Salvo que así lo establezca la
-        legislación aplicable de obligado cumplimiento, el uso que el Usuario
-        haga del Sitio o de todas las funcionalidades que el Sitio ofrece,
-        incluyendo cualquier contenido, publicación o herramienta, se ofrece
-        "tal cual" y "según su disponibilidad" sin declaraciones o garantías de
-        ningún tipo, tanto explícitas como implícitas, incluidas entre otras,
-        las garantías de comerciabilidad, adecuación a un fin particular y no
-        incumplimiento. El Marketplace TAKIVEN no garantiza que el Sitio sea
-        siempre seguro o esté libre de errores, ni que funcione siempre sin
-        interrupciones, retrasos o imperfecciones. Marketplace TAKIVEN no se
-        hace responsable de los posibles daños o perjuicios en el Sitio que se
-        puedan derivar de interferencias, omisiones, interrupciones, virus
-        informáticos, averías o desconexiones en el funcionamiento operativo del
-        sistema electrónico, de retrasos o bloqueos en el uso de este sistema
-        electrónico causados por deficiencias o sobrecargas en el sistema de
-        Internet o en otros sistemas electrónicos, así como también de daños que
-        puedan ser causados por terceras personas mediante intromisiones
-        ilegítimas fuera del control de Marketplace TAKIVEN.
+        TAKIVEN. El Marketplace TAKIVEN recomienda al Cliente que no comparta
+        con terceros ningún tipo de información, contraseña u otro dato de
+        carácter personal, siendo el Cliente responsable por el mal uso de dicha
+        información y asumiendo la responsabilidad que pueda derivar de dicha
+        falta de diligencia. El responsable del manejo y administración del
+        Marketplace denominado TAKIVEN a la que acceden los Clientes, así como
+        de la comercialización de los productos y/o servicios a través de la
+        plataforma es TAKIVEN. El uso de los bienes y servicios no constituye ni
+        significa que los titulares de dichos productos o servicios participen o
+        están involucrados -bajo ningún supuesto- en el negocio Marketplace
+        TAKIVEN. Salvo que así lo establezca la legislación aplicable de
+        obligado cumplimiento, el uso que el Usuario haga del Sitio o de todas
+        las funcionalidades que el Sitio ofrece, incluyendo cualquier contenido,
+        publicación o herramienta, se ofrece tal cual y según su disponibilidad
+        sin declaraciones o garantías de ningún tipo, tanto explícitas como
+        implícitas, incluidas entre otras, las garantías de comerciabilidad,
+        adecuación a un fin particular y no incumplimiento. El Marketplace
+        TAKIVEN no garantiza que el Sitio sea siempre seguro o esté libre de
+        errores, ni que funcione siempre sin interrupciones, retrasos o
+        imperfecciones. Marketplace TAKIVEN no se hace responsable de los
+        posibles daños o perjuicios en el Sitio que se puedan derivar de
+        interferencias, omisiones, interrupciones, virus informáticos, averías o
+        desconexiones en el funcionamiento operativo del sistema electrónico, de
+        retrasos o bloqueos en el uso de este sistema electrónico causados por
+        deficiencias o sobrecargas en el sistema de Internet o en otros sistemas
+        electrónicos, así como también de daños que puedan ser causados por
+        terceras personas mediante intromisiones ilegítimas fuera del control de
+        Marketplace TAKIVEN.
       </p>
       <p>
         Para los casos en los se requiera el registro del Cliente, necesitarás
@@ -392,7 +392,7 @@ const page = () => {
         algún problema para efectuar un cargo en el método de pago que hayas
         seleccionado, será factible que se pueda efectuar el cargo en cualquier
         otro método de pago válido que esté asociado a tu cuenta. Cuando
-        utilizas los Servicios del Marketplace ""TAKIVEN” eres responsable de
+        utilizas los Servicios del Marketplace TAKIVEN eres responsable de
         mantener la confidencialidad de los datos de tu cuenta y tu contraseña,
         así como de restringir el acceso a tu ordenador y a tus dispositivos. En
         la medida en que así lo permita la legislación aplicable, aceptas asumir
@@ -408,37 +408,37 @@ const page = () => {
         asimismo obligado a informarnos inmediatamente cuando tenga lugar
         cualquier variación en la información que nos has facilitado. Nos
         reservamos el derecho a denegar el acceso al servicio del Marketplace
-        "TAKIVEN", a cancelar cualesquiera cuentas y a eliminar o modificar
+        TAKIVEN, a cancelar cualesquiera cuentas y a eliminar o modificar
         cualquier contenido en caso de que el usuario incumpliera la legislación
         aplicable, los presentes Términos y Condiciones o cualesquiera otros
         términos y condiciones o políticas aplicables. Asimismo, todas las
-        imágenes y colores de los productos del Marketplace "TAKIVEN" son
+        imágenes y colores de los productos del Marketplace TAKIVEN son
         referenciales y pueden variar con respecto al producto físico. Las
         imágenes también pueden presentar al producto instalado en un ambiente
         para mostrar el acabado y funcionalidad del mismo, sin que esto indique
         que el producto se venda en conjunto. Es responsabilidad de cada marca
         explicar si hubiera una variante con el producto enviado Propiedad
         intelectual, derechos de autor, bases de datos, licencia y acceso. El
-        Cliente declara que ante el mal uso del Sitio del Marketplace, "TAKIVEN"
-        , TAKIVEN podrá bloquearlo de su lista de Clientes permitidos para
+        Cliente declara que ante el mal uso del Sitio del Marketplace, TAKIVEN ,
+        TAKIVEN podrá bloquearlo de su lista de Clientes permitidos para
         utilizar el Sitio sin aviso alguno, por lo tanto, un mal uso de la
         aplicación, aprovechamiento indebido del mismo o actos que
         desnaturalicen o generen una situación de aprovechamiento y/o ventaja
         indebida por parte del Cliente que perjudique al Sitio del Marketplace
-        "TAKIVEN" de TAKIVEN, encuentra expresamente prohibido y será
-        considerado como un acto de piratería de software que infringe las leyes
-        de la propiedad intelectual e industrial, de tal forma que TAKIVEN podrá
+        TAKIVEN de TAKIVEN, encuentra expresamente prohibido y será considerado
+        como un acto de piratería de software que infringe las leyes de la
+        propiedad intelectual e industrial, de tal forma que TAKIVEN podrá
         exigir responsabilidad por el incumplimiento de esta condición, según la
         normativa vigente. Todo contenido alojado o puesto a disposición en
-        cualquiera de los Servicios del Sitio del Marketplace, "TAKIVEN", como
-        por ejemplo texto, gráficos, logotipos, iconos de botones, imágenes,
-        clips de audio, descargas digitales, y recopilaciones de datos son
-        propiedad de TAKIVEN o de sus proveedores de contenido y está protegido
-        por las leyes vigentes, así como por la legislación internacional sobre
-        derechos de propiedad intelectual, derechos de autor y derechos sobre
-        bases de datos. El conjunto de todo el contenido albergado o puesto a
-        disposición a través de cualquier Servicio del Marketplace, "TAKIVEN" es
-        propiedad exclusiva deTAKIVEN, y está protegido por las leyes vigentes e
+        cualquiera de los Servicios del Sitio del Marketplace, TAKIVEN, como por
+        ejemplo texto, gráficos, logotipos, iconos de botones, imágenes, clips
+        de audio, descargas digitales, y recopilaciones de datos son propiedad
+        de TAKIVEN o de sus proveedores de contenido y está protegido por las
+        leyes vigentes, así como por la legislación internacional sobre derechos
+        de propiedad intelectual, derechos de autor y derechos sobre bases de
+        datos. El conjunto de todo el contenido albergado o puesto a disposición
+        a través de cualquier Servicio del Marketplace, TAKIVEN es propiedad
+        exclusiva deTAKIVEN, y está protegido por las leyes vigentes e
         internacionales sobre derechos de propiedad intelectual y derechos sobre
         bases de datos. En ese sentido, no podrán utilizarse las marcas
         registradas ni la imagen comercial de TAKIVEN, ni en relación con ningún
@@ -446,35 +446,34 @@ const page = () => {
         fuera susceptible de causar confusión entre los usuarios o que pueda
         menospreciar o desacreditar a TAKIVEN. El resto de marcas registradas
         que no son propiedad de TAKIVEN y que aparecen incluidas o están
-        disponibles a través de los Servicios del Marketplace, "TAKIVEN"
+        disponibles a través de los Servicios del Marketplace, TAKIVEN
         pertenecen a sus respectivos propietarios, quienes podrán o no estar
         afiliados o relacionados de cualquier modo con TAKIVEN o patrocinados
         por TAKIVEN. No está permitida la extracción sistemática ni la
         reutilización de parte alguna del contenido de ninguno de los Servicios
-        del Marketplace, "TAKIVEN" sin nuestro expreso consentimiento por
-        escrito. En particular, no se permite el uso de herramientas o robots de
-        búsqueda y extracción de datos para la extracción (ya sea en una o
-        varias ocasiones) de partes sustanciales de los Servicios del
-        Marketplace, "TAKIVEN" para su reutilización sin nuestro expreso
-        consentimiento por escrito. Tampoco le está permitido al usuario crear
-        ni publicar sus propias bases de datos cuando éstas contengan partes
-        sustanciales de cualquiera de los Servicios del Marketplace, "TAKIVEN"
-        (por ejemplo, las listas de productos y listas de precios) sin nuestro
-        expreso consentimiento por escrito. TAKIVEN y sus licenciantes,
-        proveedores, editores, titulares de derechos u otros proveedores de
-        contenidos se reservan cualquier derecho que no esté expresamente
-        comprendido en estos Términos y Condiciones. No está permitida la
-        reproducción, duplicación, copia, venta, reventa o explotación de ningún
-        tipo de los Servicios del Marketplace, "TAKIVEN" ni de parte alguna de
-        los mismos con fines comerciales, en cada caso sin nuestro previo
-        consentimiento por escrito. Tampoco está permitido utilizar técnicas de
-        framing para introducir cualquier marca comercial, logotipo u otra
-        información protegida por derechos de autor (incluyendo imágenes, texto,
-        diseños de página o formatos) deTAKIVEN sin el correspondiente
-        consentimiento previo por escrito. No está permitido el uso de
-        metaetiquetas (meta tags) ni de ningún otro "texto oculto" que utilice
-        los nombres o marcas registradas de TAKIVEN sin nuestro consentimiento
-        previo y por escrito.
+        del Marketplace, TAKIVEN sin nuestro expreso consentimiento por escrito.
+        En particular, no se permite el uso de herramientas o robots de búsqueda
+        y extracción de datos para la extracción (ya sea en una o varias
+        ocasiones) de partes sustanciales de los Servicios del Marketplace,
+        TAKIVEN para su reutilización sin nuestro expreso consentimiento por
+        escrito. Tampoco le está permitido al usuario crear ni publicar sus
+        propias bases de datos cuando éstas contengan partes sustanciales de
+        cualquiera de los Servicios del Marketplace, TAKIVEN (por ejemplo, las
+        listas de productos y listas de precios) sin nuestro expreso
+        consentimiento por escrito. TAKIVEN y sus licenciantes, proveedores,
+        editores, titulares de derechos u otros proveedores de contenidos se
+        reservan cualquier derecho que no esté expresamente comprendido en estos
+        Términos y Condiciones. No está permitida la reproducción, duplicación,
+        copia, venta, reventa o explotación de ningún tipo de los Servicios del
+        Marketplace, TAKIVEN ni de parte alguna de los mismos con fines
+        comerciales, en cada caso sin nuestro previo consentimiento por escrito.
+        Tampoco está permitido utilizar técnicas de framing para introducir
+        cualquier marca comercial, logotipo u otra información protegida por
+        derechos de autor (incluyendo imágenes, texto, diseños de página o
+        formatos) deTAKIVEN sin el correspondiente consentimiento previo por
+        escrito. No está permitido el uso de metaetiquetas (meta tags) ni de
+        ningún otro texto oculto que utilice los nombres o marcas registradas de
+        TAKIVEN sin nuestro consentimiento previo y por escrito.
       </p>
       <h2>9. RECLAMOS</h2>
       <p>
@@ -489,32 +488,32 @@ const page = () => {
       <p>
         La participación del Cliente en el Sitio no constituye ni crea contrato
         de sociedad, de representación, de mandato, como así tampoco relación
-        laboral alguna entre dicho Cliente y el Marketplace "TAKIVEN
+        laboral alguna entre dicho Cliente y el Marketplace TAKIVEN
       </p>
       <h2>
-        11. ADMINISTRACIÓN DEL MARKETPLACE "TAKIVEN" Y PARTICIPACIÓN DE
+        11. ADMINISTRACIÓN DEL MARKETPLACE TAKIVEN Y PARTICIPACIÓN DE
         PROVEEDORES
       </h2>
       <p>
         La responsabilidad por el manejo y administración del Marketplace, es
-        decir, el ingreso de los Clientes al Marketplace "TAKIVEN", así como la
+        decir, el ingreso de los Clientes al Marketplace TAKIVEN, así como la
         comercialización de los productos y servicios a través del Sitio es
-        responsabilidad del Marketplace "TAKIVEN" ; para tal efecto, se cumple
-        con informar de forma clara y transparente a los Clientes que decidan
-        acceder de manera libre y voluntaria al "Sitio" que, la decisión de
+        responsabilidad del Marketplace TAKIVEN ; para tal efecto, se cumple con
+        informar de forma clara y transparente a los Clientes que decidan
+        acceder de manera libre y voluntaria al Sitio que, la decisión de
         adquirir un producto y/o servicio, no conlleva a que se interprete que
         el uso de bienes (marcas, logos productos y servicios) protegidos por
         las normas de propiedad intelectual, no constituye ni significa que los
         titulares de dichos bienes participen o están involucrados -bajo ningún
-        supuesto- en el negocio del Marketplace "TAKIVEN"., de esta forma con
-        brindar "información clara y relevante" al Cliente, en aras de evitar
-        que éste pueda tomar una decisión de consumo bajo premisas equivocadas.
+        supuesto- en el negocio del Marketplace TAKIVEN., de esta forma con
+        brindar información clara y relevante al Cliente, en aras de evitar que
+        éste pueda tomar una decisión de consumo bajo premisas equivocadas.
         Realizaremos nuestros mejores esfuerzos para asegurar la disponibilidad,
-        sin interrupciones, de los Servicios del Marketplace "TAKIVEN", así como
+        sin interrupciones, de los Servicios del Marketplace TAKIVEN, así como
         la ausencia de errores en cualquier transmisión de información que
         pudiera tener lugar. No obstante, y debido a la naturaleza misma de
         Internet, no es posible garantizar tales extremos. Asimismo, tu acceso a
-        los Servicios del Marketplace "TAKIVEN" pudiera ocasionalmente verse
+        los Servicios del Marketplace TAKIVEN pudiera ocasionalmente verse
         suspendido o restringido a efectos de la realización de trabajos de
         reparación o mantenimiento, o la introducción de nuevos productos o
         servicios. Procuraremos limitar la frecuencia y duración de tales
@@ -526,7 +525,7 @@ const page = () => {
         cualesquiera pérdidas indirectas o de carácter consecuencial que no
         fueran razonablemente previsibles por ambas partes en el momento en que
         el Cliente hubiera comenzado a utilizar los Servicios del Marketplace
-        "TAKIVEN". Tampoco seremos responsable de ninguna demora o falta de
+        TAKIVEN. Tampoco seremos responsable de ninguna demora o falta de
         cumplimiento de nuestras obligaciones derivadas de las presentes
         condiciones si dicha demora o falta de cumplimiento fuera atribuible a
         circunstancias ajenas a nuestro control razonable. Esta disposición no
@@ -538,7 +537,7 @@ const page = () => {
       </p>
       <h2>
         12. USO DE LINKS, ENLACES, HIPERVÍNCULOS Y OTRO MECANISMO DIRIGIDOS A
-        OTRO MEDIO DE ACCESO DISTINTO AL DEL MARKETPLACE "REAL PLAZA"
+        OTRO MEDIO DE ACCESO DISTINTO AL DEL MARKETPLACE REAL PLAZA
       </h2>
       <p>
         En el supuesto de que en el Sitio se dispusieran enlaces o hipervínculos
@@ -806,8 +805,8 @@ const page = () => {
       <p>
         La información requerida a través de la presente plataforma resulta
         necesaria para ejecutar la prestación de servicios ofrecidos por el
-        Marketplace "TAKIVEN" (en adelante, el "Servicio"). TAKIVEN asegura a
-        sus clientes que conversará de manera segura y tratará sus datos con la
+        Marketplace TAKIVEN (en adelante, el Servicio). TAKIVEN asegura a sus
+        clientes que conversará de manera segura y tratará sus datos con la
         finalidad de desarrollar la relación contractual y cumplir con
         obligaciones de carácter fiscal, contable y otra de acuerdo a ley.
         TAKIVEN transferirá sus datos personales a las empresas vendedoras de
@@ -822,7 +821,7 @@ const page = () => {
       <p>
         De no proporcionar los datos requeridos no se le podrá brindar el
         Servicio.
-      </p> */}
+      </p>
     </div>
   );
 };
