@@ -50,8 +50,8 @@ const page = () => {
         4. MODIFICACIÓN DE LOS TÉRMINOS Y CONDICIONES
       </h2>
       <p className=" text-justify">
-        El Marketplace "TAKIVEN" que desarrolla TAKIVEN a título de creador y
-        administrador del Sitio- reserva expresamente el derecho a modificar,
+        El Marketplace TAKIVEN que desarrolla TAKIVEN a título de creador y
+        administrador del Sitio reserva expresamente el derecho a modificar,
         actualizar o ampliar en cualquier momento los presentes Términos y
         Condiciones. Cualquier modificación, actualización o ampliación
         producida en los presentes Términos y Condiciones será inmediatamente
@@ -59,7 +59,7 @@ const page = () => {
         Condiciones vigentes al momento de la navegación para la aceptación de
         los mismos. En caso de que el Cliente no estuviera de acuerdo con las
         modificaciones mencionadas, podrá optar por no hacer uso de los
-        servicios ofrecidos por el Marketplace "TAKIVEN" a través del Sitio.
+        servicios ofrecidos por el Marketplace TAKIVEN a través del Sitio.
       </p>
       {/*
       <h2 className="text-[24px] font-[500]">
