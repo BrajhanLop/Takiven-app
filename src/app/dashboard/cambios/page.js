@@ -233,7 +233,6 @@ const page = () => {
         determina que la falla o avería fue provocada por un uso indebido, se te
         enviará una notificación para que puedas recoger el producto.
       </p>
-
       <h3 className="text-[20px] font-[500] mb-5 ml-5">
       C.2 Productos BIG & OVERSIZE:{" "}
         <span className=" font-[400]">
