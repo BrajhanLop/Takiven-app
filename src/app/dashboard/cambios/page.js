@@ -234,9 +234,10 @@ const page = () => {
         enviará una notificación para que puedas recoger el producto.
       </p>
       <h3 className="text-[20px] font-[500] mb-5 ml-5">
-      C.2 Productos BIG & OVERSIZE:{" "}
+        C.2 Productos BIG & OVERSIZE:{" "}
         <span className=" font-[400]">
-        Ejm: Muebles, cocinas, cajas chinas, parrillas, bicicletas, thermas, hornos, etc.
+          Ejm: Muebles, cocinas, cajas chinas, parrillas, bicicletas, thermas,
+          hornos, etc.
         </span>
       </h3>
       <ul className="text-[18px] ml-10 mb-5">
@@ -261,6 +262,116 @@ const page = () => {
           por el costo de envío.
         </li>
       </ul>
+      <p className=" text-justify mb-3 text-[18px] ml-5">
+        Para aprobar la devolución, el producto debe pasar por un proceso de
+        Control de Calidad, este proceso puede tomar un tiempo de hasta 7 días
+        hábiles. Si el producto cumple con toda las condiciones descritas
+        anteriormente, se procederá a gestionar el cambio de producto o
+        reembolso de dinero según corresponda. No obstante, si la tienda o marca
+        determina que la falla o avería fue provocada por un uso indebido, se te
+        enviará una notificación para que puedas recoger el producto.
+      </p>
+
+      <h3 className="text-[20px] font-[500] mb-5 ml-5">
+        C.3 Productos Electrónicos de Grandes Dimensiones:{" "}
+        <span className=" font-[400]">
+          Ejm: Televisores, lavadoras, refrigeradoras, equipos de gimnasio, etc.
+        </span>
+      </h3>
+
+      <ul className="text-[18px] ml-10 mb-5">
+        <li className=" list-disc ml-5 text-justify">
+          Puedes solicitar devolver el producto en un plazo máximo de 7 (siete)
+          días calendario desde la fecha en que recibiste tu pedido.
+        </li>
+        <li className=" list-disc ml-5 text-justify">
+          Un asesor de Servicio al Cliente, notificará a la tienda para
+          coordinar la visita del servicio técnico de la marca, quien emitirá un
+          informe técnico sobre el estado del producto.
+        </li>
+        <li className=" list-disc ml-5 text-justify">
+          Nos debes enviar una copia del informe a atencionalcliente@takiven.pe
+          En caso el informe determine que la falla es de fábrica se procederá a
+          coordinar la visita del Courier para el recojo del producto.
+        </li>
+        <li className=" list-disc ml-5 text-justify">
+          El producto debes devolverlo en las mismas condiciones (empaque,
+          etiquetas, sellos), tal cual fue recibido.
+        </li>
+        <li className=" list-disc ml-5 text-justify">
+          Es necesario que adjuntes el comprobante de pago (boleta o factura)
+          que certifique la compra realizada.
+        </li>
+        <li className=" list-disc ml-5 text-justify">
+          Puedes solicitar el reembolso integro de su dinero, incluido el pago
+          por el costo de envío.
+        </li>
+        <li className=" list-disc ml-5 text-justify">
+          Para aprobar una devolución, es muy importante que el producto sea
+          devuelto con todos sus accesorios, empaques, documentación completos.
+        </li>
+      </ul>
+      <p className=" text-justify mb-3 text-[18px] ml-5">
+        Si el producto cumple con todas las condiciones para ser devuelto, se
+        procederá a gestionar con el cambio de producto o reembolso de dinero
+        según corresponda.
+      </p>
+
+      <h2 className="text-[24px] font-[500] mb-5 ml-5">
+        2. ¿Cómo solicitar la devolución de un producto?
+      </h2>
+      <p className=" text-justify mb-3 text-[18px] ml-5">
+        Envíanos un correo electrónico a atencionalcliente@takiven.pe, bajo el
+        asunto -Devolución de Producto y el número de pedido-. Debes indicar el
+        motivo de la devolución. Recuerda que tienes hasta 7 días calendario
+        desde que recibiste tu pedido para comunicarnos tu decisión de devolver
+        un producto.
+      </p>
+      <p className=" text-justify mb-3 text-[18px] ml-5">
+        En un plazo no mayor a 48 horas hábiles nos pondremos en contacto
+        contigo vía email, indicándote por cual medio deberás devolver el
+        producto. Debes tener en cuenta que el medio de la devolución dependerá
+        del motivo de la devolución, las dimensiones del producto y el lugar
+        donde se encuentre el mismo. Por último, ten en cuenta que dependiendo
+        del motivo se pueden aplicar cargos adicionales.
+      </p>
+
+      <h2 className="text-[24px] font-[500] mb-5 ml-5">
+        3. Medios para la Devolución de un producto
+      </h2>
+      <p className=" text-justify mb-3 text-[18px] ml-5">
+        Dependiendo del motivo de la devolución, dimensiones y ubicación del
+        producto; se tienen previstas hasta tres opciones para devolver el
+        producto a la tienda:
+      </p>
+      <ol className="text-justify">
+        <li className=" list-decimal ml-10 text-[18px]">
+          {" "}
+          <span className="font-[500] ">Devolver en tienda: </span> Disponible
+          solo en algunas tiendas de Lima y Provincia.
+        </li>
+        <li className=" list-decimal ml-10 text-[18px]">
+          {" "}
+          <span className="font-[500] ">Recojo a domicilio: </span> olo para
+          productos de grandes dimensiones y se trate de falla de producto.
+        </li>
+        <li className=" list-decimal ml-10 text-[18px]">
+          {" "}
+          <span className="font-[500] ">Vía Courier Lima: </span> Para productos
+          de pequeñas y medianas dimensiones. El cliente deberá dejar el
+          producto en una oficina de Olva Courier más cercana, previa
+          autorización y coordinación con Takiven.
+        </li>
+        <li className=" list-decimal ml-10 text-[18px]">
+          {" "}
+          <span className="font-[500] ">Vía Courier Provincia: </span> En casos
+          donde NO sea posible recoger el producto en provincia, el cliente
+          deberá enviar el producto a través del Courier de su preferencia hacia
+          el almacén de la tienda. En caso la devolución sea por motivos de
+          falla de producto, Takiven le reembolsará al cliente el dinero que
+          pagó por el servicio.
+        </li>
+      </ol>
     </div>
   );
 };
