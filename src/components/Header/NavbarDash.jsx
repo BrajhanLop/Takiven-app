@@ -58,7 +58,7 @@ const NavbarDash = () => {
 
   return (
     <>
-      <nav className="fixed  w-full bg-[#3FD077] flex justify-center items-center gap-4">
+      <nav className="fixed z-20  w-full bg-[#3FD077] flex justify-center items-center gap-4">
         <div
           className="flex cursor-pointer"
           onClick={() => router.push("/dashboard")}
