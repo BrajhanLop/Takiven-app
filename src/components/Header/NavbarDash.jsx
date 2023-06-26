@@ -12,7 +12,7 @@ import { useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
 
 const NavbarDash = () => {
-  const { isToggle, toggle, isFalse } = useToggle();
+  const { isToggle, toggle, isFalse, isTrue } = useToggle();
   const {
     isToggle: isCart,
     toggle: toggleCart,
@@ -23,7 +23,11 @@ const NavbarDash = () => {
   const router = useRouter();
 
   const handleClickOutside = (event) => {
-    if (catRef.current && !catRef.current.contains(event.target)) {
+    if (
+      catRef.current &&
+      !catRef.current.contains(event.target) &&
+      !event.target.classList.contains("menu-option")
+    ) {
       falseCat();
       isFalse();
       falseCart();
@@ -32,8 +36,10 @@ const NavbarDash = () => {
 
   useEffect(() => {
     document.addEventListener("click", handleClickOutside, true);
+    console.log("hh");
     return () => {
       document.removeEventListener("click", handleClickOutside, true);
+      console.log("hh");
     };
   }, []);
 
@@ -53,7 +59,6 @@ const NavbarDash = () => {
     falseCart();
     falseCat();
     toggle();
-    console.log(isToggle);
   };
 
   return (
@@ -71,7 +76,7 @@ const NavbarDash = () => {
               src={menu}
               alt="menu"
               onClick={handlecategory}
-              className="w-[40px] cursor-pointer "
+              className="menu-option w-[40px] cursor-pointer "
             />
           </div>
           <div className="w-[900px] h-[48px] ">
@@ -89,7 +94,7 @@ const NavbarDash = () => {
               src={cart}
               alt="cart"
               onClick={handleCart}
-              className="w-[40px] h-[40px] cursor-pointer"
+              className="menu-option w-[40px] h-[40px] cursor-pointer"
             />
             {isCart && <CartMenu catRef={catRef} />}
           </div>
@@ -100,7 +105,7 @@ const NavbarDash = () => {
             src={user}
             alt="user"
             onClick={handleUser}
-            className="w-[40px] h-[40px] cursor-pointer"
+            className="menu-option w-[40px] h-[40px] cursor-pointer"
           />
           {isToggle && <CuentMenu catRef={catRef} isFalse={isFalse} />}
         </div>

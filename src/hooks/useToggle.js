@@ -12,7 +12,11 @@ const useToggle = (initialState = false) => {
     setIsToggle(false);
   };
 
-  return { isToggle, toggle, isFalse };
+  const isTrue = () => {
+    setIsToggle(true);
+  };
+
+  return { isToggle, toggle, isFalse, isTrue };
 };
 
 export default useToggle;
