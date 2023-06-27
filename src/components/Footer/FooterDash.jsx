@@ -44,7 +44,7 @@ const FooterDash = () => {
             <Image src={terminos} alt="info" />
           </div>
           <Link href="/dashboard/term">
-            <p className=" text-[20px] font-[500]">Terminos y condiciones</p>
+            <p className=" xl:text-[20px] font-[500]">Terminos y condiciones</p>
           </Link>
         </div>
 
@@ -53,7 +53,7 @@ const FooterDash = () => {
             <Image src={politicas} alt="info" />
           </div>
           <Link href="/dashboard/politica">
-            <p className=" text-[20px] font-[500]">Politicas de Privacidad</p>
+            <p className="  xl:text-[20px] font-[500]">Politicas de Privacidad</p>
           </Link>
         </div>
 
@@ -62,7 +62,7 @@ const FooterDash = () => {
             <Image src={cambios} alt="info" />
           </div>
           <Link href="/dashboard/cambios">
-            <p className=" text-[20px] font-[500]">Cambios y Devoluciones</p>
+            <p className="  xl:text-[20px] font-[500]">Cambios y Devoluciones</p>
           </Link>
         </div>
 
@@ -71,7 +71,7 @@ const FooterDash = () => {
             <Image src={offer} alt="info" />
           </div>
           <Link href="/dashboard/legales">
-            <p className=" text-[20px] font-[500]">Oferta y Promociones</p>
+            <p className="  xl:text-[20px] font-[500]">Oferta y Promociones</p>
           </Link>
         </div>
       </div>

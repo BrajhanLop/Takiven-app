@@ -70,13 +70,13 @@ const NavbarDash = () => {
         >
           <Image src={logo} alt="logo" className="" />
         </div>
-        <div className="flex items-center w-[60%] gap-3">
+        <div className="flex items-center  w-[60%] gap-3">
           <div>
             <Image
               src={menu}
               alt="menu"
               onClick={handlecategory}
-              className="menu-option w-[40px] cursor-pointer "
+              className="menu-option cursor-pointer "
             />
           </div>
           <div className="w-[900px] h-[48px] ">

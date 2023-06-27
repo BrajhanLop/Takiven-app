@@ -22,7 +22,7 @@ const GamerSection = ({ category }) => {
 
   return (
     <div className="mx-auto overflow-hidden">
-      <div className="flex items-center gap-3 mx-auto mt-10">
+      <div className="flex items-center gap-3 mx-auto mt-10 px-3">
         <Image src={category.img} className="w-[55px]" alt="play" />
 
         <p className="text-[#3FD077] text-[30px] font-[400] font-rock">
@@ -35,7 +35,7 @@ const GamerSection = ({ category }) => {
         <p className="text-[#3FD077] text-[30px] font-[400] font-rock cursor-pointer">más</p>
       
       </div>
-      <div className="flex items-center ">
+      <div className="flex items-center px-1">
       <div className="flex-none cursor-pointer" onClick={handleScrollLeft}>
 
         <Image src={left} alt="" className="w-[40px]" />
