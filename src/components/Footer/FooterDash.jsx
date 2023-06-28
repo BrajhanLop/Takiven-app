@@ -21,7 +21,7 @@ import dinner from "../../assets/img/tarjetas/dinner.png";
 import amex from "../../assets/img/tarjetas/amex.png";
 import union from "../../assets/img/tarjetas/union.png";
 import culqui from "../../assets/img/tarjetas/culqui.png";
-
+import libro from "../../assets/img/logo/img.png";
 import Image from "next/image";
 import Link from "next/link";
 const FooterDash = () => {
@@ -30,7 +30,8 @@ const FooterDash = () => {
   isBrowser();
   return (
     <div>
-      <div className="mt-5 bg-green text-white flex justify-center items-center gap-6 h-[59px]">
+      <div className="mt-5 bg-green text-white flex justify-center items-center gap-3
+      lg:gap-6 h-[59px]">
         {/* <div className="flex items-center gap-2">
           <div>
             <Image src={info} alt="info" />
@@ -39,12 +40,14 @@ const FooterDash = () => {
             <p className=" text-[20px] font-[500]">Acerca de Nosotros</p>
           </Link>
         </div> */}
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 ">
           <div>
             <Image src={terminos} alt="info" />
           </div>
           <Link href="/dashboard/term">
-            <p className=" xl:text-[20px] font-[500]">Terminos y condiciones</p>
+            <p className="text-[14px] lg:text-[16px] xl:text-[20px] font-[500]">
+              Terminos y condiciones
+            </p>
           </Link>
         </div>
 
@@ -53,7 +56,9 @@ const FooterDash = () => {
             <Image src={politicas} alt="info" />
           </div>
           <Link href="/dashboard/politica">
-            <p className="  xl:text-[20px] font-[500]">Politicas de Privacidad</p>
+            <p className="text-[14px] lg:text-[16px]  xl:text-[20px] font-[500]">
+              Politicas de Privacidad
+            </p>
           </Link>
         </div>
 
@@ -62,7 +67,9 @@ const FooterDash = () => {
             <Image src={cambios} alt="info" />
           </div>
           <Link href="/dashboard/cambios">
-            <p className="  xl:text-[20px] font-[500]">Cambios y Devoluciones</p>
+            <p className="text-[14px] lg:text-[16px]  xl:text-[20px] font-[500]">
+              Cambios y Devoluciones
+            </p>
           </Link>
         </div>
 
@@ -71,17 +78,19 @@ const FooterDash = () => {
             <Image src={offer} alt="info" />
           </div>
           <Link href="/dashboard/legales">
-            <p className="  xl:text-[20px] font-[500]">Oferta y Promociones</p>
+            <p className="text-[14px] lg:text-[16px]  xl:text-[20px] font-[500]">
+              Oferta y Promociones
+            </p>
           </Link>
         </div>
       </div>
       <div className="flex gap-5 ">
         <div className=" w-[30%] flex justify-end">
-          <div className="w-[294px] pr-6 pt-5">
+          <div className="lg:w-[294px] lg:pr-6 lg:pt-5">
             <div className="flex justify-center">
-              <Image src={logo} alt="logo" className="w-[250px]" />
+              <Image src={logo} alt="logo" className="w-[200px] lg:w-[250px]" />
             </div>
-            <p className="text-[18px] font-[300] text-justify">
+            <p className="text-[18px] font-[300] text-justify  lg:pl-5">
               Somos un Marketplace online donde encontrarás la selección más
               grande de productos de las mejores tiendas del Perú.
             </p>
@@ -92,7 +101,7 @@ const FooterDash = () => {
         </div>
 
         <div className=" w-[34%]">
-          <h3 className=" text-[#29E197] text-[32px] font-[700] mt-5 mb-4">
+          <h3 className=" text-[#29E197] xl:text-[32px] lg:text-[32px] font-[700] mt-5 mb-4">
             ¿Necesitas Ayuda?
           </h3>
           <p className=" text-[18px] font-[300] mb-3">
@@ -140,7 +149,7 @@ const FooterDash = () => {
             <div className="w-px h-[80%] bg-gray-300"></div>
           </div>
           <div className="pl-5">
-            <h3 className=" text-[#29E197] text-[32px] font-[700] mt-5 mb-3">
+            <h3 className=" text-[#29E197] xl:text-[32px] lg:text-[32px] font-[700] mt-5 mb-3">
               ¿Quieres vender en Takiven?
             </h3>
             <p className=" text-[18px] font-[300] mb-3">
@@ -149,25 +158,21 @@ const FooterDash = () => {
                 dejános tus datos
               </span>
             </p>
-            <div className="flex mb-14">
-              <div>
-                {/* <Image src={inst} alt="info" className="w-[50px]" /> */}
+            <div className="flex justify-between mb-14">
+              <div className="flex">
+                <div>
+                  {/* <Image src={inst} alt="info" className="w-[50px]" /> */}
 
-                <AiFillInstagram className="text-[50px] text-[#29E197]" />
+                  <AiFillInstagram className="text-[50px] text-[#29E197]" />
+                </div>
+                <div>
+                  {/* <Image src={face} alt="info" className="w-[50px] " /> */}
+                  <MdFacebook className="text-[50px] text-[#29E197]" />
+                </div>
               </div>
               <div>
-                {/* <Image src={face} alt="info" className="w-[50px] " /> */}
-                <MdFacebook className="text-[50px] text-[#29E197]" />
+                <Image src={libro} alt="info" />
               </div>
-            </div>
-            <div className="flex items-center gap-1">
-              <div>
-                <Image src={mark} alt="info" className="w-[22px]" />
-              </div>
-              <p className=" text-[18px] font-[300]">
-                {" "}
-                2023 Takiven - Todos los derechos reservados
-              </p>
             </div>
           </div>
         </div>
@@ -201,6 +206,15 @@ const FooterDash = () => {
             <Image src={culqui} alt="info" />
           </div>
         </div>
+      </div>
+      <div className="flex items-center justify-center gap-1 bg-[#3FD077] py-1">
+        <div>
+          <Image src={mark} alt="info" className="w-[22px]" />
+        </div>
+        <p className=" text-[18px] font-[500] text-white ">
+          {" "}
+          2023 Takiven - Todos los derechos reservados
+        </p>
       </div>
     </div>
   );
