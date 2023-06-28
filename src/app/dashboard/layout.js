@@ -8,7 +8,7 @@ export default function DashboardLayout({ children }) {
       <section className="flex justify-center mb-20 w-full mt-[73px]">
         {children}
       </section>
-      <FooterDash />
+      {/* <FooterDash /> */}
     </div>
   );
 }
