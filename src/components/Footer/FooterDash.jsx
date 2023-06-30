@@ -42,10 +42,10 @@ const FooterDash = () => {
         </div> */}
         <div className="flex items-center gap-2 ">
           <div>
-            <Image src={terminos} alt="info" />
+            <Image src={terminos} alt="info" className="w-[34px] md:w-[24px]"/>
           </div>
           <Link href="/dashboard/term">
-            <p className="text-[14px] lg:text-[16px] xl:text-[20px] font-[500]">
+            <p className=" hidden md:block text-[14px] lg:text-[16px] xl:text-[20px] font-[500]">
               Terminos y condiciones
             </p>
           </Link>
@@ -53,10 +53,10 @@ const FooterDash = () => {
 
         <div className="flex items-center gap-2">
           <div>
-            <Image src={politicas} alt="info" />
+            <Image src={politicas} alt="info" className="w-[34px] md:w-[24px]"/>
           </div>
           <Link href="/dashboard/politica">
-            <p className="text-[14px] lg:text-[16px]  xl:text-[20px] font-[500]">
+            <p className="hidden md:block text-[14px] lg:text-[16px]  xl:text-[20px] font-[500]">
               Politicas de Privacidad
             </p>
           </Link>
@@ -64,10 +64,10 @@ const FooterDash = () => {
 
         <div className="flex items-center gap-2">
           <div>
-            <Image src={cambios} alt="info" />
+            <Image src={cambios} alt="info" className="w-[34px] md:w-[24px]" />
           </div>
           <Link href="/dashboard/cambios">
-            <p className="text-[14px] lg:text-[16px]  xl:text-[20px] font-[500]">
+            <p className=" hidden md:block text-[14px] lg:text-[16px]  xl:text-[20px] font-[500]">
               Cambios y Devoluciones
             </p>
           </Link>
@@ -75,17 +75,17 @@ const FooterDash = () => {
 
         <div className="flex items-center gap-2">
           <div>
-            <Image src={offer} alt="info" />
+            <Image src={offer} alt="info" className="w-[34px] md:w-[24px]" />
           </div>
           <Link href="/dashboard/legales">
-            <p className="text-[14px] lg:text-[16px]  xl:text-[20px] font-[500]">
+            <p className="hidden md:block text-[14px] lg:text-[16px]  xl:text-[20px] font-[500]">
               Oferta y Promociones
             </p>
           </Link>
         </div>
       </div>
-      <div className="flex gap-5 ">
-        <div className=" w-[30%] flex justify-end">
+      <div className="flex flex-col px-3 md:px-0 md:flex-row gap-5 ">
+        <div className=" md:w-[30%] flex justify-end">
           <div className="lg:w-[294px] lg:pr-6 lg:pt-5">
             <div className="flex justify-center">
               <Image src={logo} alt="logo" className="w-[200px] lg:w-[250px]" />
@@ -95,13 +95,14 @@ const FooterDash = () => {
               grande de productos de las mejores tiendas del Perú.
             </p>
           </div>
-          <div className="flex items-center">
+          <div className="hidden md:flex items-center">
             <div className="w-px h-[80%] bg-gray-300"></div>
           </div>
+          
         </div>
-
-        <div className=" w-[34%]">
-          <h3 className=" text-[#29E197] xl:text-[32px] lg:text-[32px] font-[700] mt-5 mb-4">
+        <hr className="md:hidden" />
+        <div className=" md:w-[34%]">
+          <h3 className=" text-[#29E197] text-[32px] xl:text-[32px] lg:text-[32px] font-[700] mt-5 mb-4 text-center">
             ¿Necesitas Ayuda?
           </h3>
           <p className=" text-[18px] font-[300] mb-3">
@@ -143,13 +144,13 @@ const FooterDash = () => {
             </div>
           </div>
         </div>
-
-        <div className=" w-[36%] flex">
+        <hr className="md:hidden" />
+        <div className=" md:w-[36%] flex">
           <div className="flex items-center">
             <div className="w-px h-[80%] bg-gray-300"></div>
           </div>
-          <div className="pl-5">
-            <h3 className=" text-[#29E197] xl:text-[32px] lg:text-[32px] font-[700] mt-5 mb-3">
+          <div className="md:pl-5">
+            <h3 className=" text-[#29E197] text-[32px] text-center xl:text-[32px] lg:text-[32px] font-[700] mt-5 mb-3">
               ¿Quieres vender en Takiven?
             </h3>
             <p className=" text-[18px] font-[300] mb-3">
@@ -158,7 +159,7 @@ const FooterDash = () => {
                 dejános tus datos
               </span>
             </p>
-            <div className="flex justify-between mb-14">
+            <div className="flex justify-between md:mb-14">
               <div className="flex">
                 <div>
                   {/* <Image src={inst} alt="info" className="w-[50px]" /> */}
@@ -176,11 +177,12 @@ const FooterDash = () => {
             </div>
           </div>
         </div>
+
       </div>
       <hr className="my-5" />
-      <div className="flex justify-evenly py-5">
+      <div className="flex flex-col items-center gap-3 md:flex-row justify-evenly py-5">
         <div className="flex items-center gap-3">
-          <p className=" text-[18px] font-[300]">Métodos de pago: </p>
+          <p className=" hidden md:block text-[18px] font-[300]">Métodos de pago: </p>
           <div className="flex gap-2">
             <div>
               <Image src={visa} alt="info" />
@@ -201,17 +203,18 @@ const FooterDash = () => {
         </div>
 
         <div className="flex items-center gap-3">
-          <p className=" text-[18px] font-[300]">Pagos seguros con:</p>
+          <p className=" hidden md:block text-[18px] font-[300]">Pagos seguros con:</p>
           <div>
             <Image src={culqui} alt="info" />
           </div>
         </div>
+
       </div>
       <div className="flex items-center justify-center gap-1 bg-[#3FD077] py-1">
         <div>
           <Image src={mark} alt="info" className="w-[22px]" />
         </div>
-        <p className=" text-[18px] font-[500] text-white ">
+        <p className="text-[14px] md:text-[18px] font-[500] text-white ">
           {" "}
           2023 Takiven - Todos los derechos reservados
         </p>
