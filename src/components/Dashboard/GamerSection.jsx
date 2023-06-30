@@ -22,20 +22,20 @@ const GamerSection = ({ category }) => {
 
   return (
     <div className="mx-auto overflow-hidden">
-      <div className="flex items-center gap-3 mx-auto mt-10">
-        <Image src={category.img} className="w-[55px]" alt="play" />
+      <div className="flex items-center gap-3 mx-auto mt-10 px-10">
+        <Image src={category.img} className="w-[45px]" alt="play" />
 
-        <p className="text-[#3FD077] text-[30px] font-[400] font-rock">
+        <p className="text-[#3FD077] text-[24px] font-[400] font-rock">
           {category.categoria}
         </p>
         <hr className="mt-5 border-[#3FD07766] w-[80%] mx-auto " />
-        <Image src={cohete} className="w-[55px] cursor-pointer" alt="cohete" />
+        <Image src={cohete} className="w-[45px] cursor-pointer" alt="cohete" />
         
-        <p className="text-[#3FD077] text-[30px] font-[400] font-rock cursor-pointer">Ver</p>
-        <p className="text-[#3FD077] text-[30px] font-[400] font-rock cursor-pointer">más</p>
+        <p className="text-[#3FD077] text-[24px] font-[400] font-rock cursor-pointer">Ver</p>
+        <p className="text-[#3FD077] text-[24px] font-[400] font-rock cursor-pointer">más</p>
       
       </div>
-      <div className="flex items-center ">
+      <div className="flex items-center px-1">
       <div className="flex-none cursor-pointer" onClick={handleScrollLeft}>
 
         <Image src={left} alt="" className="w-[40px]" />
