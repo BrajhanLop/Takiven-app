@@ -63,23 +63,29 @@ const NavbarDash = () => {
 
   return (
     <>
-      <nav className="fixed z-20  w-full bg-[#3FD077] flex justify-center items-center gap-4">
+      <nav className="h-[87px] md:h-auto fixed z-20  w-full bg-[#3FD077] flex justify-between md:justify-center  items-center px-2 lg:gap-4 gap-3 md:py-1 lg:py-0 md:pr-2">
         <div
-          className="flex cursor-pointer"
+          className="md:flex cursor-pointer hidden "
           onClick={() => router.push("/dashboard")}
         >
-          <Image src={logo} alt="logo" className="" />
+          <Image src={logo} alt="logo" className="md:w-[180px] lg:w-[232px]" />
         </div>
-        <div className="flex items-center w-[60%] gap-3">
+        <div className="flex items-center w-[60%]   md:gap-3">
           <div>
             <Image
               src={menu}
               alt="menu"
               onClick={handlecategory}
-              className="menu-option w-[40px] cursor-pointer "
+              className="menu-option cursor-pointer w-[40px]"
             />
           </div>
-          <div className="w-[900px] h-[48px] ">
+          <div
+            className="md:hidden  cursor-pointer "
+            onClick={() => router.push("/dashboard")}
+          >
+            <Image src={logo} alt="logo" className="w-[162px]" />
+          </div>
+          <div className="hidden xl:w-[800px] lg:w-[600px]  md:block  md:w-full h-[48px] ">
             <input
               type="text"
               placeholder="¿Que deseas tener en casa?"
@@ -88,26 +94,30 @@ const NavbarDash = () => {
           </div>
           {isCat && <MenuCategories catRef={catRef} />}
         </div>
-        <div className="flex gap-1">
-          <div className="flex items-center relative">
+        <div className="flex gap-3 items-center">
+          <div className="flex gap-1">
+            <div className="flex items-center relative">
+              <Image
+                src={cart}
+                alt="cart"
+                onClick={handleCart}
+                className="menu-option w-[40px] h-[40px] cursor-pointer"
+              />
+              {isCart && <CartMenu catRef={catRef} />}
+            </div>
+            <span className="hidden md:block text-white text-[35px] font-[300] ">
+              0
+            </span>
+          </div>
+          <div className="relative">
             <Image
-              src={cart}
-              alt="cart"
-              onClick={handleCart}
+              src={user}
+              alt="user"
+              onClick={handleUser}
               className="menu-option w-[40px] h-[40px] cursor-pointer"
             />
-            {isCart && <CartMenu catRef={catRef} />}
+            {isToggle && <CuentMenu catRef={catRef} isFalse={isFalse} />}
           </div>
-          <span className="text-white text-[35px] font-[300] ">0</span>
-        </div>
-        <div className="relative">
-          <Image
-            src={user}
-            alt="user"
-            onClick={handleUser}
-            className="menu-option w-[40px] h-[40px] cursor-pointer"
-          />
-          {isToggle && <CuentMenu catRef={catRef} isFalse={isFalse} />}
         </div>
       </nav>
     </>
