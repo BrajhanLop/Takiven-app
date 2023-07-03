@@ -11,46 +11,46 @@ const MenuCategories = ({ catRef }) => {
   return (
     <div
       ref={catRef}
-      className="fixed top-[5rem] bg-[#30F27B] px-20 h-[133px] lg:w-[62%] xl:w-[60%]  flex justify-center lg:items-center xl:items-start  lg:gap-2 xl:gap-8 rounded rounded-b-[20px] pt-3"
+      className="fixed top-[5rem] pb-3 bg-[#30F27B] lg:px-20 lg:h-[133px] w-[96%] md:w-[60%] lg:w-[62%] xl:w-[60%]  flex justify-center flex-wrap lg:items-center md:gap-2 xl:items-start  lg:gap-2 xl:gap-8 rounded rounded-b-[20px] pt-3"
     >
-      <div>
-        <div className="p-3 border xl:w-[80px] lg:w-[70px]  xl:h-[80px] lg:h-[70px] border-white rounded-full flex justify-center items-center">
+      <div className="flex flex-col items-center w-[80px]">
+        <div className="p-3 border w-[50px] xl:w-[80px] lg:w-[70px]  xl:h-[80px] lg:h-[70px] border-white rounded-full flex justify-center items-center">
           <Image src={play} alt="play" />
         </div>
-        <p className="text-center text-white xl:text-[20px]">Gamer</p>
+        <p className="text-center text-white text-[16px] lg:text-[20px] xl:text-[20px]">Gamer</p>
       </div>
-      <div>
-        <div className="p-3 border border-white rounded-full  xl:w-[80px] lg:w-[70px]  xl:h-[80px] lg:h-[70px] flex justify-center items-center">
+      <div className="flex flex-col items-center w-[80px]">
+        <div className="p-3 border border-white rounded-full w-[50px] xl:w-[80px] lg:w-[70px]  xl:h-[80px] lg:h-[70px] flex justify-center items-center">
           <Image src={mascotas} alt="play" className="m-0" />
         </div>
-        <p className="text-center text-white xl:text-[20px]">Mascotas</p>
+        <p className="text-center text-white text-[16px] xl:text-[20px]">Mascotas</p>
       </div>
-      <div>
-        <div className="p-3 border border-white rounded-full xl:w-[80px] lg:w-[70px]  xl:h-[80px] lg:h-[70px]flex justify-center items-center">
+      <div className="flex flex-col items-center w-[80px]">
+        <div className="p-3 border border-white rounded-full w-[50px] xl:w-[80px] lg:w-[70px]  xl:h-[80px] lg:h-[70px]flex justify-center items-center">
           <Image alt="play" src={computer} />
         </div>
-        <p className="text-center text-white xl:text-[20px]">Computo</p>
+        <p className="text-center text-white text-[16px] xl:text-[20px]">Computo</p>
       </div>
-      <div>
-        <div className="p-3 border border-white rounded-full xl:w-[80px] lg:w-[70px]  xl:h-[80px] lg:h-[70px] flex justify-center items-center">
+      <div className="flex flex-col items-center w-[80px]">
+        <div className="p-3 border border-white rounded-full w-[50px] xl:w-[80px] lg:w-[70px]  xl:h-[80px] lg:h-[70px] flex justify-center items-center">
           <Image alt="play" src={audio} />
         </div>
         <p className="text-center text-white xl:text-[20px]">Audio</p>
       </div>
-      <div>
-        <div className="p-3 border border-white rounded-full xl:w-[80px] lg:w-[70px]  xl:h-[80px] lg:h-[70px] flex justify-center items-center">
+      <div className="flex flex-col items-center w-[80px]">
+        <div className="p-3 border border-white rounded-full w-[50px] xl:w-[80px] lg:w-[70px]  xl:h-[80px] lg:h-[70px] flex justify-center items-center">
           <Image alt="play" src={belleza} />
         </div>
         <p className="text-center text-white xl:text-[20px]">Belleza</p>
       </div>
-      <div>
-        <div className="p-3 border border-white rounded-full xl:w-[80px] lg:w-[70px]  xl:h-[80px] lg:h-[70px] flex justify-center items-center">
+      <div className="flex flex-col items-center w-[80px]">
+        <div className="p-3 border border-white rounded-full w-[50px] xl:w-[80px] lg:w-[70px]  xl:h-[80px] lg:h-[70px] flex justify-center items-center">
           <Image alt="play" src={world} />
         </div>
         <p className="text-center text-white xl:text-[20px]">Mundo</p>
       </div>
-      <div>
-        <div className="p-3 border border-white rounded-full xl:w-[80px] lg:w-[70px]  xl:h-[80px] lg:h-[70px] flex justify-center items-center">
+      <div className="flex flex-col items-center w-[80px]">
+        <div className="p-3 border border-white rounded-full w-[50px] xl:w-[80px] lg:w-[70px]  xl:h-[80px] lg:h-[70px] flex justify-center items-center">
           <Image alt="play" src={love} />
         </div>
         <p className="text-center text-white xl:text-[20px]">Love</p>

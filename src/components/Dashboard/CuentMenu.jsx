@@ -13,12 +13,12 @@ const CuentMenu = ({ catRef, isFalse }) => {
       className=" bg-[#3FD077] absolute  top-[4rem] right-0 rounded rounded-b-[20px] w-[228px] h-[160px] text-white"
     >
       <div>
-        <p className=" text-[20px] font-[500] text-center bg-[#30F27B] py-4">
+        <p className=" text-[18px] lg:text-[20px] font-[500] text-center bg-[#30F27B] py-4">
           Hola, Paulo Abad
         </p>
       </div>
       <div className=" h-[98px] ">
-        <div className="flex justify-center items-center gap-4 text-[20px] h-1/2 font-[500]">
+        <div className="flex justify-center items-center gap-4 text-[18px] lg:text-[20px] h-1/2 font-[500]">
           <Image src={icono} alt="user" className="w-[30px] cursor-pointer" />
           <Link href="/dashboard/datos" onClick={isFalse}>
             <p className="w-[111px]">Mi Cuenta</p>
