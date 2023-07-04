@@ -22,7 +22,7 @@ const GamerSection = ({ category }) => {
   return (
     <div className="mx-auto overflow-hidden">
       <div className="flex items-center gap-1 md:gap-3 mx-auto mt-10 px-2 md:px-10">
-        <p onClick={() => setSwichtCat(!swichtCat)}>
+        <p className="  md:hidden" onClick={() => setSwichtCat(!swichtCat)}>
           {swichtCat ? "❌" : "⭕"}
         </p>
         <Image src={category.img} className="w-[45px]" alt="play" />
