@@ -10,7 +10,7 @@ const CuentMenu = ({ catRef, isFalse }) => {
   return (
     <div
       ref={catRef}
-      className=" bg-[#3FD077] absolute  top-[4rem] right-0 rounded rounded-b-[20px] w-[228px] h-[160px] text-white"
+      className=" bg-[#3FD077] absolute top-[70px]  md:top-[64px] right-0 rounded rounded-b-[20px] w-[228px] h-[160px] text-white"
     >
       <div>
         <p className=" text-[18px] lg:text-[20px] font-[500] text-center bg-[#30F27B] py-4">
