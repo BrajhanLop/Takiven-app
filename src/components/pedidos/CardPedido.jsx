@@ -1,6 +1,6 @@
 const CardPedido = ({ pedido }) => {
   return (
-    <div className="bg-[#F6F6F6] text-[#3C4A5B] py-5 px-16 w-full rounded-[20px]">
+    <div className="bg-[#F6F6F6] text-[#3C4A5B] py-5 px-5 md:px-16 w-full rounded-[20px]">
       <div>
         <h2 className="text-[#3C4A5B] font-[700] text-20px">
           TU PEDIDO: {pedido.title}
@@ -10,7 +10,7 @@ const CardPedido = ({ pedido }) => {
           Estado: {pedido.estado}
         </p>
       </div>
-      <div className="flex justify-between mt-3">
+      <div className="flex justify-between flex-wrap gap-2 mt-3">
         <div className="flex gap-2">
           {pedido.items.map((item) => (
             <div

@@ -6,7 +6,7 @@ const ContentPedidos = () => {
       title: "TAK-03081921",
       fecha: "22 de Febrero de 2023 - S/640.00 - 4 Articulos",
       estado: "En curso",
-      items: ["image1", "image2", "image3", "image4"],
+      items: ["image1", "image2"],
     },
     {
       title: "TAK-03381224",
@@ -18,14 +18,14 @@ const ContentPedidos = () => {
       title: "TAK-03299116",
       fecha: "05 de Enero de 2023 - S/840.00 - 3 Articulos",
       estado: "Entregado",
-      items: ["image1", "image2", "image3"],
+      items: ["image1", "image2"],
     },
   ];
 
   return (
-    <div className=" max-w-[1200px] w-[1200px] mt-24">
+    <div className=" max-w-[1200px] w-[1200px] mt-5 md:mt-10 xl:mt-24">
       <div className="w-full">
-        <h2 className=" text-[40px] font-[700] text-green">Datos de socio</h2>
+        <h2 className=" text-[40px] font-[700] pl-5 xl:pl-0 text-green">Tus pedidos</h2>
         <hr className="mb-3" />
         <div>
           {pedidos.length === 0 ? (

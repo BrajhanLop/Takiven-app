@@ -4,6 +4,7 @@ import left from "../../assets/img/svg/left.svg";
 import rigth from "../../assets/img/svg/rigth.svg";
 import cohete from "../../assets/img/svg/rocket.svg";
 import CardProduct from "../Product/CardProduct";
+import { GoTriangleDown, GoTriangleRight } from "react-icons/go";
 import { useRef, useState } from "react";
 
 const GamerSection = ({ category }) => {
@@ -23,7 +24,7 @@ const GamerSection = ({ category }) => {
     <div className="mx-auto overflow-hidden">
       <div className="flex items-center gap-1 md:gap-3 mx-auto mt-10 px-2 md:px-10">
         <p className="  md:hidden" onClick={() => setSwichtCat(!swichtCat)}>
-          {swichtCat ? "❌" : "⭕"}
+          {swichtCat ? <GoTriangleRight className=" text-green text-xl" /> : <GoTriangleDown className=" text-green text-xl" />}
         </p>
         <Image src={category.img} className="w-[45px]" alt="play" />
 
