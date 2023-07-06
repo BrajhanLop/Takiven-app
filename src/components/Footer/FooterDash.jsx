@@ -96,7 +96,7 @@ const FooterDash = () => {
             <div className="flex justify-center">
               <Image src={logo} alt="logo" className="w-[200px] lg:w-[250px]" />
             </div>
-            <p className="text-[18px] font-[300] text-justify  lg:pl-5">
+            <p className="text-[18px] font-[300] text-justify px-2 lg:px-0 lg:pl-5">
               Somos un Marketplace online donde encontrarás la selección más
               grande de productos de las mejores tiendas del Perú.
             </p>
