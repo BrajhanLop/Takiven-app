@@ -6,34 +6,26 @@ const FormLogin = ({ toggle }) => {
     register,
     handleSubmit,
     reset,
-    formState: { errors },
+    formState: { errors }
   } = useForm();
 
-  const submit = (data) => {
+  const submit = data => {
     console.log(data);
   };
 
   return (
     <div className="w-full lg:w-1/2 bg-[#f2f6fb] md:bg-white flex flex-col md:px-10 md:pt-16 pb-10   md:rounded-[57px]">
       <div>
-        <h2 className="text-[30px] font-[700] text-title">
-          Iniciar Sesión en Takiven
-        </h2>
+        <h2 className="text-[30px] font-[700] text-title">Iniciar Sesión en Takiven</h2>
         <p className=" text-title text-[18px] md:text-[22px]">
           ¿No eres cliente?{" "}
-          <span
-            className=" text-green font-[500] cursor-pointer"
-            onClick={toggle}
-          >
+          <span className=" text-green font-[500] cursor-pointer" onClick={toggle}>
             Regístrate ahora
           </span>
         </p>
       </div>
       <hr className="mt-5 border-[#3FD07766] w-[80%] mx-auto mb-5" />
-      <form
-        onSubmit={handleSubmit(submit)}
-        className="flex flex-col gap-2 md:gap-3"
-      >
+      <form onSubmit={handleSubmit(submit)} className="flex flex-col gap-2 md:gap-3">
         <div className="flex flex-col">
           {/* <label
             htmlFor=""
@@ -48,13 +40,12 @@ const FormLogin = ({ toggle }) => {
             {...register("email", {
               required: {
                 value: true,
-                message: "El correo es requerido",
+                message: "El correo es requerido"
               },
               pattern: {
-                value:
-                  /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i,
-                message: "ingrese un email válido ",
-              },
+                value: /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i,
+                message: "ingrese un email válido "
+              }
             })}
           />
           <p className=" text-[#FF5576]">{errors.email?.message}</p>
@@ -70,14 +61,14 @@ const FormLogin = ({ toggle }) => {
             {...register("password", {
               required: {
                 value: true,
-                message: "la contraseña es requerida",
+                message: "la contraseña es requerida"
               },
               pattern: {
                 value: /^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$/i,
                 message:
-                  "La contraseña debe tener al entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula ",
+                  "La contraseña debe tener al entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula "
               },
-              maxLength: 18,
+              maxLength: 18
             })}
           />
           <p className=" text-[#FF5576]">{errors.password?.message}</p>

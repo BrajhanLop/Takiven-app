@@ -7,7 +7,7 @@ export default function RegisterLayout({ children }) {
       <Navbar />
 
       <section className="mx-auto">{children}</section>
-      <FooterSec/>
+      <FooterSec />
     </>
   );
 }

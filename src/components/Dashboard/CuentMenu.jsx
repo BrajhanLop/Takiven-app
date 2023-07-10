@@ -1,7 +1,7 @@
 import puser from "../../assets/img/icons/puser.png";
-import icono from '../../assets/img/svg/icono.svg'
-import icono2 from '../../assets/img/svg/icono2.svg'
-import icono3 from '../../assets/img/svg/icono3.svg'
+import icono from "../../assets/img/svg/icono.svg";
+import icono2 from "../../assets/img/svg/icono2.svg";
+import icono3 from "../../assets/img/svg/icono3.svg";
 import extend from "../../assets/img/icons/extend.png";
 import obs from "../../assets/img/icons/obs.png";
 import Image from "next/image";
@@ -30,7 +30,7 @@ const CuentMenu = ({ catRef, isFalse }) => {
           <Link href="/dashboard/pedido" onClick={isFalse}>
             <p className="w-[111px]">Mis Pedidos</p>
           </Link>
-          <Image src={icono3} alt="link" className="w-[20px] cursor-pointer"/>
+          <Image src={icono3} alt="link" className="w-[20px] cursor-pointer" />
         </div>
       </div>
     </div>

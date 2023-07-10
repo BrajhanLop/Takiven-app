@@ -5,7 +5,7 @@ const useToggle = (initialState = false) => {
   const [isToggle, setIsToggle] = useState(initialState);
 
   const toggle = () => {
-    setIsToggle((prevValue) => !prevValue);
+    setIsToggle(prevValue => !prevValue);
   };
 
   const isFalse = () => {

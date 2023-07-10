@@ -9,8 +9,8 @@ const page = () => {
       <h2 className="text-[24px] font-[500] mb-10">Importante:</h2>
 
       <p className=" text-justify mb-3 text-[18px]">
-        Aqui encontraras los terminos y condiciones que se publicaran de cada
-        campaña o promocion vigente en el tiempo.
+        Aqui encontraras los terminos y condiciones que se publicaran de cada campaña o promocion
+        vigente en el tiempo.
       </p>
     </div>
   );

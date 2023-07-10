@@ -7,9 +7,7 @@ const ProductItemCard = () => {
     <>
       <div className="flex">
         <Image src={check} alt="check"></Image>
-        <h4 className="text-white text-[20px] lg:text-[24px] font-[700]">
-          Agregago al carrito
-        </h4>
+        <h4 className="text-white text-[20px] lg:text-[24px] font-[700]">Agregago al carrito</h4>
       </div>
       <div className="mt-4">
         <div className="flex gap-5">
@@ -17,9 +15,7 @@ const ProductItemCard = () => {
             <Image src={product1} alt="check" className=" w-[100px] lg:w-[144px]"></Image>
           </div>
           <div className="md:text-[20px] lg:text-[22px]">
-            <p className=" font-[500] text-white">
-              Nombre del Producto
-            </p>
+            <p className=" font-[500] text-white">Nombre del Producto</p>
             <p className=" font-[400] text-[#6D6D6D]">Categoria</p>
             <p className="font-[400] text-[#6D6D6D]">Detalles</p>
             <p className=" font-[500] text-white">S/450.00</p>

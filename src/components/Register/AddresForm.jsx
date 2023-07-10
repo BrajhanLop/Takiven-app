@@ -12,25 +12,25 @@ const AddresForm = () => {
     register,
     handleSubmit,
     reset,
-    formState: { errors },
+    formState: { errors }
   } = useForm();
   const [selectedRegion, setSelectedRegion] = useState("");
   const [selectedDistrict, setSelectedDistrict] = useState("");
   const router = useRouter();
 
-  const submit = (data) => {
+  const submit = data => {
     console.log(data);
     router.push("/register/ubication");
   };
   console.log(distritos["Callao"]["Distritos"]);
 
-  const handleRegionChange = (event) => {
+  const handleRegionChange = event => {
     console.log(event.target.value);
     setSelectedRegion(event.target.value);
     setSelectedDistrict("");
   };
 
-  const handleDistrictChange = (event) => {
+  const handleDistrictChange = event => {
     setSelectedDistrict(event.target.value);
   };
 
@@ -39,15 +39,10 @@ const AddresForm = () => {
       <div className="flex justify-center lg:justify-start gap-2">
         <ImageLeft />
         {/* <Image src={left} alt="left" /> */}
-        <h2 className="text-[30px] font-[700] text-title ">
-          Dirección de entregas
-        </h2>
+        <h2 className="text-[30px] font-[700] text-title ">Dirección de entregas</h2>
       </div>
 
-      <form
-        onSubmit={handleSubmit(submit)}
-        className="flex flex-col mx-5 gap-5 md:gap-5"
-      >
+      <form onSubmit={handleSubmit(submit)} className="flex flex-col mx-5 gap-5 md:gap-5">
         <div className="flex flex-col">
           <label htmlFor="" className="text-[24px] text-subtext  md:font-[500]">
             Departamento
@@ -60,14 +55,14 @@ const AddresForm = () => {
             {...register("dep", {
               required: {
                 value: true,
-                message: "El departamento es requerido",
-              },
+                message: "El departamento es requerido"
+              }
             })}
             value={selectedRegion}
             onChange={handleRegionChange}
           >
             <option value="">Seleccionar Región</option>
-            {Object.keys(distritos).map((region) => (
+            {Object.keys(distritos).map(region => (
               <option key={region} value={region}>
                 {region}
               </option>
@@ -85,27 +80,23 @@ const AddresForm = () => {
             {...register("dist", {
               required: {
                 value: true,
-                message: "El Distrito es requerido",
-              },
+                message: "El Distrito es requerido"
+              }
             })}
             value={selectedDistrict}
             onChange={handleDistrictChange}
           >
             <option value="">Seleccionar Distrito</option>
-            {distritos[selectedRegion]?.["Distritos"].map((district) => (
+            {distritos[selectedRegion]?.["Distritos"].map(district => (
               <option key={district} value={district}>
                 {district}
               </option>
-              
             ))}
           </select>
           <p className=" text-[#FF5576]">{errors.dist?.message}</p>
         </div>
         <div className="flex flex-col">
-          <label
-            htmlFor=""
-            className="text-[24px] text-subtext md:text-[24px] md:font-[500]"
-          >
+          <label htmlFor="" className="text-[24px] text-subtext md:text-[24px] md:font-[500]">
             Direccion Completa
           </label>
           <input
@@ -114,8 +105,8 @@ const AddresForm = () => {
             {...register("addres", {
               required: {
                 value: true,
-                message: "La dirección es requerida",
-              },
+                message: "La dirección es requerida"
+              }
             })}
           />
           <p className=" text-[#FF5576]">{errors.addres?.message}</p>
@@ -130,16 +121,15 @@ const AddresForm = () => {
             {...register("ref", {
               required: {
                 value: true,
-                message: "la referencia es requerida",
-              },
+                message: "la referencia es requerida"
+              }
             })}
           />
 
           <p className=" text-[#FF5576]">{errors.ref?.message}</p>
         </div>
         <p className="text-[18px] xl:mb-3">
-          La direccion de entrega debe ser real y proporcionada de manera
-          correcta por el usuario
+          La direccion de entrega debe ser real y proporcionada de manera correcta por el usuario
         </p>
         <button
           type="submit"

@@ -35,5 +35,5 @@ export const images = [
   oso,
   rugby,
   taxi,
-  women,
+  women
 ];

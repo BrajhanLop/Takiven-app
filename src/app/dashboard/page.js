@@ -13,7 +13,7 @@ const page = () => {
         <HeroDash />
       </main>
       <div className="">
-        {arrayCategorias.map((category) => (
+        {arrayCategorias.map(category => (
           <GamerSection key={category.categoria} category={category} />
         ))}
       </div>
