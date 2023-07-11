@@ -111,7 +111,7 @@ const DatosSocio = () => {
         </div>
         <div className="flex gap-4 bg-[#F6F6F6] px-5 py-3 rounded-[20px]">
           <input type="checkbox" className="w-[27px]" />
-          <p className="text-[#3C4A5B] text-[20px]">
+          <p className="text-[#3C4A5B] text-[16px] md:text-[20px] text-justify">
             Acepto recibir promociones, descuentos y publicidad de Takiven mediante el uso de datos
             personales brindados
           </p>
