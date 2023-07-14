@@ -15,8 +15,8 @@ export const postRequest = async (dataSend, endpoint) => {
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
-        Authorization: getToken(),
-      },
+        Authorization: getToken()
+      }
     });
 
     return data;
@@ -29,15 +29,15 @@ export const postRequest = async (dataSend, endpoint) => {
   }
 };
 
-export const getRequest = async (endpoint) => {
+export const getRequest = async endpoint => {
   const token = getToken();
   try {
     const { data } = await axios.get(URL + endpoint, {
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
-        Authorization: getToken(),
-      },
+        Authorization: getToken()
+      }
     });
 
     return data;

@@ -3,7 +3,7 @@ module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}"
   ],
   theme: {
     extend: {
@@ -12,19 +12,16 @@ module.exports = {
         green: "#3FD077",
         yellow: "#F9DD8C",
         fond: "#F5F7FA",
-        subtext: "#535557",
+        subtext: "#535557"
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))"
       },
       fontFamily: {
-        rock: "Rock Salt",
-      },
-    },
+        rock: "Rock Salt"
+      }
+    }
   },
-  plugins: [
-    require('tailwind-scrollbar-hide')
-  ],
+  plugins: [require("tailwind-scrollbar-hide")]
 };

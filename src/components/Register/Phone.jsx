@@ -10,11 +10,11 @@ const Phone = () => {
     register,
     handleSubmit,
     reset,
-    formState: { errors },
+    formState: { errors }
   } = useForm();
   const router = useRouter();
 
-  const submit = (data) => {
+  const submit = data => {
     console.log(data);
     router.push("/welcome");
   };
@@ -23,20 +23,12 @@ const Phone = () => {
       <div className="flex justify-center lg:justify-start gap-2">
         {/* <Image src={left} alt="left" /> */}
         <ImageLeft />
-        <h2 className="text-[30px] font-[700] text-title">
-          Número de Teléfono
-        </h2>
+        <h2 className="text-[30px] font-[700] text-title">Número de Teléfono</h2>
       </div>
 
-      <form
-        onSubmit={handleSubmit(submit)}
-        className="flex flex-col mx-5 gap-5 md:gap-5"
-      >
+      <form onSubmit={handleSubmit(submit)} className="flex flex-col mx-5 gap-5 md:gap-5">
         <div className="flex flex-col">
-          <label
-            htmlFor=""
-            className="text-[24px] text-subtext md:text-[24px] md:font-[400]"
-          >
+          <label htmlFor="" className="text-[24px] text-subtext md:text-[24px] md:font-[400]">
             Contacto 1
           </label>
           <input
@@ -45,8 +37,8 @@ const Phone = () => {
             {...register("contacto1", {
               required: {
                 value: true,
-                message: "Este campo es obligatorio",
-              },
+                message: "Este campo es obligatorio"
+              }
             })}
           />
           <p className=" text-[#FF5576]">{errors.contacto1?.message}</p>
@@ -63,8 +55,7 @@ const Phone = () => {
         </div>
 
         <p className="text-[20px] xl:mb-10">
-          De los numeros proporcionados, al menos uno de ellos debe contar con
-          WhatsApp
+          De los numeros proporcionados, al menos uno de ellos debe contar con WhatsApp
         </p>
         <button
           type="submit"

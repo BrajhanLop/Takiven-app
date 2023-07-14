@@ -4,14 +4,7 @@ import { useRouter } from "next/navigation";
 
 const ImageLeft = () => {
   const router = useRouter();
-  return (
-    <Image
-      src={left}
-      alt="left"
-      className=" cursor-pointer"
-      onClick={() => router.back()}
-    />
-  );
+  return <Image src={left} alt="left" className=" cursor-pointer" onClick={() => router.back()} />;
 };
 
 export default ImageLeft;
