@@ -1,10 +1,7 @@
-const { default: ContentPedidos } = require("@/components/pedidos/ContentPedidos")
-
+const { default: ContentPedidos } = require("@/components/pedidos/ContentPedidos");
 
 const page = () => {
-  return (
-    <ContentPedidos/>
-  )
-}
+  return <ContentPedidos />;
+};
 
-export default page
+export default page;

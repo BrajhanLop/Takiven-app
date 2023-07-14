@@ -14,14 +14,14 @@ export const arrayCategorias = [
       {
         nombre: "Consola",
         marca: "Sony",
-        precio: 499.99,
+        precio: 499.99
       },
       {
         nombre: "Controlador",
         marca: "Microsoft",
-        precio: 59.99,
-      },
-    ],
+        precio: 59.99
+      }
+    ]
   },
   {
     categoria: "Mascotas",
@@ -30,14 +30,14 @@ export const arrayCategorias = [
       {
         nombre: "Perro",
         marca: "N/A",
-        precio: 0.0,
+        precio: 0.0
       },
       {
         nombre: "Gato",
         marca: "N/A",
-        precio: 0.0,
-      },
-    ],
+        precio: 0.0
+      }
+    ]
   },
   {
     categoria: "Computo",
@@ -46,14 +46,14 @@ export const arrayCategorias = [
       {
         nombre: "Laptop",
         marca: "HP",
-        precio: 899.99,
+        precio: 899.99
       },
       {
         nombre: "Teclado",
         marca: "Logitech",
-        precio: 29.99,
-      },
-    ],
+        precio: 29.99
+      }
+    ]
   },
   {
     categoria: "Audio",
@@ -62,14 +62,14 @@ export const arrayCategorias = [
       {
         nombre: "Auriculares",
         marca: "Sony",
-        precio: 99.99,
+        precio: 99.99
       },
       {
         nombre: "Altavoces",
         marca: "JBL",
-        precio: 149.99,
-      },
-    ],
+        precio: 149.99
+      }
+    ]
   },
   {
     categoria: "Belleza",
@@ -78,14 +78,14 @@ export const arrayCategorias = [
       {
         nombre: "Maquillaje",
         marca: "Maybelline",
-        precio: 9.99,
+        precio: 9.99
       },
       {
         nombre: "Cepillo de pelo",
         marca: "Tangle Teezer",
-        precio: 14.99,
-      },
-    ],
+        precio: 14.99
+      }
+    ]
   },
   {
     categoria: "Mundo",
@@ -94,14 +94,14 @@ export const arrayCategorias = [
       {
         nombre: "Mapa",
         marca: "N/A",
-        precio: 9.99,
+        precio: 9.99
       },
       {
         nombre: "Globo terráqueo",
         marca: "N/A",
-        precio: 19.99,
-      },
-    ],
+        precio: 19.99
+      }
+    ]
   },
   {
     categoria: "Love",
@@ -110,13 +110,13 @@ export const arrayCategorias = [
       {
         nombre: "Anillo",
         marca: "Tiffany & Co.",
-        precio: 999.99,
+        precio: 999.99
       },
       {
         nombre: "Tarjeta de amor",
         marca: "Hallmark",
-        precio: 4.99,
-      },
-    ],
-  },
+        precio: 4.99
+      }
+    ]
+  }
 ];

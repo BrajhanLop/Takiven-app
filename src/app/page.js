@@ -11,16 +11,11 @@ export default function Home() {
 
   return (
     <>
-    
       <Navbar />
       <main className=" max-w-[1200px] mx-auto pb-8">
         <div className="flex flex-col items-center gap-5 lg:flex-row lg:mx-5 xl:mx-0 lg:gap-10 xl:gap-16 ">
           <HeroSection />
-          {isToggle ? (
-            <Register toggle={toggle} />
-          ) : (
-            <FormLogin toggle={toggle} />
-          )}
+          {isToggle ? <Register toggle={toggle} /> : <FormLogin toggle={toggle} />}
           {/* <FormLogin /> */}
           {/* <Register/> */}
         </div>

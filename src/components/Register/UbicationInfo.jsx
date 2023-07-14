@@ -10,11 +10,11 @@ const UbicationInfo = () => {
     register,
     handleSubmit,
     reset,
-    formState: { errors },
+    formState: { errors }
   } = useForm();
   const router = useRouter();
 
-  const submit = (data) => {
+  const submit = data => {
     console.log(data);
     router.push("/register/phone");
   };
@@ -23,17 +23,10 @@ const UbicationInfo = () => {
       <div className="flex justify-center lg:justify-start gap-2">
         <ImageLeft />
         {/* <Image src={left} alt="left" /> */}
-        <h2 className="text-[30px] font-[700] text-title">
-          Muestra tu Ubicación
-        </h2>
+        <h2 className="text-[30px] font-[700] text-title">Muestra tu Ubicación</h2>
       </div>
-      <p className=" text-[24px] text-title">
-        Indicanos donde llegaran tus pedidos
-      </p>
-      <form
-        onSubmit={handleSubmit(submit)}
-        className="flex flex-col w-full mx-5 gap-5 md:gap-5"
-      >
+      <p className=" text-[24px] text-title">Indicanos donde llegaran tus pedidos</p>
+      <form onSubmit={handleSubmit(submit)} className="flex flex-col w-full mx-5 gap-5 md:gap-5">
         <div className=" border-2 border-[#DADEE3] rounded-2xl h-[336px] flex justify-center items-center">
           <div className="w-full h-full">
             <iframe
@@ -45,7 +38,7 @@ const UbicationInfo = () => {
               loading="lazy"
             ></iframe>
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-              <Image src={marker} alt="Marker" className="w-8 h-8"  />
+              <Image src={marker} alt="Marker" className="w-8 h-8" />
             </div>
           </div>
         </div>

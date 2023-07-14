@@ -9,11 +9,11 @@ const ConfirmPersonal = ({ toggle, info }) => {
     register,
     handleSubmit,
     reset,
-    formState: { errors },
+    formState: { errors }
   } = useForm();
   const router = useRouter();
 
-  const submit = (data) => {
+  const submit = data => {
     console.log(data);
     router.push("/register/addres");
   };
@@ -22,9 +22,7 @@ const ConfirmPersonal = ({ toggle, info }) => {
     <div className="fixed top-0 bottom-0 left-0 right-0 m-auto bg-slate-300/60  flex justify-center items-center">
       <div className=" w-[500px] rounded-[36px]  px-3 py-5  bg-white flex flex-col pb-10 md:px-10 md:pt-16    md:rounded-[57px]">
         <div className="flex justify-center">
-          <h2 className="text-[24px] font-[700] text-title mb-3">
-            Confirmar Datos
-          </h2>
+          <h2 className="text-[24px] font-[700] text-title mb-3">Confirmar Datos</h2>
         </div>
         <div className="bg-[#f2f6fb] px-5 py-4 rounded-[22px]">
           <div className="flex gap-2 ">
@@ -55,10 +53,7 @@ const ConfirmPersonal = ({ toggle, info }) => {
             </div>
           </div>
         </div>
-        <form
-          onSubmit={handleSubmit(submit)}
-          className="flex flex-col gap-5 md:gap-5"
-        >
+        <form onSubmit={handleSubmit(submit)} className="flex flex-col gap-5 md:gap-5">
           <div className="flex gap-1  mt-3 mb-0">
             <input
               type="checkbox"
@@ -66,14 +61,14 @@ const ConfirmPersonal = ({ toggle, info }) => {
               {...register("contract", {
                 required: {
                   value: true,
-                  message: "Debe certificar la información.",
-                },
+                  message: "Debe certificar la información."
+                }
               })}
             />
 
             <p className="text-[18px] font-[300] leading-6 text-justify px-1 ">
-              Certifico que la información enviada anteriormente es legalmente
-              precisa y que esta es mi única cuenta de Takiven.
+              Certifico que la información enviada anteriormente es legalmente precisa y que esta es
+              mi única cuenta de Takiven.
             </p>
           </div>
           <p className=" text-[#FF5576]">{errors.contract?.message}</p>

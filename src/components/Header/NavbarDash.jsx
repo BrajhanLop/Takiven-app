@@ -13,16 +13,12 @@ import { useRouter } from "next/navigation";
 
 const NavbarDash = () => {
   const { isToggle, toggle, isFalse, isTrue } = useToggle();
-  const {
-    isToggle: isCart,
-    toggle: toggleCart,
-    isFalse: falseCart,
-  } = useToggle();
+  const { isToggle: isCart, toggle: toggleCart, isFalse: falseCart } = useToggle();
   const { isToggle: isCat, toggle: toggleCat, isFalse: falseCat } = useToggle();
   const catRef = useRef(null);
   const router = useRouter();
 
-  const handleClickOutside = (event) => {
+  const handleClickOutside = event => {
     if (
       catRef.current &&
       !catRef.current.contains(event.target) &&
@@ -64,10 +60,7 @@ const NavbarDash = () => {
   return (
     <>
       <nav className="h-[87px] md:h-auto fixed z-20  w-full bg-[#3FD077] flex justify-between md:justify-center  items-center px-2 lg:gap-4 gap-3 md:py-1 lg:py-0 md:pr-2">
-        <div
-          className="md:flex cursor-pointer hidden "
-          onClick={() => router.push("/dashboard")}
-        >
+        <div className="md:flex cursor-pointer hidden " onClick={() => router.push("/dashboard")}>
           <Image src={logo} alt="logo" className="md:w-[180px] lg:w-[232px]" />
         </div>
         <div className="flex items-center w-[60%]   md:gap-3">
@@ -79,10 +72,7 @@ const NavbarDash = () => {
               className="menu-option cursor-pointer w-[40px]"
             />
           </div>
-          <div
-            className="md:hidden  cursor-pointer "
-            onClick={() => router.push("/dashboard")}
-          >
+          <div className="md:hidden  cursor-pointer " onClick={() => router.push("/dashboard")}>
             <Image src={logo} alt="logo" className="w-[162px]" />
           </div>
           <div className="hidden xl:w-[800px] lg:w-[600px]  md:block  md:w-full h-[48px] ">
@@ -105,9 +95,7 @@ const NavbarDash = () => {
               />
               {isCart && <CartMenu catRef={catRef} />}
             </div>
-            <span className="hidden md:block text-white text-[35px] font-[300] ">
-              0
-            </span>
+            <span className="hidden md:block text-white text-[35px] font-[300] ">0</span>
           </div>
           <div className="relative">
             <Image
