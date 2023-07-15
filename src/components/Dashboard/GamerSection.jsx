@@ -6,11 +6,14 @@ import cohete from "../../assets/img/svg/rocket.svg";
 import CardProduct from "../Product/CardProduct";
 import { GoTriangleDown, GoTriangleRight } from "react-icons/go";
 import { useRef, useState } from "react";
+import { useRouter } from "next/navigation";
+
 
 const GamerSection = ({ category }) => {
   const sliderRef = useRef(null);
   const [swichtCat, setSwichtCat] = useState(true);
   const arr = [1, 2, 3, 4, 5, 6, 7, 8];
+  const router = useRouter();
 
   const handleScrollLeft = () => {
     sliderRef.current.scrollLeft -= 200;
@@ -20,9 +23,11 @@ const GamerSection = ({ category }) => {
     sliderRef.current.scrollLeft += 200;
   };
 
+  
+
   return (
     <div className="mx-auto overflow-hidden">
-      <div className="flex items-center gap-1 md:gap-3 mx-auto mt-10 px-2 md:px-10">
+      <div className="flex items-center gap-1 md:gap-3 mx-auto mt-10 px-2 md:px-10 lg:px-0 max-w-[1200px]">
         <p className="  md:hidden" onClick={() => setSwichtCat(!swichtCat)}>
           {swichtCat ? (
             <GoTriangleRight className=" text-green text-xl" />
@@ -38,15 +43,15 @@ const GamerSection = ({ category }) => {
         <hr className="mt-5 border-[#3FD07766] w-[80%] mx-auto " />
         <Image src={cohete} className="w-[45px] cursor-pointer" alt="cohete" />
 
-        <p className="text-[#3FD077] text-[16px] md:text-[24px] font-[400] font-rock cursor-pointer">
+        <p className="text-[#3FD077] text-[16px] md:text-[24px] font-[400] font-rock cursor-pointer" onClick={() => router.push("/dashboard/categoria")}>
           Ver
         </p>
-        <p className="text-[#3FD077] text-[16px] md:text-[24px] font-[400] font-rock cursor-pointer">
+        <p className="text-[#3FD077] text-[16px] md:text-[24px] font-[400] font-rock cursor-pointer" onClick={() => router.push("/dashboard/categoria")}>
           más
         </p>
       </div>
       {swichtCat && (
-        <div className="flex items-center px-1">
+        <div className="flex items-center justify-center px-1">
           <div className="flex-none cursor-pointer" onClick={handleScrollLeft}>
             <Image src={left} alt="" className="w-[40px]" />
           </div>
