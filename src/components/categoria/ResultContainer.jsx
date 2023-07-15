@@ -9,7 +9,7 @@ const ResultContainer = () => {
     <div className='flex flex-wrap gap-2 xl:max-w-[980px] lg:max-w-[700px]'>
         {
           arr.map(ar => (
-            <CardProduct/>
+            <CardProduct key={ar}/>
           ))
         }
 
