@@ -32,10 +32,10 @@ const NavbarDash = () => {
 
   useEffect(() => {
     document.addEventListener("click", handleClickOutside, true);
-    console.log("hh");
+    
     return () => {
       document.removeEventListener("click", handleClickOutside, true);
-      console.log("hh");
+      
     };
   }, []);
 
@@ -63,7 +63,7 @@ const NavbarDash = () => {
         <div className="md:flex cursor-pointer hidden " onClick={() => router.push("/dashboard")}>
           <Image src={logo} alt="logo" className="md:w-[180px] lg:w-[232px]" />
         </div>
-        <div className="flex items-center w-[60%]   md:gap-3">
+        <div className="flex items-center w-[60%] xl:max-w-[800px]  md:gap-3">
           <div>
             <Image
               src={menu}
@@ -75,7 +75,7 @@ const NavbarDash = () => {
           <div className="md:hidden  cursor-pointer " onClick={() => router.push("/dashboard")}>
             <Image src={logo} alt="logo" className="w-[162px]" />
           </div>
-          <div className="hidden xl:w-[800px] lg:w-[600px]  md:block  md:w-full h-[48px] ">
+          <div className="hidden xl:w-[800px] lg:w-[600px]   md:block  md:w-full h-[48px] ">
             <input
               type="text"
               placeholder="¿Que deseas tener en casa?"

@@ -1,18 +1,14 @@
-import React from 'react'
-import CardProduct from '../Product/CardProduct'
+import React from "react";
+import CardProduct from "../Product/CardProduct";
 
 const ResultContainer = () => {
-
-  const arr = [1,2,3, 4,5,6,7,8,9]
+  const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
   return (
-    <div className=' flex flex-col'>
-    <div className='flex flex-wrap gap-2 xl:max-w-[980px] lg:max-w-[700px]'>
-        {
-          arr.map(ar => (
-            <CardProduct key={ar}/>
-          ))
-        }
-
+    <div className=" flex flex-col">
+      <div className="flex flex-wrap justify-center gap-2 xl:max-w-[980px] lg:max-w-[700px] md:max-w-[600px]">
+        {arr.map(ar => (
+          <CardProduct key={ar} />
+        ))}
       </div>
 
       <div className="flex mt-5 justify-center">
@@ -26,8 +22,8 @@ const ResultContainer = () => {
           <p>3</p>
         </div>
       </div>
-      </div>
-  )
-}
+    </div>
+  );
+};
 
-export default ResultContainer
+export default ResultContainer;

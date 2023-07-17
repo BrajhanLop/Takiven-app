@@ -43,10 +43,10 @@ const GamerSection = ({ category }) => {
         <hr className="mt-5 border-[#3FD07766] w-[80%] mx-auto " />
         <Image src={cohete} className="w-[45px] cursor-pointer" alt="cohete" />
 
-        <p className="text-[#3FD077] text-[16px] md:text-[24px] font-[400] font-rock cursor-pointer" onClick={() => router.push("/dashboard/categoria")}>
+        <p className="text-[#3FD077] text-[16px] md:text-[24px] font-[400] font-rock cursor-pointer" onClick={() => router.push(`/dashboard/${category.categoria}`)}>
           Ver
         </p>
-        <p className="text-[#3FD077] text-[16px] md:text-[24px] font-[400] font-rock cursor-pointer" onClick={() => router.push("/dashboard/categoria")}>
+        <p className="text-[#3FD077] text-[16px] md:text-[24px] font-[400] font-rock cursor-pointer" onClick={() => router.push(`/dashboard/${category.categoria}`)}>
           más
         </p>
       </div>
