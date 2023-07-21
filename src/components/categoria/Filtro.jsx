@@ -3,7 +3,7 @@ import filter from "../../assets/img/svg/filter.svg";
 
 const Filtro = () => {
   return (
-    <div className="w-[280px] h-[300px] bg-[#ECEEF0] rounded-[20px]">
+    <div className=" hidden md:block w-[280px] h-[300px] bg-[#ECEEF0] rounded-[20px]">
       <div className=" bg-[#3FD077] text-white rounded-t-[20px] h-[62px] flex items-center gap-3 pl-3">
         <Image src={filter} alt="icon" />
         <p className=" text-[24px] font-semibold">Filtros</p>

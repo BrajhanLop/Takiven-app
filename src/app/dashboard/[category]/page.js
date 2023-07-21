@@ -6,6 +6,7 @@ import React from 'react'
 const page = ({params}) => {
     const {category} = params;
     
+    
   return (
     <div className="flex flex-col items-center">
     <Titulo category={category} />

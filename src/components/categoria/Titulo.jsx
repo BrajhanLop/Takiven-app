@@ -16,12 +16,12 @@ const Titulo = ({ category }) => {
 
   return (
     <div className="flex justify-between w-full mt-5 lg:mt-16 mb-5 max-w-[1280px] ">
-      <div className="flex gap-3">
+      <div className="flex items-center gap-3">
         <Image src={buscarCategory().img} alt="icon"/>
         <p className="text-[#3FD077] text-[20px] md:text-[24px] font-[400] font-rock">{category}</p>
       </div>
-      <div className="pr-2 lg:pr-0">
-        <select className="border border-[#29E197] px-3 py-1 rounded-xl text-[19px]">
+      <div className=" pr-2 lg:pr-0 flex items-center ">
+        <select className="border border-[#29E197] px-3 py-1 rounded-xl text-[19px] w-[150px] md:w-auto">
           <option value="Relevancia">Relevancia</option>
           <option value="mas">Mayor precio primero</option>
           <option value="menos">Menor precio primero</option>

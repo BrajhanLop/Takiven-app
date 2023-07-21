@@ -42,7 +42,7 @@ const Especifications = () => {
 
   return (
     <div className="mt-10 flex flex-col items-center">
-      <div className="flex w-[1130px] text-[20px] justify-around text-[#3C4A5B] mb-3">
+      <div className="flex xl:w-[1130px] lg:w-[950px] text-[12px] md:text-[16px] gap-2 md:gap-6 lg:text-[20px] justify-around text-[#3C4A5B] mb-3 px-2 md:px-0">
         <p onClick={hadleEsp} className={esp ? 'font-[700] border-b-2 border-[#3C4A5B] cursor-pointer' : 'cursor-pointer'}>
           ESPECIFICACIONES
         </p>

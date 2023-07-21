@@ -2,7 +2,7 @@ import React from "react";
 
 const Comentarios = () => {
   return (
-    <div className="text-[#3C4A5B] w-[1130px] ">
+    <div className="text-[#3C4A5B] xl:w-[1110px] lg:w-[950px] md:w-[700px] w-full px-2 md:px-0">
       <p className="text-[18px] font-[400] bg-[#ECEEF0] py-3 pl-4">Gerardo Dafonseka</p>
       <div className="text-[18px] font-[300] py-3 pl-4">
         <p>

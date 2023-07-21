@@ -2,8 +2,8 @@ import React from "react";
 
 const Descripción = () => {
   return (
-    <div className="w-[1110px] mx-auto">
-      <p className=" text-[#3C4A5B] text-[18px] font-[300] text-justify">
+    <div className="xl:w-[1110px] lg:w-[950px] md:w-[700px] w-full px-2 md:px-0 mx-auto">
+      <p className=" text-[#3C4A5B] text-[15px] md:text-[18px] font-[300] text-justify">
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
         been the industry standard dummy text ever since the 1500s, when an unknown printer took a
         galley of type and scrambled it to make a type specimen book. It has survived not only five

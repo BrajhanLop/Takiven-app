@@ -24,7 +24,30 @@ const GamerSection = ({ category }) => {
 
   return (
     <div className="mx-auto overflow-hidden mt-10">
-      <h3 className="text-[#3C4A5B] text-[24px] font-[500]">¡Lo piensas y lo tienes!</h3>
+      {/* <h3 className="text-[#3C4A5B] text-[24px] font-[500]">¡Lo piensas y lo tienes!</h3> */}
+      <div className="flex items-center gap-1 md:gap-3 mx-auto mt-10 px-2 md:px-10">
+        <p className="  md:hidden" onClick={() => setSwichtCat(!swichtCat)}>
+          {swichtCat ? (
+            <GoTriangleRight className=" text-green text-xl" />
+          ) : (
+            <GoTriangleDown className=" text-green text-xl" />
+          )}
+        </p>
+        <Image src={category.img} className="w-[45px]" alt="play" />
+
+        <p className="text-[#3FD077] text-[20px] md:text-[24px] font-[400] font-rock">
+          {category.categoria}
+        </p>
+        <hr className="mt-5 border-[#3FD07766] w-[80%] mx-auto " />
+        <Image src={cohete} className="w-[45px] cursor-pointer" alt="cohete" />
+
+        <p className="text-[#3FD077] text-[16px] md:text-[24px] font-[400] font-rock cursor-pointer" onClick={() => router.push(`/dashboard/${category.categoria}`)}>
+          Ver
+        </p>
+        <p className="text-[#3FD077] text-[16px] md:text-[24px] font-[400] font-rock cursor-pointer" onClick={() => router.push(`/dashboard/${category.categoria}`)}>
+          más
+        </p>
+      </div>
       {swichtCat && (
         <div className="flex items-center justify-center px-1">
           <div className="flex-none cursor-pointer" onClick={handleScrollLeft}>

@@ -3,10 +3,10 @@ import React from "react";
 
 const Detail = () => {
   return (
-    <div className="flex gap-5">
-      <div className="w-[637px] h-[491px] border border-[#3FD077]"></div>
+    <div className="flex flex-col items-center lg:flex-row lg:justify-center gap-5">
+      <div className="xl:w-[637px] lg:w-[500px] xl:h-[491px] lg:h-[400px] md:w-[400px] md:h-[300px] w-[300px] h-[300px] border border-[#3FD077]"></div>
 
-      <div className="w-[553px] text-[#3C4A5B] mt-5">
+      <div className="xl:w-[553px] lg:w-[450px] md:w-[450px] w-[320px] text-[#3C4A5B] mt-5">
         <p className="text-[22px] font-[300]">Marca</p>
         <p className="text-[24px] font-[500]">NOMBRE DEL PRODUCTO</p>
         <p className="text-[22px] font-[300]">
@@ -28,7 +28,7 @@ const Detail = () => {
           </div>
         </div>
 
-        <div className="flex justify-between my-5">
+        <div className="flex justify-between gap-2 my-5">
           <div className=" flex gap-8">
             <button className="bg-[#ECEEF0] w-[40px] h-[40px] rounded-[5px] text-[22px] font-[700]">
               -
@@ -43,7 +43,7 @@ const Detail = () => {
           </button>
         </div>
 
-        <div className="flex gap-3">
+        <div className=" hidden lg:flex gap-3">
           <div className="w-[175px] h-[153px] border border-[#3FD077]"></div>
           <div className="w-[175px] h-[153px] border border-[#3FD077]"></div>
           <div className="w-[175px] h-[153px] border border-[#3FD077]"></div>
