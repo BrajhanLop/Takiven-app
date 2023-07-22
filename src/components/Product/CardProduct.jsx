@@ -1,10 +1,19 @@
+import { useRouter } from "next/navigation";
+
+
 const CardProduct = () => {
+  const router = useRouter();
+
+  const handleClick = () => {
+    router.push("/dashboard/Gamer/1");
+    };
+
   return (
     <div className=" border border-[#30F27B] w-[280px] md:h-[450px] lg:h-[500px] md:w-[250px] lg:w-[300px] xl:w-auto rounded-[20px] flex flex-col gap-3 items-center transform hover:scale-[0.98] hover:duration-500">
-      <div className="border mt-3 flex justify-center items-center rounded-[20px]  w-[270px] md:w-[220px]   lg:w-[292px] mx-3 h-[220px]  md:h-[220px] lg:h-[264px] ">
+      <div onClick={handleClick} className="border mt-3 flex justify-center items-center rounded-[20px]  w-[270px] md:w-[220px]   lg:w-[292px] mx-3 h-[220px]  md:h-[220px] lg:h-[264px] cursor-pointer">
         IMG
       </div>
-      <div>
+      <div onClick={handleClick} className="cursor-pointer" >
         <h3 className=" text-[20px] font-[600px]">Marca del Producto</h3>
         <p className=" text-[18px] font-[400px]">Nombre del Producto</p>
       </div>
