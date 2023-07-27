@@ -4,7 +4,7 @@ import user from "../../assets/img/admin/usergen.png";
 
 const NavbarAdmin = () => {
   return (
-    <div className=" max-w-[1200px] w-full flex justify-between px-3 py-3">
+    <div className=" max-w-[1350px] w-full flex justify-between px-3 py-3">
       <div>
         <Image src={takivn} alt="" />
       </div>
