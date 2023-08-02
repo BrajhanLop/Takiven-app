@@ -24,7 +24,7 @@ const page = () => {
               <Card img={card2} title="Nuevos Usuarios" amount="120" />
             </div>
 
-            <div className="bg-white rounded-[20px] p-4 mx-4 ">
+            <div className="bg-white rounded-[20px] text-[#3C4A5B] p-4 mx-4 ">
               <div className="flex gap-3">
                 <Image src={despacho} alt="" />
                 <p className=" xl:text-[28px] md:text-[26px] text-[22px] font-[400]">Despacho</p>
@@ -162,20 +162,7 @@ const page = () => {
         </div>
       </div>
 
-      {/* <div className='flex flex-wrap gap-2'>
-            <Card img={card1} title = "Ventas del lunes" amount="S/. 1,000.00"  />
-            <Card img={card1} title = "Ventas de la semana" amount="S/. 2,000.00"  />
-            <Card img={card1} title = "Ventas total del mes" amount="S/. 8,000.00"  />
-            <Card img={card2} title = "Usuarios Online" amount="100"  />
-            <Card img={card2} title = "Usuarios Registrados" amount="1500"  />
-            <Card img={card2} title = "Nuevos Usuarios" amount="120"  />
-        </div>
-        <div>
-          <div>
-          <Image src="" alt="" />
-          <p>Despacho</p>
-          </div>
-        </div> */}
+
     </div>
   );
 };
