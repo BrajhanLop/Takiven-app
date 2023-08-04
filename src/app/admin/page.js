@@ -12,10 +12,10 @@ const page = () => {
     <div className=" bg-[#EDF0F1]  flex">
       <div className="flex gap-1 max-w-[1350px]">
         <Sidebar />
-        <div className="flex flex-col lg:flex-row">
+        <div className="flex flex-col ml-[90px] lg:flex-row">
          
-          <div className="lg:w-7/12 w-full">
-            <div className="flex justify-evenly lg:justify-between flex-wrap gap-2 p-4 ">
+          <div className="lg:w-7/12 w-full flex flex-col justify-between">
+            <div className="flex justify-evenly lg:justify-between flex-wrap gap-2  p-4 ">
               <Card img={card1} title="Ventas del lunes" amount="S/. 1,000.00" />
               <Card img={card1} title="Ventas de la semana" amount="S/. 2,000.00" />
               <Card img={card1} title="Ventas total del mes" amount="S/. 8,000.00" />
@@ -119,7 +119,7 @@ const page = () => {
               </div>
             </div>
 
-            <div className=" py-4 px-4 text-[#3C4A5B] bg-white rounded-[20px] mt-4 mx-4 mb-4">
+            <div className=" py-4 px-4 text-[#3C4A5B] bg-white rounded-[20px] mt-4 mx-4">
               <div className=" flex gap-3 ">
                 <Image src={uservend} alt="" />
                 <h3 className="xl:text-[28px] lg:text-[26px] font-[400] text-[22px] ">Usuarios</h3>
