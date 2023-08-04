@@ -7,11 +7,13 @@ import uservend from "../../assets/img/admin/uservend.png";
 import despacho from "../../assets/img/admin/despacho.png";
 import Image from "next/image";
 import Sidebar from "@/components/admin/Sidebar";
+import NavbarAdmin from "@/components/admin/NavbarAdmin";
 const page = () => {
   return (
     <div className=" bg-[#EDF0F1]  flex">
-      <div className="flex gap-1 max-w-[1350px]">
-        <Sidebar />
+      <div className="flex flex-col gap-1 max-w-[1350px]">
+        
+      <NavbarAdmin />
         <div className="flex flex-col ml-[90px] lg:flex-row">
          
           <div className="lg:w-7/12 w-full flex flex-col justify-between">
