@@ -1,10 +1,13 @@
 'use client'
+import { EcommerceContext } from "@/context/EcommerceContext";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 
 const Detail = () => {
 
 const [counter, SetCounter] = useState(1)
+
+const { addCart } = useContext(EcommerceContext)
 
   return (
     <div className="flex flex-col items-center lg:flex-row lg:justify-center gap-5">
@@ -42,7 +45,7 @@ const [counter, SetCounter] = useState(1)
               +
             </button>
           </div>
-          <button className="bg-[#3FD077] text-white w-[275px] h-[40px] rounded-[5px] text-[18px] font-[300]">
+          <button onClick={()=> addCart({nombre: "nombre del producto", Categoria: "categoria", Detalles: "detalles", precio: "450.00"})} className="bg-[#3FD077] text-white w-[275px] h-[40px] rounded-[5px] text-[18px] font-[300]">
             Agregar al carrito
           </button>
         </div>

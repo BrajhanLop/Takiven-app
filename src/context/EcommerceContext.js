@@ -1,9 +1,19 @@
-import { createContext } from "react";
+'use client'
+import { createContext, useState } from "react";
 
-const EcommerceContext = createContext()
+export const EcommerceContext = createContext()
 
-const EcommerceProvider = ({children}) => {
-    return <EcommerceContext.Provider>
+export const EcommerceProvider = ({children}) => {
+
+    const [cart, setCart] = useState([])
+
+    const addCart = (value) => {
+        
+        setCart([value, ...cart])
+        
+    }
+
+    return <EcommerceContext.Provider value={{cart, addCart}}>
         {children}
     </EcommerceContext.Provider>
 }

@@ -2,14 +2,15 @@
 import Image from "next/image";
 import logo from "../../assets/img/logo/logo2.png";
 import menu from "../../assets/img/svg/menu.svg";
-import cart from "../../assets/img/svg/cart.svg";
+import carts from "../../assets/img/svg/cart.svg";
 import user from "../../assets/img/svg/user.svg";
 import CuentMenu from "../Dashboard/CuentMenu";
 import useToggle from "@/hooks/useToggle";
 import CartMenu from "../Dashboard/CartMenu";
 import MenuCategories from "../Dashboard/MenuCategories";
-import { useEffect, useRef } from "react";
+import { useContext, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
+import { EcommerceContext } from "@/context/EcommerceContext";
 
 const NavbarDash = () => {
   const { isToggle, toggle, isFalse, isTrue } = useToggle();
@@ -38,6 +39,8 @@ const NavbarDash = () => {
       
     };
   }, []);
+
+  const { cart } = useContext(EcommerceContext);
 
   const handlecategory = () => {
     isFalse();
@@ -88,14 +91,14 @@ const NavbarDash = () => {
           <div className="flex gap-1">
             <div className="flex items-center relative">
               <Image
-                src={cart}
+                src={carts}
                 alt="cart"
                 onClick={handleCart}
                 className="menu-option w-[40px] h-[40px] cursor-pointer"
               />
               {isCart && <CartMenu catRef={catRef} />}
             </div>
-            <span className="hidden md:block text-white text-[35px] font-[300] ">0</span>
+            <span className="hidden md:block text-white text-[35px] font-[300] ">{cart.length}</span>
           </div>
           <div className="relative">
             <Image
