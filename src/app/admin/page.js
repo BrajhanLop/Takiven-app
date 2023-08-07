@@ -18,7 +18,7 @@ const page = () => {
          
           <div className="lg:w-7/12 w-full flex flex-col justify-between">
             <div className="flex justify-evenly lg:justify-between flex-wrap gap-2  p-4 ">
-              <Card img={card1} title="Ventas del lunes" amount="S/. 1,000.00" />
+             
               <Card img={card1} title="Ventas de la semana" amount="S/. 2,000.00" />
               <Card img={card1} title="Ventas total del mes" amount="S/. 8,000.00" />
               <Card img={card2} title="Usuarios Online" amount="100" />
