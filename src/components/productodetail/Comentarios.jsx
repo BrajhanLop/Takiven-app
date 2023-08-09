@@ -13,9 +13,10 @@ const Comentarios = () => {
         </p>
       </div>
       <p className="text-[18px] font-[400] bg-[#ECEEF0] py-3 pl-4">Tu</p>
-      <p className="text-[18px] font-[300] py-3 pl-4">
+      <input type="text" className="w-full h-20 border px-3" placeholder="Agrega tu comentario, si compraste este producto." />
+      {/* <p className="text-[18px] font-[300] py-3 pl-4">
         Agrega tu comentario, si compraste este producto.
-      </p>
+      </p> */}
     </div>
   );
 };

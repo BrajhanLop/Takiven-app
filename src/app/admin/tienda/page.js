@@ -22,7 +22,7 @@ const page = () => {
           </div>
         </div>
 
-        <div className="w-[1292px] h-[630px] bg-white px-10 py-3">
+        <div className="w-full h-[630px] bg-white px-10 py-3 rounded-[20px]">
           <h4 className="text-[28px] text-[#3C4A5B] font-[500]">Filtros</h4>
           <div className="flex justify-between">
             <select className="w-[375px] h-[45px] text-[24px] text-[#3C4A5B] border border-[#3C4A5B] rounded-[10px] px-2">
