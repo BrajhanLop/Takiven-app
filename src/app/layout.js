@@ -1,3 +1,4 @@
+import { EcommerceProvider } from "@/context/EcommerceContext";
 import "./globals.css";
 
 export const metadata = {
@@ -9,7 +10,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className=" min-h-screen bg-[#f2f6fb] md:bg-[#f2f6fb]  flex flex-col md:justify-between">
+        <EcommerceProvider>
         {children}
+        </EcommerceProvider>
       </body>
     </html>
   );
