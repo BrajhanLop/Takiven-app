@@ -7,13 +7,13 @@ import edit from '../../../assets/img/admin/svg/bxs-edit.svg'
 import { BiToggleRight } from "react-icons/bi";
 import { MdToggleOff } from "react-icons/md";
 import Image from "next/image";
-import { useRouter, usePathname } from "next/navigation";
+// import { useRouter, usePathname } from "next/navigation";
 
 
 const page = () => {
-  const router = useRouter();
+  // const router = useRouter();
  
-  console.log(usePathname());
+  // console.log(usePathname());
 
 
   const data = [
