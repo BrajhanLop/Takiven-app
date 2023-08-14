@@ -13,7 +13,7 @@ import { useState } from "react";
 // import { useRouter, usePathname } from "next/navigation";
 
 
-const page = () => {
+const Tienda = () => {
   // const router = useRouter();
  
   // console.log(usePathname());
@@ -187,4 +187,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Tienda;
