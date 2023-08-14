@@ -8,17 +8,16 @@ import despacho from "../../assets/img/admin/despacho.png";
 import Image from "next/image";
 import Sidebar from "@/components/admin/Sidebar";
 import NavbarAdmin from "@/components/admin/NavbarAdmin";
+import Footer from "@/components/admin/Footer";
 const page = () => {
   return (
     <div className=" bg-[#EDF0F1]  flex">
       <div className="flex flex-col gap-1 max-w-[1350px]">
-        
-      <NavbarAdmin />
+        <NavbarAdmin />
         <div className="flex flex-col ml-[90px] lg:flex-row">
-         
           <div className="lg:w-7/12 w-full flex flex-col justify-between">
             <div className="flex justify-evenly lg:justify-between flex-wrap gap-2  p-4 ">
-            <Card img={card1} title="Ventas del lunes" amount="S/. 1,000.00" />
+              <Card img={card1} title="Ventas del lunes" amount="S/. 1,000.00" />
               <Card img={card1} title="Ventas de la semana" amount="S/. 2,000.00" />
               <Card img={card1} title="Ventas total del mes" amount="S/. 8,000.00" />
               <Card img={card2} title="Usuarios Online" amount="100" />
@@ -79,12 +78,14 @@ const page = () => {
               </div>
             </div>
           </div>
-           
+
           <div className="lg:w-5/12 w-full">
             <div className=" py-4 px-4 text-[#3C4A5B] bg-white rounded-[20px] mt-4 mx-4">
               <div className=" flex gap-3 h-[40px] ">
                 <Image src={start} alt="" />
-                <h3 className="xl:text-[28px] lg:text-[24px] text-[22px]  font-[400]">Productos mas vendidos</h3>
+                <h3 className="xl:text-[28px] lg:text-[24px] text-[22px]  font-[400]">
+                  Productos mas vendidos
+                </h3>
               </div>
               <div className="">
                 <div className=" flex xl:text-[18px] md:text-[15px] text-[13px]  font-[400] pt-4 ">
@@ -162,9 +163,8 @@ const page = () => {
             </div>
           </div>
         </div>
+        <Footer/>
       </div>
-
-
     </div>
   );
 };
