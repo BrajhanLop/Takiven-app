@@ -17,7 +17,7 @@ const page = () => {
   // const router = useRouter();
  
   // console.log(usePathname());
-  const [active, setActive] = useState(false)
+  const [active, setactive] = useState(false)
 
 
   const data = [
@@ -169,7 +169,7 @@ const page = () => {
                     </td>
                     <td className="px-6 py-4">
 
-                        <Image onClick={()=> setActive(!active)} src={edit} alt="edit" className=" cursor-pointer" />
+                        <Image onClick={()=> setactive(!active)} src={edit} alt="edit" className=" cursor-pointer" />
                         {
                           active && <Edit/>
                         }
