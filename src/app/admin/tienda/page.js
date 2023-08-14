@@ -30,38 +30,38 @@ const Tienda = () => {
       precio: 100,
       cntd: 5,
       status: 'Publicado'
-    // },
-    // {
-    //   id: 2,
-    //   producto: "Producto 1",
-    //   categoria: "Mascotas",
-    //   stock: false,
-    //   sku: "SKU123",
-    //   precio: 100,
-    //   cntd: 5,
-    //   status: 'Pendiente'
-    // },
-    // {
-    //   id: 3,
-    //   producto: "Producto 1",
-    //   categoria: "Computo",
-    //   stock: true,
-    //   sku: "SKU123",
-    //   precio: 100,
-    //   cntd: 5,
-    //   status: 'Agotado'
-    // },
-    // {
-    //   id: 4,
-    //   producto: "Producto 1",
-    //   categoria: "Computo",
-    //   stock: true,
-    //   sku: "SKU123",
-    //   precio: 100,
-    //   cntd: 5,
-    //   status: "Pendiente"
-    // }
+    },
+    {
+      id: 2,
+      producto: "Producto 1",
+      categoria: "Mascotas",
+      stock: false,
+      sku: "SKU123",
+      precio: 100,
+      cntd: 5,
+      status: 'Pendiente'
+    },
+    {
+      id: 3,
+      producto: "Producto 1",
+      categoria: "Computo",
+      stock: true,
+      sku: "SKU123",
+      precio: 100,
+      cntd: 0,
+      status: 'Agotado'
+    },
+    {
+      id: 4,
+      producto: "Producto 1",
+      categoria: "Computo",
+      stock: true,
+      sku: "SKU123",
+      precio: 100,
+      cntd: 0,
+      status: "Pendiente"
     }
+    
   ];
 
   return (
@@ -141,7 +141,7 @@ const Tienda = () => {
                     </td>
                     <td className="px-6 py-4">{item.categoria}</td>
                     <td className="px-6 py-4">
-                      {item?.stock === true ? (
+                      {item?.cntd != 0 ? (
                         <div className=" text-[60px] text-green">
                           <BiToggleRight />
                         </div>
