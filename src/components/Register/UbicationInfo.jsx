@@ -19,7 +19,7 @@ const UbicationInfo = () => {
     router.push("/register/phone");
   };
   return (
-    <div className=" max-w-[350px] sm:max-w-[450px]    bg-[#f2f6fb] md:max-w-[550px] md:bg-white flex flex-col items-center gap-3 md:px-10 md:pt-16 pb-10   md:rounded-[57px]">
+    <div className=" max-w-[350px] sm:max-w-[450px]    bg-[#f2f6fb] md:max-w-[550px] md:bg-white flex flex-col gap-3 md:px-10 md:pt-16 pb-10   md:rounded-[57px]">
       <div className="flex justify-center lg:justify-start gap-2">
         <ImageLeft />
         {/* <Image src={left} alt="left" /> */}
