@@ -10,10 +10,11 @@ import Image from "next/image";
 import Footer from "@/components/admin/Footer";
 import Edit from "@/components/admin/Edit";
 import { useState } from "react";
-// import { useRouter, usePathname } from "next/navigation";
+import { useRouter} from "next/navigation";
 
 
 const Tienda = () => {
+  const router = useRouter();
   // const router = useRouter();
  
   // console.log(usePathname());
@@ -102,7 +103,7 @@ const Tienda = () => {
               placeholder="Buscar producto"
               className="border border-[#3C4A5B] rounded-[10px] px-2 text-[22px]"
             />
-            <button className="bg-green h-[45px] text-[24px] text-white   w-[272px]  rounded-[20px]">
+            <button onClick={()=> router.push('/admin/tienda/addproduct')} className="bg-green h-[45px] text-[24px] text-white   w-[272px]  rounded-[20px]">
               + Agregar Producto
             </button>
           </div>
