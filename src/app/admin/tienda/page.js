@@ -7,13 +7,18 @@ import edit from '../../../assets/img/admin/svg/bxs-edit.svg'
 import { BiToggleRight } from "react-icons/bi";
 import { MdToggleOff } from "react-icons/md";
 import Image from "next/image";
-import { useRouter, usePathname } from "next/navigation";
+import Footer from "@/components/admin/Footer";
+import Edit from "@/components/admin/Edit";
+import { useState } from "react";
+import { useRouter} from "next/navigation";
 
 
-const page = () => {
+const Tienda = () => {
   const router = useRouter();
+  // const router = useRouter();
  
-  console.log(usePathname());
+  // console.log(usePathname());
+  const [active, setactive] = useState(false)
 
 
   const data = [
@@ -44,7 +49,7 @@ const page = () => {
       stock: true,
       sku: "SKU123",
       precio: 100,
-      cntd: 5,
+      cntd: 0,
       status: 'Agotado'
     },
     {
@@ -54,10 +59,10 @@ const page = () => {
       stock: true,
       sku: "SKU123",
       precio: 100,
-      cntd: 5,
+      cntd: 0,
       status: "Pendiente"
     }
-    // Agrega más datos ficticios aquí
+    
   ];
 
   return (
@@ -78,7 +83,7 @@ const page = () => {
           </div>
         </div>
 
-        <div className="w-full h-[630px] bg-white px-10 py-3 rounded-[20px]">
+        <div className="w-full pb-5 bg-white px-10 py-3 rounded-[20px]">
           <h4 className="text-[28px] text-[#3C4A5B] font-[500]">Filtros</h4>
           <div className="flex justify-between">
             <select className="w-[375px] h-[45px] text-[24px] text-[#3C4A5B] border border-[#3C4A5B] rounded-[10px] px-2">
@@ -98,10 +103,12 @@ const page = () => {
               placeholder="Buscar producto"
               className="border border-[#3C4A5B] rounded-[10px] px-2 text-[22px]"
             />
-            <button className="bg-green h-[45px] text-[24px] text-white   w-[272px]  rounded-[20px]">
+            <button onClick={()=> router.push('/admin/tienda/addproduct')} className="bg-green h-[45px] text-[24px] text-white   w-[272px]  rounded-[20px]">
               + Agregar Producto
             </button>
           </div>
+
+
 
           <div className="flex justify-center mt-8 text-[#3C4A5B]">
             <table className="w-full bg-white border border-gray-300">
@@ -135,7 +142,7 @@ const page = () => {
                     </td>
                     <td className="px-6 py-4">{item.categoria}</td>
                     <td className="px-6 py-4">
-                      {item?.stock === true ? (
+                      {item?.cntd != 0 ? (
                         <div className=" text-[60px] text-green">
                           <BiToggleRight />
                         </div>
@@ -163,18 +170,22 @@ const page = () => {
                     </td>
                     <td className="px-6 py-4">
 
-                        <Image src={edit} alt="edit" className="" />
-
+                        <Image onClick={()=> setactive(!active)} src={edit} alt="edit" className=" cursor-pointer" />
+                        {
+                          active && <Edit/>
+                        }
                     </td>
                   </tr>
                 ))}
+ 
               </tbody>
             </table>
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };
 
-export default page;
+export default Tienda;
