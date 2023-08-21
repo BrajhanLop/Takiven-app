@@ -1,9 +1,10 @@
 "use client";
 import Card from "@/components/admin/Card";
 import NavbarAdmin from "@/components/admin/NavbarAdmin";
-import card1 from "../../../assets/img/admin/card1.svg";
-import despacho from "../../../assets/img/admin/despacho.png";
 import edit from "../../../assets/img/admin/svg/bxs-edit.svg";
+import packages from "../../../assets/img/admin/svg/bx-package.svg";
+import arrow from "../../../assets/img/admin/svg/bx-arrow-to-top.svg";
+
 import { BiToggleRight } from "react-icons/bi";
 import { MdToggleOff } from "react-icons/md";
 import Image from "next/image";
@@ -11,6 +12,7 @@ import Footer from "@/components/admin/Footer";
 import Edit from "@/components/admin/Edit";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+
 
 const Tienda = () => {
   const router = useRouter();
@@ -91,15 +93,15 @@ const Tienda = () => {
       <div className="ml-[90px] flex flex-col gap-2">
         <div className="bg-white rounded-[20px] ">
           <div className="flex justify-evenly">
-            <Card img={card1} title="Ventas del día" amount="S/. 1,000.00" />
+            <Card img={arrow} title="Ventas del día" amount="S/. 1,000.00" color='#3FD077' />
             <div className="border-l border-[#3C4A5B] my-4"></div>
-            <Card img={card1} title="Ventas de la semana" amount="S/. 10,000.00" />
+            <Card img={arrow} title="Ventas de la semana" amount="S/. 10,000.00"  color='#3FD077' />
             <div className="border-l border-[#3C4A5B] my-4"></div>
-            <Card img={despacho} title="Pedidos nuevos" amount="+20" />
+            <Card img={packages} title="Pedidos nuevos" amount="+20" color='#3FD0D0'/>
+            <div className="border-l border-[#3C4A5B] my-4" ></div>
+            <Card img={packages} title="Entregados" amount="120" color='#3FD0D0' />
             <div className="border-l border-[#3C4A5B] my-4"></div>
-            <Card img={despacho} title="Entregados" amount="120" />
-            <div className="border-l border-[#3C4A5B] my-4"></div>
-            <Card img={despacho} title="Pedidos Totales" amount="140" />
+            <Card img={packages} title="Pedidos Totales" amount="140" color='#3FD0D0'/>
           </div>
         </div>
 

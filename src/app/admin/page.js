@@ -9,6 +9,9 @@ import Image from "next/image";
 import Sidebar from "@/components/admin/Sidebar";
 import NavbarAdmin from "@/components/admin/NavbarAdmin";
 import Footer from "@/components/admin/Footer";
+import packages from "../../assets/img/admin/svg/bx-package.svg";
+import arrow from "../../assets/img/admin/svg/bx-arrow-to-top.svg";
+import usercheck from "../../assets/img/admin/svg/bxs-user-check.svg";
 const page = () => {
   return (
     <div className=" bg-[#EDF0F1]  flex">
@@ -17,12 +20,12 @@ const page = () => {
         <div className="flex flex-col ml-[90px] lg:flex-row">
           <div className="lg:w-7/12 w-full flex flex-col justify-between">
             <div className="flex justify-evenly lg:justify-between flex-wrap gap-2  p-4 ">
-              <Card img={card1} title="Ventas del lunes" amount="S/. 1,000.00" />
-              <Card img={card1} title="Ventas de la semana" amount="S/. 2,000.00" />
-              <Card img={card1} title="Ventas total del mes" amount="S/. 8,000.00" />
-              <Card img={card2} title="Usuarios Online" amount="100" />
-              <Card img={card2} title="Usuarios Registrados" amount="1500" />
-              <Card img={card2} title="Nuevos Usuarios" amount="120" />
+              <Card img={arrow} title="Ventas del lunes" amount="S/. 1,000.00" color='#3FD077' />
+              <Card img={arrow} title="Ventas de la semana" amount="S/. 2,000.00" color='#3FD077'  />
+              <Card img={arrow} title="Ventas total del mes" amount="S/. 8,000.00" color='#3FD077' />
+              <Card img={usercheck} title="Usuarios Online" amount="100" color='#3FD0A4' />
+              <Card img={usercheck} title="Usuarios Registrados" amount="1500" color='#3FD0A4'  />
+              <Card img={usercheck} title="Nuevos Usuarios" amount="120" color='#3FD0A4'  />
             </div>
 
             <div className="bg-white rounded-[20px] text-[#3C4A5B] p-4 mx-4 ">

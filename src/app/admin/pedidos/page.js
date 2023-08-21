@@ -3,8 +3,13 @@ import NavbarAdmin from "@/components/admin/NavbarAdmin";
 import alert from "../../../assets/img/admin/alert.png";
 import check from "../../../assets/img/admin/check.png";
 import edit from "../../../assets/img/admin/svg/bxs-edit.svg";
-import despacho from "../../../assets/img/admin/despacho.png";
+import checkdouble from "../../../assets/img/admin/svg/bx-check-double.svg";
+import packages from "../../../assets/img/admin/svg/bx-package.svg";
+import alarm from "../../../assets/img/admin/svg/bxs-alarm-exclamation.svg";
+
 import Image from "next/image";
+
+
 
 const page = () => {
   const data = [
@@ -60,15 +65,15 @@ const page = () => {
         <div className="bg-white rounded-[20px] ">
           <div className="bg-white rounded-[20px] ">
             <div className="flex justify-evenly">
-              <Card img={check} title="Ventas pagdas" amount="120" />
+              <Card img={checkdouble} title="Ventas pagdas" amount="120" color='#3FD077' />
               <div className="border-l border-[#3C4A5B] my-4"></div>
-              <Card img={check} title="Ventas totales" amount="S/. 40,000.00" />
+              <Card img={checkdouble} title="Ventas totales" amount="S/. 40,000.00" color='#3FD077' />
               <div className="border-l border-[#3C4A5B] my-4"></div>
-              <Card img={despacho} title="Pedidos nuevos" amount="+20" />
+              <Card img={packages} title="Pedidos nuevos" amount="+20" color='#3FD0D0' />
               <div className="border-l border-[#3C4A5B] my-4"></div>
-              <Card img={despacho} title="Entregados" amount="120" />
+              <Card img={packages} title="Entregados" amount="120" color='#3FD0D0' />
               <div className="border-l border-[#3C4A5B] my-4"></div>
-              <Card img={alert} title="Pedidos Perdidos" amount="10" />
+              <Card img={alarm} title="Pedidos Perdidos" amount="10" color='#FF8084' />
             </div>
           </div>
 
