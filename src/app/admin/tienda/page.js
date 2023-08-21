@@ -1,25 +1,46 @@
-'use client'
+"use client";
 import Card from "@/components/admin/Card";
 import NavbarAdmin from "@/components/admin/NavbarAdmin";
 import card1 from "../../../assets/img/admin/card1.svg";
 import despacho from "../../../assets/img/admin/despacho.png";
-import edit from '../../../assets/img/admin/svg/bxs-edit.svg'
+import edit from "../../../assets/img/admin/svg/bxs-edit.svg";
 import { BiToggleRight } from "react-icons/bi";
 import { MdToggleOff } from "react-icons/md";
 import Image from "next/image";
 import Footer from "@/components/admin/Footer";
 import Edit from "@/components/admin/Edit";
-import { useState } from "react";
-import { useRouter} from "next/navigation";
-
+import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 
 const Tienda = () => {
   const router = useRouter();
-  // const router = useRouter();
- 
-  // console.log(usePathname());
-  const [active, setactive] = useState(false)
+  
+  const [selectedTask, setSelectedTask] = useState(null);
 
+
+  const closeOnOutsideClick = (e) => {
+    if (selectedTask && e.target.closest('.modal-container') === null) {
+      closeModal();
+    }
+  };
+
+  const openModal = task => {
+    setSelectedTask(task.id);
+    console.log(task.id);
+  };
+
+  const closeModal = () => {
+    setSelectedTask(null);
+  };
+
+
+  useEffect(() => {
+    document.addEventListener('click', closeOnOutsideClick);
+
+    return () => {
+      document.removeEventListener('click', closeOnOutsideClick);
+    };
+  }, [selectedTask]);
 
   const data = [
     {
@@ -30,7 +51,7 @@ const Tienda = () => {
       sku: "SKU123",
       precio: 100,
       cntd: 5,
-      status: 'Publicado'
+      status: "Publicado"
     },
     {
       id: 2,
@@ -40,7 +61,7 @@ const Tienda = () => {
       sku: "SKU123",
       precio: 100,
       cntd: 5,
-      status: 'Pendiente'
+      status: "Pendiente"
     },
     {
       id: 3,
@@ -50,7 +71,7 @@ const Tienda = () => {
       sku: "SKU123",
       precio: 100,
       cntd: 0,
-      status: 'Agotado'
+      status: "Agotado"
     },
     {
       id: 4,
@@ -62,7 +83,6 @@ const Tienda = () => {
       cntd: 0,
       status: "Pendiente"
     }
-    
   ];
 
   return (
@@ -103,12 +123,12 @@ const Tienda = () => {
               placeholder="Buscar producto"
               className="border border-[#3C4A5B] rounded-[10px] px-2 text-[22px]"
             />
-            <button onClick={()=> router.push('/admin/tienda/addproduct')} className="bg-green h-[45px] text-[24px] text-white   w-[272px]  rounded-[20px]">
+            <button
+              onClick={() => router.push("/admin/tienda/addproduct")}
+              className="bg-green h-[45px] text-[24px] text-white   w-[272px]  rounded-[20px]">
               + Agregar Producto
             </button>
           </div>
-
-
 
           <div className="flex justify-center mt-8 text-[#3C4A5B]">
             <table className="w-full bg-white border border-gray-300">
@@ -156,34 +176,38 @@ const Tienda = () => {
                     <td className="px-6 py-4">{item.precio}</td>
                     <td className="px-6 py-4">{item.cntd}</td>
                     <td className="px-6 py-4">
-                      {item?.status === 'Publicado' ? (
-                        <p className="bg-[#E6F7D9] text-[#8BDA4F] text-center py-1 px-2  rounded-[5px]">Publicado</p>
-                      ) : 
-                      item?.status === 'Pendiente' ?
-                      (
-                        <p className="bg-[#FFF4D9] text-[#FFB608] text-center py-1 px-2  rounded-[5px]">Pendiente</p>
-                      ):
-                      (
-                        <p className="bg-[#FFE4E5] text-[#FF8084] text-center py-1 px-2  rounded-[5px]">Agotado</p>
-                      )
-                      }
+                      {item?.status === "Publicado" ? (
+                        <p className="bg-[#E6F7D9] text-[#8BDA4F] text-center py-1 px-2  rounded-[5px]">
+                          Publicado
+                        </p>
+                      ) : item?.status === "Pendiente" ? (
+                        <p className="bg-[#FFF4D9] text-[#FFB608] text-center py-1 px-2  rounded-[5px]">
+                          Pendiente
+                        </p>
+                      ) : (
+                        <p className="bg-[#FFE4E5] text-[#FF8084] text-center py-1 px-2  rounded-[5px]">
+                          Agotado
+                        </p>
+                      )}
                     </td>
-                    <td className="px-6 py-4">
+                    <td className="px-6 py-4 relative">
+                      <Image
+                        onClick={() => openModal(item)}
+                        src={edit}
+                        alt="edit"
+                        className=" cursor-pointer"
+                      />
 
-                        <Image onClick={()=> setactive(!active)} src={edit} alt="edit" className=" cursor-pointer" />
-                        {
-                          active && <Edit/>
-                        }
+                      {selectedTask === item.id && <Edit />}
                     </td>
                   </tr>
                 ))}
- 
               </tbody>
             </table>
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };
