@@ -5,7 +5,7 @@ const Card = ({img, title, amount, color}) => {
   return (
     <div className="w-[220px] h-[126px] text-[#3C4A5B] bg-white p-2 rounded-[20px] flex flex-col justify-center items-center gap-1">
       <div className="flex justify-center items-center gap-3">
-        <div className={`w-[40px] h-[40px] rounded-[10px] bg-[${color}] flex justify-center items-center`}>
+        <div className={`w-[40px] h-[40px] rounded-[10px] flex justify-center items-center`} style={{backgroundColor: color}}>
 
         <Image src={img} alt="" />
         </div>

@@ -18,9 +18,9 @@ const Sidebar = () => {
   console.log(usePathname());
 
   return (
-    <div className="fixed h-screen left-0 top-0 bg-[#EDF0F1] w-[90px] flex flex-col gap-5 items-center">
-      <div>
-        <Image src={takivn} alt="" />
+    <div className="fixed h-screen left-0 top-0 bg-[#EDF0F1] w-[90px] flex flex-col gap-5 items-center mt-3">
+      <div className=" h-[70px] w-[60px]">
+        <Image src={takivn} alt="" className=" h-full w-full" />
       </div>
       <div
         onClick={() => router.push("/admin")}

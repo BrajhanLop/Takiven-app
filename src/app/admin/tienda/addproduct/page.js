@@ -166,7 +166,9 @@ const AddProduct = () => {
                       <div className="w-[184px] h-[266px] border-dashed border-2 border-gray-300 flex justify-center items-center rounded-[20px] flex-col">
                         <img src={selectedImage} alt="Selected" className="w-full h-auto" />
                         <div className="border-dashed border-t border-b border-gray-300 w-full">
-                          <p className="text-[14px] text-gray-300 font-[300]">Nombre del Archivo subido</p>
+                          <p className="text-[14px] text-gray-300 font-[300]">
+                            Nombre del Archivo subido
+                          </p>
                           <p className="text-[10px] font-[500] text-gray-300">0.5MB</p>
                         </div>
                         <p className="text-[14px] text-gray-300 font-[500]">Eliminar Foto</p>
@@ -332,6 +334,11 @@ const AddProduct = () => {
               <p className="font-[300] text-[16px] mt-2">
                 El producto debe contar con 5 especificaciones basicas.
               </p>
+            </div>
+            <div className="flex justify-end h-full items-end cursor-pointer">
+              <button className="bg-[#29E197] text-white w-[247px] h-[65px] rounded-[20px]">
+                Publicar
+              </button>
             </div>
           </div>
         </div>

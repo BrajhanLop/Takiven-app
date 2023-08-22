@@ -8,6 +8,7 @@ import packages from "../../../assets/img/admin/svg/bx-package.svg";
 import alarm from "../../../assets/img/admin/svg/bxs-alarm-exclamation.svg";
 
 import Image from "next/image";
+import Footer from "@/components/admin/Footer";
 
 
 
@@ -93,16 +94,16 @@ const page = () => {
                 <div>
                   <p className="text-[18px] text-[#3C4A5B] font-[300]">Desde:</p>
                   <input
-                    className="border border-[#3C4A5B] w-[185px] h-[45px] rounded-[5px]"
-                    type="text"
+                    className="border border-[#3C4A5B] w-[185px] h-[45px] rounded-[5px] px-2"
+                    type="date"
                   />
                 </div>
 
                 <div>
                   <p className="text-[18px] text-[#3C4A5B] font-[300]">Hasta:</p>
                   <input
-                    className="border border-[#3C4A5B] w-[185px] h-[45px] rounded-[5px]"
-                    type="text"
+                    className="border border-[#3C4A5B] w-[185px] h-[45px] rounded-[5px] px-2"
+                    type="date"
                   />
                 </div>
               </div>
@@ -200,6 +201,7 @@ const page = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

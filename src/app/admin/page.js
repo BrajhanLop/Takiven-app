@@ -11,6 +11,8 @@ import NavbarAdmin from "@/components/admin/NavbarAdmin";
 import Footer from "@/components/admin/Footer";
 import packages from "../../assets/img/admin/svg/bx-package.svg";
 import arrow from "../../assets/img/admin/svg/bx-arrow-to-top.svg";
+import star from "../../assets/img/admin/svg/bxs-star-half.svg";
+import user from "../../assets/img/admin/svg/bxs-user-voice.svg";
 import usercheck from "../../assets/img/admin/svg/bxs-user-check.svg";
 const page = () => {
   return (
@@ -19,18 +21,27 @@ const page = () => {
         <NavbarAdmin />
         <div className="flex flex-col ml-[90px] lg:flex-row">
           <div className="lg:w-7/12 w-full flex flex-col justify-between">
-            <div className="flex justify-evenly lg:justify-between flex-wrap gap-2  p-4 ">
-              <Card img={arrow} title="Ventas del lunes" amount="S/. 1,000.00" color='#3FD077' />
-              <Card img={arrow} title="Ventas de la semana" amount="S/. 2,000.00" color='#3FD077'  />
-              <Card img={arrow} title="Ventas total del mes" amount="S/. 8,000.00" color='#3FD077' />
-              <Card img={usercheck} title="Usuarios Online" amount="100" color='#3FD0A4' />
-              <Card img={usercheck} title="Usuarios Registrados" amount="1500" color='#3FD0A4'  />
-              <Card img={usercheck} title="Nuevos Usuarios" amount="120" color='#3FD0A4'  />
+            <div className="flex justify-evenly  md:justify-around xl:justify-between flex-wrap gap-2  p-4 ">
+              <Card img={arrow} title="Ventas del lunes" amount="S/. 1,000.00" color="#3FD077" />
+              <Card img={arrow} title="Ventas de la semana" amount="S/. 2,000.00" color="#3FD077" />
+              <Card
+                img={arrow}
+                title="Ventas total del mes"
+                amount="S/. 8,000.00"
+                color="#3FD077"
+              />
+              <Card img={usercheck} title="Usuarios Online" amount="100" color="#3FD0A4" />
+              <Card img={usercheck} title="Usuarios Registrados" amount="1500" color="#3FD0A4" />
+              <Card img={usercheck} title="Nuevos Usuarios" amount="120" color="#3FD0A4" />
             </div>
 
             <div className="bg-white rounded-[20px] text-[#3C4A5B] p-4 mx-4 ">
               <div className="flex gap-3">
-                <Image src={despacho} alt="" />
+                <div
+                  className={`w-[40px] h-[40px] rounded-[10px] flex justify-center items-center bg-[#3FD0D0]`}
+                  >
+                  <Image src={packages} alt="" />
+                </div>
                 <p className=" xl:text-[28px] md:text-[26px] text-[22px] font-[400]">Despacho</p>
               </div>
               <div className="">
@@ -85,7 +96,11 @@ const page = () => {
           <div className="lg:w-5/12 w-full">
             <div className=" py-4 px-4 text-[#3C4A5B] bg-white rounded-[20px] mt-4 mx-4">
               <div className=" flex gap-3 h-[40px] ">
-                <Image src={start} alt="" />
+              <div
+                  className={`w-[40px] h-[40px] rounded-[10px] flex justify-center items-center bg-[#D0B03F]`}
+                  >
+                  <Image src={star} alt="" />
+                </div>
                 <h3 className="xl:text-[28px] lg:text-[24px] text-[22px]  font-[400]">
                   Productos mas vendidos
                 </h3>
@@ -127,7 +142,11 @@ const page = () => {
 
             <div className=" py-4 px-4 text-[#3C4A5B] bg-white rounded-[20px] mt-4 mx-4">
               <div className=" flex gap-3 ">
-                <Image src={uservend} alt="" />
+              <div
+                  className={`w-[40px] h-[40px] rounded-[10px] flex justify-center items-center bg-[#D0B03F]`}
+                  >
+                  <Image src={user} alt="" />
+                </div>
                 <h3 className="xl:text-[28px] lg:text-[26px] font-[400] text-[22px] ">Usuarios</h3>
               </div>
               <div className="">
@@ -166,7 +185,7 @@ const page = () => {
             </div>
           </div>
         </div>
-        <Footer/>
+        <Footer />
       </div>
     </div>
   );
