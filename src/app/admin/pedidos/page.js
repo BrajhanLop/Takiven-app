@@ -1,3 +1,4 @@
+"use client";
 import Card from "@/components/admin/Card";
 import NavbarAdmin from "@/components/admin/NavbarAdmin";
 import alert from "../../../assets/img/admin/alert.png";
@@ -9,8 +10,10 @@ import alarm from "../../../assets/img/admin/svg/bxs-alarm-exclamation.svg";
 import { AiFillCaretLeft, AiFillCaretRight } from "react-icons/ai";
 import Image from "next/image";
 import Footer from "@/components/admin/Footer";
-
-
+import { useEffect, useState } from "react";
+import Edit from "@/components/admin/Edit";
+import EditPedidos from "@/components/admin/EditPedidos";
+import { useRouter } from "next/navigation";
 
 const page = () => {
   const data = [
@@ -59,6 +62,33 @@ const page = () => {
       status: "Enviado"
     }
   ];
+  const router = useRouter();
+   const [selectedTask, setSelectedTask] = useState(null);
+
+
+  const closeOnOutsideClick = e => {
+    if (selectedTask && e.target.closest(".modal-container") === null) {
+      closeModal();
+    }
+  };
+
+  const openModal = task => {
+    setSelectedTask(task.id);
+    console.log(task.id);
+  };
+
+  const closeModal = () => {
+    setSelectedTask(null);
+  };
+
+  useEffect(() => {
+    document.addEventListener("click", closeOnOutsideClick);
+
+    return () => {
+      document.removeEventListener("click", closeOnOutsideClick);
+    };
+  }, [selectedTask]);
+
   return (
     <div className="flex flex-col max-w-[1350px] w-full">
       <NavbarAdmin />
@@ -66,15 +96,20 @@ const page = () => {
         <div className="bg-white rounded-[20px] ">
           <div className="bg-white rounded-[20px] ">
             <div className="flex justify-evenly">
-              <Card img={checkdouble} title="Ventas pagdas" amount="120" color='#3FD077' />
+              <Card img={checkdouble} title="Ventas pagdas" amount="120" color="#3FD077" />
               <div className="border-l border-[#3C4A5B] my-4"></div>
-              <Card img={checkdouble} title="Ventas totales" amount="S/. 40,000.00" color='#3FD077' />
+              <Card
+                img={checkdouble}
+                title="Ventas totales"
+                amount="S/. 40,000.00"
+                color="#3FD077"
+              />
               <div className="border-l border-[#3C4A5B] my-4"></div>
-              <Card img={packages} title="Pedidos nuevos" amount="+20" color='#3FD0D0' />
+              <Card img={packages} title="Pedidos nuevos" amount="+20" color="#3FD0D0" />
               <div className="border-l border-[#3C4A5B] my-4"></div>
-              <Card img={packages} title="Entregados" amount="120" color='#3FD0D0' />
+              <Card img={packages} title="Entregados" amount="120" color="#3FD0D0" />
               <div className="border-l border-[#3C4A5B] my-4"></div>
-              <Card img={alarm} title="Pedidos Perdidos" amount="10" color='#FF8084' />
+              <Card img={alarm} title="Pedidos Perdidos" amount="10" color="#FF8084" />
             </div>
           </div>
 
@@ -191,30 +226,31 @@ const page = () => {
                         )}
                       </td>
                       <td className="px-6 py-4 relative">
-                        <Image src={edit} alt="edit" className=" cursor-pointer" />
+                        <Image onClick={() => openModal(item)} src={edit} alt="edit" className=" cursor-pointer" />
+                        {selectedTask === item.id && <EditPedidos/>}
                       </td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
-          </div>
-        </div>
-        <div className="flex mt-5 justify-end mr-8">
-          <div className="text-[#3C4A5B] flex items-center text-[20px] mr-2">
-            <AiFillCaretLeft />
-          </div>
-          <div className="bg-[#3C4A5B] h-[40px] w-[40px] rounded-full flex justify-center items-center">
-            <p className=" text-white"> 1</p>
-          </div>
-          <div className="text-[#3C4A5B] h-[40px] w-[40px] rounded-full  flex justify-center items-center">
-            <p>2</p>
-          </div>
-          <div className="text-[#3C4A5B] h-[40px] w-[40px] rounded-full  flex justify-center items-center">
-            <p>3</p>
-          </div>
-          <div className="text-[#3C4A5B] flex items-center text-[20px]">
-            <AiFillCaretRight />
+            <div className="flex mt-5 justify-end ">
+              <div className="text-[#3C4A5B] flex items-center text-[20px] mr-2">
+                <AiFillCaretLeft />
+              </div>
+              <div className="bg-[#3C4A5B] h-[36px] w-[36px] rounded-full flex justify-center items-center">
+                <p className=" text-white"> 1</p>
+              </div>
+              <div className="text-[#3C4A5B] h-[36px] w-[36px] rounded-full  flex justify-center items-center">
+                <p>2</p>
+              </div>
+              <div className="text-[#3C4A5B] h-[36px] w-[36px] rounded-full  flex justify-center items-center">
+                <p>3</p>
+              </div>
+              <div className="text-[#3C4A5B] flex items-center text-[20px]">
+                <AiFillCaretRight />
+              </div>
+            </div>
           </div>
         </div>
       </div>

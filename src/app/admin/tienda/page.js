@@ -13,12 +13,54 @@ import Edit from "@/components/admin/Edit";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
+const data = [
+  {
+    id: 1,
+    producto: "Producto 1",
+    categoria: "Zapatillas",
+    stock: true,
+    sku: "SKU123",
+    precio: 100,
+    cntd: 5,
+    status: "Publicado"
+  },
+  {
+    id: 2,
+    producto: "Producto 1",
+    categoria: "Mascotas",
+    stock: true,
+    sku: "SKU123",
+    precio: 100,
+    cntd: 5,
+    status: "Pendiente"
+  },
+  {
+    id: 3,
+    producto: "Producto 1",
+    categoria: "Computo",
+    stock: false,
+    sku: "SKU123",
+    precio: 100,
+    cntd: 0,
+    status: "Agotado"
+  },
+  {
+    id: 4,
+    producto: "Producto 1",
+    categoria: "Computo",
+    stock: false,
+    sku: "SKU123",
+    precio: 100,
+    cntd: 0,
+    status: "Pendiente"
+  }
+];
+
 const Tienda = () => {
   const router = useRouter();
-
   const [selectedTask, setSelectedTask] = useState(null);
   const [activeStock, setActiveStock] = useState(false);
-  const [datos, setDatos] = useState(false);
+  const [datos, setDatos] = useState(data);
 
   const closeOnOutsideClick = e => {
     if (selectedTask && e.target.closest(".modal-container") === null) {
@@ -47,48 +89,11 @@ const Tienda = () => {
     setActiveStock(!activeStock);
   };
 
-  const data = [
-    {
-      id: 1,
-      producto: "Producto 1",
-      categoria: "Zapatillas",
-      stock: true,
-      sku: "SKU123",
-      precio: 100,
-      cntd: 5,
-      status: "Publicado"
-    },
-    {
-      id: 2,
-      producto: "Producto 1",
-      categoria: "Mascotas",
-      stock: false,
-      sku: "SKU123",
-      precio: 100,
-      cntd: 5,
-      status: "Pendiente"
-    },
-    {
-      id: 3,
-      producto: "Producto 1",
-      categoria: "Computo",
-      stock: true,
-      sku: "SKU123",
-      precio: 100,
-      cntd: 0,
-      status: "Agotado"
-    },
-    {
-      id: 4,
-      producto: "Producto 1",
-      categoria: "Computo",
-      stock: true,
-      sku: "SKU123",
-      precio: 100,
-      cntd: 0,
-      status: "Pendiente"
-    }
-  ];
+  const toggleStock = index => {
+    const updatedProducts = [...datos];
+    updatedProducts[index].stock = !updatedProducts[index].stock;
+    setDatos(updatedProducts);
+  };
 
   return (
     <div className="flex flex-col max-w-[1350px] w-full">
@@ -153,7 +158,7 @@ const Tienda = () => {
                 </tr>
               </thead>
               <tbody>
-                {data.map(item => (
+                {datos.map((item, index) => (
                   <tr key={item.id}>
                     <td className="px-6 py-4">
                       <input type="checkbox" />
@@ -167,24 +172,19 @@ const Tienda = () => {
                     </td>
                     <td className="px-6 py-4">{item.categoria}</td>
                     <td className="px-6 py-4">
-                      <div
-                        onClick={handleStock}
-                        className={
-                          activeStock
-                            ? `text-[60px] text-green cursor-pointer`
-                            : `text-[60px] text-gray-300 cursor-pointer`
-                        }>
-                        <BiToggleRight />
-                      </div>
-                      {/* {item?.cntd != 0 ? (
-                        <div onClick={()=>setActiveStock(!activeStock)} className={activeStock ? `text-[60px] text-green cursor-pointer` : `text-[60px] text-gray-300 cursor-pointer`}>
+                      {item.stock ? (
+                        <div
+                          onClick={() => toggleStock(index)}
+                          className={`text-[60px] text-green cursor-pointer`}>
                           <BiToggleRight />
                         </div>
                       ) : (
-                        <div className=" text-[60px] text-gray-300 cursor-pointer">
+                        <div
+                          onClick={() => toggleStock(index)}
+                          className=" text-[60px] text-gray-300 cursor-pointer">
                           <MdToggleOff />
                         </div>
-                      )} */}
+                      )}
                     </td>
                     <td className="px-6 py-4">{item.sku}</td>
                     <td className="px-6 py-4">{item.precio}</td>
@@ -219,24 +219,25 @@ const Tienda = () => {
               </tbody>
             </table>
           </div>
-        </div>
-        <div className="flex mt-5 justify-end mr-8">
+          <div className="flex mt-5 justify-end mr-8">
           <div className="text-[#3C4A5B] flex items-center text-[20px] mr-2">
             <AiFillCaretLeft />
           </div>
-          <div className="bg-[#3C4A5B] h-[40px] w-[40px] rounded-full flex justify-center items-center">
+          <div className="bg-[#3C4A5B] h-[36px] w-[36px] rounded-full flex justify-center items-center">
             <p className=" text-white"> 1</p>
           </div>
-          <div className="text-[#3C4A5B] h-[40px] w-[40px] rounded-full  flex justify-center items-center">
+          <div className="text-[#3C4A5B] h-[36px] w-[36px] rounded-full  flex justify-center items-center">
             <p>2</p>
           </div>
-          <div className="text-[#3C4A5B] h-[40px] w-[40px] rounded-full  flex justify-center items-center">
+          <div className="text-[#3C4A5B] h-[36px] w-[36px] rounded-full  flex justify-center items-center">
             <p>3</p>
           </div>
           <div className="text-[#3C4A5B] flex items-center text-[20px]">
             <AiFillCaretRight />
           </div>
         </div>
+        </div>
+
       </div>
       <Footer />
     </div>
