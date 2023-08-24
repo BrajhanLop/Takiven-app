@@ -6,7 +6,7 @@ import edit from "../../../assets/img/admin/svg/bxs-edit.svg";
 import checkdouble from "../../../assets/img/admin/svg/bx-check-double.svg";
 import packages from "../../../assets/img/admin/svg/bx-package.svg";
 import alarm from "../../../assets/img/admin/svg/bxs-alarm-exclamation.svg";
-
+import { AiFillCaretLeft, AiFillCaretRight } from "react-icons/ai";
 import Image from "next/image";
 import Footer from "@/components/admin/Footer";
 
@@ -198,6 +198,23 @@ const page = () => {
                 </tbody>
               </table>
             </div>
+          </div>
+        </div>
+        <div className="flex mt-5 justify-end mr-8">
+          <div className="text-[#3C4A5B] flex items-center text-[20px] mr-2">
+            <AiFillCaretLeft />
+          </div>
+          <div className="bg-[#3C4A5B] h-[40px] w-[40px] rounded-full flex justify-center items-center">
+            <p className=" text-white"> 1</p>
+          </div>
+          <div className="text-[#3C4A5B] h-[40px] w-[40px] rounded-full  flex justify-center items-center">
+            <p>2</p>
+          </div>
+          <div className="text-[#3C4A5B] h-[40px] w-[40px] rounded-full  flex justify-center items-center">
+            <p>3</p>
+          </div>
+          <div className="text-[#3C4A5B] flex items-center text-[20px]">
+            <AiFillCaretRight />
           </div>
         </div>
       </div>

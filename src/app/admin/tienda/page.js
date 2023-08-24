@@ -4,7 +4,7 @@ import NavbarAdmin from "@/components/admin/NavbarAdmin";
 import edit from "../../../assets/img/admin/svg/bxs-edit.svg";
 import packages from "../../../assets/img/admin/svg/bx-package.svg";
 import arrow from "../../../assets/img/admin/svg/bx-arrow-to-top.svg";
-
+import { AiFillCaretLeft, AiFillCaretRight } from "react-icons/ai";
 import { BiToggleRight } from "react-icons/bi";
 import { MdToggleOff } from "react-icons/md";
 import Image from "next/image";
@@ -13,15 +13,15 @@ import Edit from "@/components/admin/Edit";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
-
 const Tienda = () => {
   const router = useRouter();
-  
+
   const [selectedTask, setSelectedTask] = useState(null);
+  const [activeStock, setActiveStock] = useState(false);
+  const [datos, setDatos] = useState(false);
 
-
-  const closeOnOutsideClick = (e) => {
-    if (selectedTask && e.target.closest('.modal-container') === null) {
+  const closeOnOutsideClick = e => {
+    if (selectedTask && e.target.closest(".modal-container") === null) {
       closeModal();
     }
   };
@@ -35,14 +35,17 @@ const Tienda = () => {
     setSelectedTask(null);
   };
 
-
   useEffect(() => {
-    document.addEventListener('click', closeOnOutsideClick);
+    document.addEventListener("click", closeOnOutsideClick);
 
     return () => {
-      document.removeEventListener('click', closeOnOutsideClick);
+      document.removeEventListener("click", closeOnOutsideClick);
     };
   }, [selectedTask]);
+
+  const handleStock = () => {
+    setActiveStock(!activeStock);
+  };
 
   const data = [
     {
@@ -93,15 +96,15 @@ const Tienda = () => {
       <div className="ml-[90px] flex flex-col gap-2">
         <div className="bg-white rounded-[20px] ">
           <div className="flex justify-evenly">
-            <Card img={arrow} title="Ventas del día" amount="S/. 1,000.00" color='#3FD077' />
+            <Card img={arrow} title="Ventas del día" amount="S/. 1,000.00" color="#3FD077" />
             <div className="border-l border-[#3C4A5B] my-4"></div>
-            <Card img={arrow} title="Ventas de la semana" amount="S/. 10,000.00"  color='#3FD077' />
+            <Card img={arrow} title="Ventas de la semana" amount="S/. 10,000.00" color="#3FD077" />
             <div className="border-l border-[#3C4A5B] my-4"></div>
-            <Card img={packages} title="Pedidos nuevos" amount="+20" color='#3FD0D0'/>
-            <div className="border-l border-[#3C4A5B] my-4" ></div>
-            <Card img={packages} title="Entregados" amount="120" color='#3FD0D0' />
+            <Card img={packages} title="Pedidos nuevos" amount="+20" color="#3FD0D0" />
             <div className="border-l border-[#3C4A5B] my-4"></div>
-            <Card img={packages} title="Pedidos Totales" amount="140" color='#3FD0D0'/>
+            <Card img={packages} title="Entregados" amount="120" color="#3FD0D0" />
+            <div className="border-l border-[#3C4A5B] my-4"></div>
+            <Card img={packages} title="Pedidos Totales" amount="140" color="#3FD0D0" />
           </div>
         </div>
 
@@ -164,15 +167,24 @@ const Tienda = () => {
                     </td>
                     <td className="px-6 py-4">{item.categoria}</td>
                     <td className="px-6 py-4">
-                      {item?.cntd != 0 ? (
-                        <div className=" text-[60px] text-green">
+                      <div
+                        onClick={handleStock}
+                        className={
+                          activeStock
+                            ? `text-[60px] text-green cursor-pointer`
+                            : `text-[60px] text-gray-300 cursor-pointer`
+                        }>
+                        <BiToggleRight />
+                      </div>
+                      {/* {item?.cntd != 0 ? (
+                        <div onClick={()=>setActiveStock(!activeStock)} className={activeStock ? `text-[60px] text-green cursor-pointer` : `text-[60px] text-gray-300 cursor-pointer`}>
                           <BiToggleRight />
                         </div>
                       ) : (
-                        <div className=" text-[60px] text-gray-300">
+                        <div className=" text-[60px] text-gray-300 cursor-pointer">
                           <MdToggleOff />
                         </div>
-                      )}
+                      )} */}
                     </td>
                     <td className="px-6 py-4">{item.sku}</td>
                     <td className="px-6 py-4">{item.precio}</td>
@@ -206,6 +218,23 @@ const Tienda = () => {
                 ))}
               </tbody>
             </table>
+          </div>
+        </div>
+        <div className="flex mt-5 justify-end mr-8">
+          <div className="text-[#3C4A5B] flex items-center text-[20px] mr-2">
+            <AiFillCaretLeft />
+          </div>
+          <div className="bg-[#3C4A5B] h-[40px] w-[40px] rounded-full flex justify-center items-center">
+            <p className=" text-white"> 1</p>
+          </div>
+          <div className="text-[#3C4A5B] h-[40px] w-[40px] rounded-full  flex justify-center items-center">
+            <p>2</p>
+          </div>
+          <div className="text-[#3C4A5B] h-[40px] w-[40px] rounded-full  flex justify-center items-center">
+            <p>3</p>
+          </div>
+          <div className="text-[#3C4A5B] flex items-center text-[20px]">
+            <AiFillCaretRight />
           </div>
         </div>
       </div>
