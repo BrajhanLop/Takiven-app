@@ -15,7 +15,7 @@ import Edit from "@/components/admin/Edit";
 import EditPedidos from "@/components/admin/EditPedidos";
 import { useRouter } from "next/navigation";
 
-const page = () => {
+const Pedidos = () => {
   const data = [
     {
       id: 1,
@@ -259,4 +259,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Pedidos;
