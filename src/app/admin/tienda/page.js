@@ -85,9 +85,6 @@ const Tienda = () => {
     };
   }, [selectedTask]);
 
-  const handleStock = () => {
-    setActiveStock(!activeStock);
-  };
 
   const toggleStock = index => {
     const updatedProducts = [...datos];
