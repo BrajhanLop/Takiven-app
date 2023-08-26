@@ -65,7 +65,7 @@ const Sidebar = () => {
         onMouseLeave={() => setIsHoverpedido(false)}>
         <FaTruck />
         <p
-          className={`text-[18px]  z-30  pr-2 text-white absolute  cursor-pointer ${
+          className={`text-[18px]  z-30   text-white absolute  cursor-pointer ${
             isHoverpedido ? "opacity-100 relative" : "opacity-0"
           }`}>
           Pedidos
@@ -78,7 +78,7 @@ const Sidebar = () => {
         onMouseLeave={() => setIsHovercuenta(false)}>
         <BiUser />
         <p
-          className={`text-[18px]  z-30  pr-2 text-white absolute  cursor-pointer ${
+          className={`text-[18px]  z-30  text-white absolute  cursor-pointer ${
             isHovercuenta ? "opacity-100 relative" : "opacity-0"
           }`}>
           Mi cuenta

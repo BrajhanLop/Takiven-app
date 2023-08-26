@@ -96,7 +96,7 @@ const Pedidos = () => {
         <div className="bg-white rounded-[20px] ">
           <div className="bg-white rounded-[20px] ">
             <div className="flex justify-evenly">
-              <Card img={checkdouble} title="Ventas pagdas" amount="120" color="#3FD077" />
+              <Card img={checkdouble} title="Ventas pagadas" amount="120" color="#3FD077" />
               <div className="border-l border-[#3C4A5B] my-4"></div>
               <Card
                 img={checkdouble}
