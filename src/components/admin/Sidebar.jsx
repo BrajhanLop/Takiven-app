@@ -60,7 +60,11 @@ const Sidebar = () => {
 
       <div
       onClick={() => router.push("/admin/pedidos")}
-        className={`cursor-pointer text-[40px] w-full hover:left-6 hover:w-[160px] text-[#3C4A5B] hover:text-white hover:bg-[#3C4A5B] gap-4 flex justify-center items-center rounded-r-[20px] py-2 relative z-20`}
+      className={
+        ruta === "/admin/pedidos"
+          ? "cursor-pointer text-[40px] w-full  hover:left-6  hover:w-[160px] text-white bg-[#3C4A5B] gap-4 flex justify-center items-center rounded-r-[20px] py-2 relative z-20"
+          : "cursor-pointer text-[40px] w-full hover:left-6 hover:w-[160px] text-[#3C4A5B] hover:text-white hover:bg-[#3C4A5B] gap-4 flex justify-center items-center rounded-r-[20px] py-2 relative z-20"
+      }
         onMouseEnter={() => setIsHoverpedido(true)}
         onMouseLeave={() => setIsHoverpedido(false)}>
         <FaTruck />

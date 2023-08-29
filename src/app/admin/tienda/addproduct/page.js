@@ -163,15 +163,19 @@ const AddProduct = () => {
 
                   {selectedImage ? (
                     <div className="flex items-center gap-2">
-                      <div className="w-[184px] h-[266px] border-dashed border-2 border-gray-300 flex justify-center items-center rounded-[20px] flex-col">
-                        <img src={selectedImage} alt="Selected" className="w-full h-auto" />
-                        <div className="border-dashed border-t border-b border-gray-300 w-full">
-                          <p className="text-[14px] text-gray-300 font-[300]">
-                            Nombre del Archivo subido
-                          </p>
-                          <p className="text-[10px] font-[500] text-gray-300">0.5MB</p>
+                      <div className="w-[184px] h-[266px] border-dashed border-2 border-gray-300 flex justify-between items-center rounded-[20px] flex-col">
+                        <div className="h-[70%] flex justify-center items-center">
+                          <img src={selectedImage} alt="Selected" className="w-full h-auto py-1 px-2" />
                         </div>
-                        <p className="text-[14px] text-gray-300 font-[500]">Eliminar Foto</p>
+                        <div>
+                          <div className="border-dashed border-t border-b border-gray-300 w-full">
+                            <p className="text-[14px] text-gray-300 font-[300]">
+                              Nombre del Archivo subido
+                            </p>
+                            <p className="text-[10px] font-[500] text-gray-300">0.5MB</p>
+                          </div>
+                          <p className="text-[14px] text-gray-300 font-[500] text-center">Eliminar Foto</p>
+                        </div>
                       </div>
                       <div>
                         <label
