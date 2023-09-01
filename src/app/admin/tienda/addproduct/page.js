@@ -35,21 +35,21 @@ const AddProduct = () => {
         <p className="text-[18px] font-[400] mb-3">Tienda / Agregar Producto</p>
         <div className="flex gap-5 text-[18px]">
           <div className="flex flex-col gap-4">
-            <div className="  w-[839px] bg-white rounded-[20px] p-4 flex flex-col gap-2">
+            <div className="  xl:w-[839px] bg-white rounded-[20px] p-4 flex flex-col gap-2">
               <p className="text-[#3C4A5B] font-[400]">Informacion</p>
-              <div className="flex gap-2">
+              {/* <div className="flex gap-2">
                 <input
                   type="text"
                   placeholder="Marca"
-                  className="w-[191px] h-[44px] rounded-[10px] border font-[300] text-[16px] pl-3"
+                  className="xl:w-[191px] h-[44px] rounded-[10px] border font-[300] text-[16px] pl-3"
                 />
                 <input
                   type="text"
                   placeholder="Nombre del Producto"
-                  className="w-[605px] h-[44px]  rounded-[10px] border text-[16px] font-[300] pl-3"
+                  className="xl:w-[605px] h-[44px]  rounded-[10px] border text-[16px] font-[300] pl-3"
                 />
               </div>
-              <div className="flex items-center gap-2">
+              <div className="flex flex-wrap items-center gap-2">
                 <p>SKU:</p>
                 <input
                   type="text"
@@ -141,11 +141,13 @@ const AddProduct = () => {
                 cols="30"
                 rows="10"
                 placeholder="Agrega una descripcion del producto que vas ofrecer, maximo 1000 caracteres."
-                className="h-[194px] rounded-[10px] border font-[300] text-[16px] pl-3 pr-3 pt-3"></textarea>
+                className="h-[194px] rounded-[10px] border font-[300] text-[16px] pl-3 pr-3 pt-3"></textarea> */}
             </div>
-            <div className="  w-[839px] bg-white rounded-[20px] p-4">
+
+
+            <div className=" lg:w-[400px] xl:w-[839px] bg-white rounded-[20px] p-4">
               <p>Multimedia</p>
-              <div className="w-[807px] h-[351px] border-2 rounded-[10px] flex items-center justify-center">
+              <div className="lg:w-[380px] xl:w-[807px] h-[351px] border-2 rounded-[10px] flex items-center justify-center">
                 <div
                   className=" flex flex-col items-center"
                   onDrop={handleImageDrop}

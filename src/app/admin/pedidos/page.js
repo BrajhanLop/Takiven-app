@@ -93,34 +93,34 @@ const Pedidos = () => {
     <div className="flex flex-col max-w-[1350px] w-full">
       <NavbarAdmin />
       <div className="ml-[90px] flex flex-col gap-2">
-        <div className="bg-white rounded-[20px] ">
+        <div className="bg-white rounded-[20px] mx-2 md:mx-0 ">
           <div className="bg-white rounded-[20px] ">
-            <div className="flex justify-evenly">
+            <div className="flex flex-wrap justify-center lg:flex-nowrap lg:flex lg:justify-evenly">
               <Card img={checkdouble} title="Ventas pagadas" amount="120" color="#3FD077" />
-              <div className="border-l border-[#3C4A5B] my-4"></div>
+              <div className=" hidden md:block border-l border-[#3C4A5B] my-4"></div>
               <Card
                 img={checkdouble}
                 title="Ventas totales"
                 amount="S/. 40,000.00"
                 color="#3FD077"
               />
-              <div className="border-l border-[#3C4A5B] my-4"></div>
+              <div className="hidden md:block border-l border-[#3C4A5B] my-4"></div>
               <Card img={packages} title="Pedidos nuevos" amount="+20" color="#3FD0D0" />
-              <div className="border-l border-[#3C4A5B] my-4"></div>
+              <div className="hidden md:block border-l border-[#3C4A5B] my-4"></div>
               <Card img={packages} title="Entregados" amount="120" color="#3FD0D0" />
-              <div className="border-l border-[#3C4A5B] my-4"></div>
+              <div className="hidden md:block border-l border-[#3C4A5B] my-4"></div>
               <Card img={alarm} title="Pedidos Perdidos" amount="10" color="#FF8084" />
             </div>
           </div>
 
-          <div className="w-full pb-5 bg-white px-10 py-3 rounded-[20px]">
+          <div className=" hidden md:block w-full pb-5 bg-white px-5 lg:px-10 py-3 rounded-[20px]">
             <h4 className="text-[28px] text-[#3C4A5B] font-[500] ">Filtros</h4>
             <div className="flex justify-between">
               <div className="flex items-end gap-4">
-                <select className="w-[375px] h-[45px] text-[24px] text-[#3C4A5B] border border-[#3C4A5B] rounded-[10px] px-2">
+                <select className="lg:w-[250px] xl:w-[375px] h-[45px] xl:text-[24px] text-[#3C4A5B] border border-[#3C4A5B] rounded-[10px] px-2">
                   <option value="">Estatus</option>
                 </select>
-                <select className="w-[375px] h-[45px] text-[24px] text-[#3C4A5B] border border-[#3C4A5B] rounded-[10px] px-2">
+                <select className="lg:w-[250px] xl:w-[375px] h-[45px] xl:text-[24px] text-[#3C4A5B] border border-[#3C4A5B] rounded-[10px] px-2">
                   <option value="">Pago</option>
                 </select>
               </div>
@@ -129,7 +129,7 @@ const Pedidos = () => {
                 <div>
                   <p className="text-[18px] text-[#3C4A5B] font-[300]">Desde:</p>
                   <input
-                    className="border border-[#3C4A5B] w-[185px] h-[45px] rounded-[5px] px-2"
+                    className="border border-[#3C4A5B] lg:w-[150px] xl:w-[185px] h-[45px] rounded-[5px] px-2"
                     type="date"
                   />
                 </div>
@@ -137,7 +137,7 @@ const Pedidos = () => {
                 <div>
                   <p className="text-[18px] text-[#3C4A5B] font-[300]">Hasta:</p>
                   <input
-                    className="border border-[#3C4A5B] w-[185px] h-[45px] rounded-[5px] px-2"
+                    className="border border-[#3C4A5B] lg:w-[150px] xl:w-[185px] h-[45px] rounded-[5px] px-2"
                     type="date"
                   />
                 </div>
@@ -148,7 +148,7 @@ const Pedidos = () => {
               <input
                 type="text"
                 placeholder="Buscar producto"
-                className="border border-[#3C4A5B] rounded-[20px] px-2 text-[22px] h-[45px]"
+                className="border border-[#3C4A5B] rounded-[20px] px-2 lg:text-[22px] h-[45px]"
               />
             </div>
 
@@ -156,61 +156,61 @@ const Pedidos = () => {
               <table className="w-full bg-white border border-gray-300">
                 <thead>
                   <tr className="bg-[#F3F3F4]">
-                    <th className="px-6 py-3 text-left">
+                    <th className=" hidden lg:block px-1 py-1  lg:px-3 lg:py-1  xl:px-6 xl:py-3 text-left">
                       <input type="checkbox" />
                     </th>
-                    <th className="px-6 py-3 text-left">N° Orden Universal</th>
-                    <th className="px-6 py-3 text-left"></th>
-                    <th className="px-6 py-3 text-left">N° Orden</th>
-                    <th className="px-6 py-3 text-left">Fecha</th>
-                    <th className="px-6 py-3 text-left">Pago</th>
-                    <th className="px-6 py-3 text-left">Precio</th>
-                    <th className="px-6 py-3 text-left">CNTD</th>
-                    <th className="px-6 py-3 text-left">Status</th>
-                    <th className="px-6 py-3 text-left">ACCIONES</th>
+                    <th className="text-[14px] lg:text-[18px]  px-1 py-1  lg:px-3 lg:py-1  xl:px-6 xl:py-3 text-left">N° Orden Universal</th>
+                    <th className=" hidden xl:block px-1 py-1  lg:px-3 lg:py-1  xl:px-6 xl:py-3 text-left"></th>
+                    <th className="hidden lg:block px-1 py-1  lg:px-3 lg:py-1  xl:px-6 xl:py-3 text-left">N° Orden</th>
+                    <th className="text-[14px] lg:text-[18px]  px-1 py-1  lg:px-3 lg:py-1  xl:px-6 xl:py-3 text-left">Fecha</th>
+                    <th className="text-[14px] lg:text-[18px]  px-1 py-1  lg:px-3 lg:py-1  xl:px-6 xl:py-3 text-left">Pago</th>
+                    <th className="text-[14px] lg:text-[18px]  px-1 py-1  lg:px-3 lg:py-1  xl:px-6 xl:py-3 text-left">Precio</th>
+                    <th className="text-[14px] lg:text-[18px]  px-1 py-1  lg:px-3 lg:py-1  xl:px-6 xl:py-3 text-left">CNTD</th>
+                    <th className="text-[14px] lg:text-[18px]  px-1 py-1  lg:px-3 lg:py-1  xl:px-6 xl:py-3 text-left">Status</th>
+                    <th className="text-[14px] lg:text-[18px]  px-1 py-1  lg:px-3 lg:py-1  xl:px-6 xl:py-3 text-left">ACCIONES</th>
                   </tr>
                 </thead>
                 <tbody>
                   {data.map(item => (
                     <tr key={item.id}>
-                      <td className="px-6 py-4">
+                      <td className="hidden lg:block lg:px-3 lg:py-1 xl:px-6 xl:py-4">
                         <input type="checkbox" />
                       </td>
-                      <td className="px-6 py-4 flex flex-row items-center gap-2">
-                        <p className="text-[18px]  font-[500]">{item.producto}</p>
+                      <td className="lg:px-3 lg:py-1 xl:px-6 xl:py-4">
+                        <p className="text-[14px] lg:text-[16px] xl:text-[18px]  font-[500]">{item.producto}</p>
                       </td>
-                      <td className="px-6 py-4"></td>
-                      <td className="px-6 py-4">
-                        <p className="text-[18px] font-[400]"> IN-0001</p>
+                      <td className="hidden xl:block  lg:px-3 lg:py-1 xl:px-6 xl:py-4"></td>
+                      <td className=" hidden lg:block lg:px-3 lg:py-1 xl:px-6 xl:py-4">
+                        <p className="text-[16px] lg:text-[18px] font-[400]"> IN-0001</p>
                       </td>
-                      <td className="px-6 py-4">{item.sku}</td>
-                      <td className="px-6 py-4">
+                      <td className="text-[14px] lg:text-[18px]  lg:px-3 lg:py-1 xl:px-6 xl:py-4">{item.sku}</td>
+                      <td className="lg:px-3 lg:py-1 xl:px-6 xl:py-4">
                         {item?.cntd === "Pagado" ? (
                           <div className="flex items-center">
                             <p className="text-[30px] text-[#8BDA4F] ">•</p>
-                            <p className="text-[18px] font-[400] text-[#8BDA4F] text-center py-1 px-1  rounded-[5px]">
+                            <p className="text-[14px] lg:text-[18px] font-[400] text-[#8BDA4F] text-center py-1 px-1  rounded-[5px]">
                               Pagado
                             </p>
                           </div>
                         ) : item?.status === "Enviado" ? (
                           <div className="flex items-center">
                             <p className="text-[30px] text-[#FFB608] ">•</p>
-                            <p className="text-[18px] font-[400] text-[#FFB608] text-center py-1 px-2  rounded-[5px]">
+                            <p className="text-[14px] lg:text-[18px]  font-[400] text-[#FFB608] text-center py-1 px-2  rounded-[5px]">
                               Enviado
                             </p>
                           </div>
                         ) : (
                           <div className="flex items-center">
                             <p className="text-[30px] text-[#FF8084] ">•</p>
-                            <p className="text-[18px] font-[400] text-[#FF8084] text-center py-1 px-2  rounded-[5px]">
+                            <p className="text-[14px] lg:text-[18px]  font-[400] text-[#FF8084] text-center py-1 px-2  rounded-[5px]">
                               Cancelado
                             </p>
                           </div>
                         )}
                       </td>
-                      <td className="px-6 py-4">S/. {item.precio}</td>
-                      <td className="px-6 py-4"> {item.cantidad}</td>
-                      <td className="px-6 py-4">
+                      <td className="text-[14px] lg:text-[18px] lg:px-3 lg:py-1 xl:px-6 xl:py-4">S/. {item.precio}</td>
+                      <td className="text-[14px] lg:text-[18px]  lg:px-3 lg:py-1 xl:px-6 xl:py-4"> {item.cantidad}</td>
+                      <td className="text-[14px] lg:text-[18px]  lg:px-3 lg:py-1 xl:px-6 xl:py-4">
                         {item?.status === "Entregado" ? (
                           <p className="bg-[#E6F7D9] text-[#8BDA4F] text-center py-1 px-2  rounded-[5px]">
                             Entregado
