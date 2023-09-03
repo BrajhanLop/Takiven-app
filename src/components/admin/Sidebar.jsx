@@ -18,9 +18,9 @@ const Sidebar = () => {
   console.log(usePathname());
 
   return (
-    <div className="fixed h-screen left-0 top-0 bg-[#EDF0F1] w-[90px] flex flex-col gap-5 items-center">
-      <div>
-        <Image src={takivn} alt="" />
+    <div className="fixed h-screen left-0 top-0 bg-[#EDF0F1] w-[90px] flex flex-col gap-5 items-center mt-3">
+      <div className=" h-[70px] w-[60px]">
+        <Image src={takivn} alt="" className=" h-full w-full" />
       </div>
       <div
         onClick={() => router.push("/admin")}
@@ -60,12 +60,16 @@ const Sidebar = () => {
 
       <div
       onClick={() => router.push("/admin/pedidos")}
-        className={`cursor-pointer text-[40px] w-full hover:left-6 hover:w-[160px] text-[#3C4A5B] hover:text-white hover:bg-[#3C4A5B] gap-4 flex justify-center items-center rounded-r-[20px] py-2 relative z-20`}
+      className={
+        ruta === "/admin/pedidos"
+          ? "cursor-pointer text-[40px] w-full  hover:left-6  hover:w-[160px] text-white bg-[#3C4A5B] gap-4 flex justify-center items-center rounded-r-[20px] py-2 relative z-20"
+          : "cursor-pointer text-[40px] w-full hover:left-6 hover:w-[160px] text-[#3C4A5B] hover:text-white hover:bg-[#3C4A5B] gap-4 flex justify-center items-center rounded-r-[20px] py-2 relative z-20"
+      }
         onMouseEnter={() => setIsHoverpedido(true)}
         onMouseLeave={() => setIsHoverpedido(false)}>
         <FaTruck />
         <p
-          className={`text-[18px]  z-30  pr-2 text-white absolute  cursor-pointer ${
+          className={`text-[18px]  z-30   text-white absolute  cursor-pointer ${
             isHoverpedido ? "opacity-100 relative" : "opacity-0"
           }`}>
           Pedidos
@@ -78,7 +82,7 @@ const Sidebar = () => {
         onMouseLeave={() => setIsHovercuenta(false)}>
         <BiUser />
         <p
-          className={`text-[18px]  z-30  pr-2 text-white absolute  cursor-pointer ${
+          className={`text-[18px]  z-30  text-white absolute  cursor-pointer ${
             isHovercuenta ? "opacity-100 relative" : "opacity-0"
           }`}>
           Mi cuenta

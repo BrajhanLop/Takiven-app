@@ -1,0 +1,29 @@
+/* Estilos para WebKit (Chrome, Safari) */
+.custom-scroll-container::-webkit-scrollbar {
+    width: 18px;
+    background-color: #3C4A5B;
+    border-radius: 20px;
+  }
+  
+  .custom-scroll-container::-webkit-scrollbar-thumb {
+    background-color: #ffffff; /* Color blanco para la barra */
+    border-radius: 20px;   
+    border: 5px #3C4A5B solid;
+    
+  }
+  
+
+  
+  .custom-scroll-container::-webkit-scrollbar-track-piece {
+    background-color: transparent; /* Fondo transparente para la barra de scroll */
+  }
+  
+  /* Estilos para Firefox (No afectarán el contenedor) */
+  .custom-scroll-container {
+    scrollbar-width: thin;
+    scrollbar-color: #ffffff #000000; /* Color blanco para la barra, color negro para el fondo */
+  }
+  
+  
+
+  

@@ -35,21 +35,21 @@ const AddProduct = () => {
         <p className="text-[18px] font-[400] mb-3">Tienda / Agregar Producto</p>
         <div className="flex gap-5 text-[18px]">
           <div className="flex flex-col gap-4">
-            <div className="  w-[839px] bg-white rounded-[20px] p-4 flex flex-col gap-2">
+            <div className="  xl:w-[839px] bg-white rounded-[20px] p-4 flex flex-col gap-2">
               <p className="text-[#3C4A5B] font-[400]">Informacion</p>
-              <div className="flex gap-2">
+              {/* <div className="flex gap-2">
                 <input
                   type="text"
                   placeholder="Marca"
-                  className="w-[191px] h-[44px] rounded-[10px] border font-[300] text-[16px] pl-3"
+                  className="xl:w-[191px] h-[44px] rounded-[10px] border font-[300] text-[16px] pl-3"
                 />
                 <input
                   type="text"
                   placeholder="Nombre del Producto"
-                  className="w-[605px] h-[44px]  rounded-[10px] border text-[16px] font-[300] pl-3"
+                  className="xl:w-[605px] h-[44px]  rounded-[10px] border text-[16px] font-[300] pl-3"
                 />
               </div>
-              <div className="flex items-center gap-2">
+              <div className="flex flex-wrap items-center gap-2">
                 <p>SKU:</p>
                 <input
                   type="text"
@@ -141,11 +141,13 @@ const AddProduct = () => {
                 cols="30"
                 rows="10"
                 placeholder="Agrega una descripcion del producto que vas ofrecer, maximo 1000 caracteres."
-                className="h-[194px] rounded-[10px] border font-[300] text-[16px] pl-3 pr-3 pt-3"></textarea>
+                className="h-[194px] rounded-[10px] border font-[300] text-[16px] pl-3 pr-3 pt-3"></textarea> */}
             </div>
-            <div className="  w-[839px] bg-white rounded-[20px] p-4">
+
+
+            <div className=" lg:w-[400px] xl:w-[839px] bg-white rounded-[20px] p-4">
               <p>Multimedia</p>
-              <div className="w-[807px] h-[351px] border-2 rounded-[10px] flex items-center justify-center">
+              <div className="lg:w-[380px] xl:w-[807px] h-[351px] border-2 rounded-[10px] flex items-center justify-center">
                 <div
                   className=" flex flex-col items-center"
                   onDrop={handleImageDrop}
@@ -163,13 +165,19 @@ const AddProduct = () => {
 
                   {selectedImage ? (
                     <div className="flex items-center gap-2">
-                      <div className="w-[184px] h-[266px] border-dashed border-2 border-gray-300 flex justify-center items-center rounded-[20px] flex-col">
-                        <img src={selectedImage} alt="Selected" className="w-full h-auto" />
-                        <div className="border-dashed border-t border-b border-gray-300 w-full">
-                          <p className="text-[14px] text-gray-300 font-[300]">Nombre del Archivo subido</p>
-                          <p className="text-[10px] font-[500] text-gray-300">0.5MB</p>
+                      <div className="w-[184px] h-[266px] border-dashed border-2 border-gray-300 flex justify-between items-center rounded-[20px] flex-col">
+                        <div className="h-[70%] flex justify-center items-center">
+                          <img src={selectedImage} alt="Selected" className="w-full h-auto py-1 px-2" />
                         </div>
-                        <p className="text-[14px] text-gray-300 font-[500]">Eliminar Foto</p>
+                        <div>
+                          <div className="border-dashed border-t border-b border-gray-300 w-full">
+                            <p className="text-[14px] text-gray-300 font-[300]">
+                              Nombre del Archivo subido
+                            </p>
+                            <p className="text-[10px] font-[500] text-gray-300">0.5MB</p>
+                          </div>
+                          <p className="text-[14px] text-gray-300 font-[500] text-center">Eliminar Foto</p>
+                        </div>
                       </div>
                       <div>
                         <label
@@ -332,6 +340,11 @@ const AddProduct = () => {
               <p className="font-[300] text-[16px] mt-2">
                 El producto debe contar con 5 especificaciones basicas.
               </p>
+            </div>
+            <div className="flex justify-end h-full items-end cursor-pointer">
+              <button className="bg-[#29E197] text-white w-[247px] h-[65px] rounded-[20px]">
+                Publicar
+              </button>
             </div>
           </div>
         </div>
