@@ -5,6 +5,9 @@ import { useState } from "react";
 import { TiArrowSortedDown } from "react-icons/ti";
 
 const AddProduct = () => {
+
+
+
   const [selectedImage, setSelectedImage] = useState(null);
 
   const handleImageUpload = event => {
@@ -37,7 +40,7 @@ const AddProduct = () => {
           <div className="flex flex-col gap-4">
             <div className="  xl:w-[839px] bg-white rounded-[20px] p-4 flex flex-col gap-2">
               <p className="text-[#3C4A5B] font-[400]">Informacion</p>
-              {/* <div className="flex gap-2">
+              <div className="flex gap-2">
                 <input
                   type="text"
                   placeholder="Marca"
@@ -141,7 +144,7 @@ const AddProduct = () => {
                 cols="30"
                 rows="10"
                 placeholder="Agrega una descripcion del producto que vas ofrecer, maximo 1000 caracteres."
-                className="h-[194px] rounded-[10px] border font-[300] text-[16px] pl-3 pr-3 pt-3"></textarea> */}
+                className="h-[194px] rounded-[10px] border font-[300] text-[16px] pl-3 pr-3 pt-3"></textarea>
             </div>
 
 
@@ -152,7 +155,7 @@ const AddProduct = () => {
                   className=" flex flex-col items-center"
                   onDrop={handleImageDrop}
                   onDragOver={handleDragOver}>
-                  {/* <button
+                  <button
                     onClick={handleImageUpload}
                     className="w-[247px] h-[65px] text-[22px] border border-[#3FD077] text-[#3FD077] rounded-[20px] hover:text-white hover:bg-[#3FD077]">
                     Subir Imagen
@@ -161,7 +164,7 @@ const AddProduct = () => {
                     <div className="max-w-xs mx-auto border rounded-lg overflow-hidden shadow-lg">
                       <img src={selectedImage} alt="Selected" className="w-full h-auto" />
                     </div>
-                  )} */}
+                  )}
 
                   {selectedImage ? (
                     <div className="flex items-center gap-2">
