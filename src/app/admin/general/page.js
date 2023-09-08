@@ -6,6 +6,9 @@ import { AiFillCaretLeft, AiFillCaretRight } from "react-icons/ai";
 import checkdouble from "../../../assets/img/admin/svg/bx-check-double.svg";
 import packages from "../../../assets/img/admin/svg/bx-package.svg";
 import edit from "../../../assets/img/admin/svg/bxs-edit.svg";
+import alarm from "../../../assets/img/admin/svg/bxs-alarm-exclamation.svg";
+import candado from "../../../assets/img/admin/bxs-lock-alt.svg"
+import radio from "../../../assets/img/admin/bx-radio-circle-marked.svg"
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
@@ -241,7 +244,7 @@ const General = () => {
           <div className="  w-1/2 h-full flex flex-col justify-between">
             <div className="flex gap-2 ">
               <div className="w-[55%] h-[169px] text-[#3C4A5B] bg-white py-2 px-5 rounded-[20px] flex flex-col justify-center items-center gap-1">
-                <div className="flex justify-center items-center gap-3">
+                <div className="flex justify-center self-start items-center gap-3">
                   <div
                     className={`w-[40px] h-[40px] rounded-[10px] flex justify-center items-center bg-[#29E197]`}>
                     <Image src={checkdouble} alt="" />
@@ -271,10 +274,10 @@ const General = () => {
             </div>
             <div className="flex gap-2 ">
               <div className="w-[55%] h-[169px] text-[#3C4A5B] bg-white py-2 px-5 rounded-[20px] flex flex-col justify-center items-center gap-1">
-                <div className="flex justify-center items-center gap-3">
+                <div className="flex justify-center self-start items-center gap-3">
                   <div
-                    className={`w-[40px] h-[40px] rounded-[10px] flex justify-center items-center bg-[#29E197]`}>
-                    <Image src={checkdouble} alt="" />
+                    className={`w-[40px] h-[40px] rounded-[10px] flex justify-center items-center bg-[#FFB608]`}>
+                    <Image src={radio} alt="" />
                   </div>
                   <p className="text-[22px] font-[500]">Descuento de comision:</p>
                 </div>
@@ -285,10 +288,10 @@ const General = () => {
               </div>
 
               <div className="w-[45%] h-[169px] text-[#3C4A5B] bg-white  py-2 px-5 rounded-[20px] flex flex-col justify-center items-center gap-1">
-                <div className="flex justify-center items-center gap-3">
+                <div className="flex justify-center self-start items-center gap-3">
                   <div
-                    className={`w-[40px] h-[40px] rounded-[10px] flex justify-center items-center bg-[#29E197]`}>
-                    <Image src={checkdouble} alt="" />
+                    className={`w-[40px] h-[40px] rounded-[10px] flex justify-center items-center bg-[#FF8084]`}>
+                    <Image src={alarm} alt="" />
                   </div>
                   <p className="text-[22px] font-[500]">Pedidos Perdidos:</p>
                 </div>
@@ -300,10 +303,10 @@ const General = () => {
             </div>
             <div className="flex gap-2">
               <div className="w-[55%] h-[169px] text-[#3C4A5B] bg-white py-2 px-5 rounded-[20px] flex flex-col justify-center items-center gap-1">
-                <div className="flex justify-center items-center gap-3">
+                <div className="flex justify-center self-start items-center gap-3">
                   <div
-                    className={`w-[40px] h-[40px] rounded-[10px] flex justify-center items-center bg-[#29E197]`}>
-                    <Image src={checkdouble} alt="" />
+                    className={`w-[40px] h-[40px] rounded-[10px] flex justify-center items-center bg-[#FFB608]`}>
+                    <Image src={candado} alt="" />
                   </div>
                   <p className="text-[22px] font-[500]">Pagos Pendientes:</p>
                 </div>
@@ -314,13 +317,13 @@ const General = () => {
                 </p>
               </div>
 
-              <div className="w-[45%] h-[169px] text-[#3C4A5B] bg-white  py-2 px-5 rounded-[20px] flex flex-col justify-center items-center gap-1">
-                <div className="flex justify-center items-center gap-3">
+              <div className="w-[45%] h-[169px]  bg-[#29E197] text-white  py-2 px-5 rounded-[20px] flex flex-col justify-center items-center gap-1">
+                <div className="flex justify-center self-start items-center gap-3">
                   <div
-                    className={`w-[40px] h-[40px] rounded-[10px] flex justify-center items-center bg-[#29E197]`}>
+                    className={`w-[40px] h-[40px] rounded-[10px] flex justify-center items-center bg-[#29E197] border border-white`}>
                     <Image src={checkdouble} alt="" />
                   </div>
-                  <p className="text-[22px] font-[500]">Deposito realizado:</p>
+                  <p className="text-[21px] font-[500]">Deposito realizado:</p>
                 </div>
                 <p className=" text-[28px] font-[500] text-center">S/ 2,374.65</p>
                 <p className="text-[14px]">*El deposito se realiza a los 5 dias habiles.</p>
