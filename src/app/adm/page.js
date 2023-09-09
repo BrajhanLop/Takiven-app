@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useForm } from "react-hook-form";
-import logo from '../../assets/img/logo/logoc.png'
+import logo from '../../assets/img/logo/Logoc.png'
 
 const Login = () => {
   const {
