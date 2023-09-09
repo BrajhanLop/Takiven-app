@@ -76,7 +76,7 @@ const Sidebar = () => {
         </p>
       </div>
 
-      <div
+      {/* <div
         className="cursor-pointer text-[40px] w-full hover:left-6 hover:w-[160px] text-[#3C4A5B] hover:text-white hover:bg-[#3C4A5B] gap-4 flex justify-center items-center rounded-r-[20px] py-2 relative z-20"
         onMouseEnter={() => setIsHovercuenta(true)}
         onMouseLeave={() => setIsHovercuenta(false)}>
@@ -87,7 +87,7 @@ const Sidebar = () => {
           }`}>
           Mi cuenta
         </p>
-      </div>
+      </div> */}
 
       <div
       onClick={() => router.push("/admin/general")}
@@ -103,7 +103,7 @@ const Sidebar = () => {
           className={`text-[18px]  z-30  pr-2 text-white absolute  cursor-pointer ${
             isAjuste ? "opacity-100 relative" : "opacity-0"
           }`}>
-          Ajustes
+          General
         </p>
       </div>
     </div>

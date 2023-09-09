@@ -243,7 +243,8 @@ const General = () => {
 
           <div className="  w-1/2 h-full flex flex-col justify-between">
             <div className="flex gap-2 ">
-              <div className="w-[55%] h-[169px] text-[#3C4A5B] bg-white py-2 px-5 rounded-[20px] flex flex-col justify-center items-center gap-1">
+
+              <div className="w-[55%] h-[180px] text-[#3C4A5B] bg-white py-4 px-5 rounded-[20px] flex flex-col justify-center items-center gap-1">
                 <div className="flex justify-center self-start items-center gap-3">
                   <div
                     className={`w-[40px] h-[40px] rounded-[10px] flex justify-center items-center bg-[#29E197]`}>
@@ -258,7 +259,7 @@ const General = () => {
                 </p>
               </div>
 
-              <div className="w-[45%] h-[169px] text-[#3C4A5B] bg-white  py-2 px-5 rounded-[20px] flex flex-col justify-center items-center gap-1">
+              <div className="w-[45%] h-[180px] text-[#3C4A5B] bg-white  py-4 px-5 rounded-[20px] flex flex-col justify-center items-center gap-1">
                 <div className="flex justify-center items-center gap-3">
                   <div
                     className={`w-[40px] h-[40px] rounded-[10px] flex justify-center items-center bg-[#3FD0D0]`}>
@@ -272,8 +273,9 @@ const General = () => {
                 </p>
               </div>
             </div>
+
             <div className="flex gap-2 ">
-              <div className="w-[55%] h-[169px] text-[#3C4A5B] bg-white py-2 px-5 rounded-[20px] flex flex-col justify-center items-center gap-1">
+              <div className="w-[55%] h-[180px] text-[#3C4A5B] bg-white py-4 px-5 rounded-[20px] flex flex-col justify-center items-center gap-1">
                 <div className="flex justify-center self-start items-center gap-3">
                   <div
                     className={`w-[40px] h-[40px] rounded-[10px] flex justify-center items-center bg-[#FFB608]`}>
@@ -287,7 +289,7 @@ const General = () => {
                 </p>
               </div>
 
-              <div className="w-[45%] h-[169px] text-[#3C4A5B] bg-white  py-2 px-5 rounded-[20px] flex flex-col justify-center items-center gap-1">
+              <div className="w-[45%] h-[180px] text-[#3C4A5B] bg-white  py-4 px-5 rounded-[20px] flex flex-col justify-center items-center gap-1">
                 <div className="flex justify-center self-start items-center gap-3">
                   <div
                     className={`w-[40px] h-[40px] rounded-[10px] flex justify-center items-center bg-[#FF8084]`}>
@@ -301,8 +303,9 @@ const General = () => {
                 </p>
               </div>
             </div>
+
             <div className="flex gap-2">
-              <div className="w-[55%] h-[169px] text-[#3C4A5B] bg-white py-2 px-5 rounded-[20px] flex flex-col justify-center items-center gap-1">
+              <div className="w-[55%] h-[180px] text-[#3C4A5B] bg-white py-4 px-5 rounded-[20px] flex flex-col justify-center items-center gap-1">
                 <div className="flex justify-center self-start items-center gap-3">
                   <div
                     className={`w-[40px] h-[40px] rounded-[10px] flex justify-center items-center bg-[#FFB608]`}>
@@ -317,7 +320,7 @@ const General = () => {
                 </p>
               </div>
 
-              <div className="w-[45%] h-[169px]  bg-[#29E197] text-white  py-2 px-5 rounded-[20px] flex flex-col justify-center items-center gap-1">
+              <div className="w-[45%] h-[180px]  bg-[#29E197] text-white  py-4 px-5 rounded-[20px] flex flex-col justify-center items-center gap-1">
                 <div className="flex justify-center self-start items-center gap-3">
                   <div
                     className={`w-[40px] h-[40px] rounded-[10px] flex justify-center items-center bg-[#29E197] border border-white`}>
