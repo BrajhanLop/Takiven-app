@@ -16,7 +16,7 @@ const Login = () => {
   };
   return (
     <div className="w-full h-screen flex justify-center items-center">
-      <div className="w-full lg:w-1/2 bg-[#f2f6fb] md:bg-white flex flex-col md:px-10 md:pt-16 pb-10   md:rounded-[57px]">
+      <div className="w-[619px] lg:[600px] bg-[#f2f6fb] md:bg-white flex flex-col md:px-10 md:pt-16 pb-10   md:rounded-[57px]">
         <div className="flex justify-center">
             <Image src={logo} />
         </div>
