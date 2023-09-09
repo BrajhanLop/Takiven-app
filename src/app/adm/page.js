@@ -16,7 +16,7 @@ const Login = () => {
   };
   return (
     <div className="w-full h-screen flex justify-center items-center">
-      <div className="w-[619px] lg:[600px] bg-[#f2f6fb] md:bg-white flex flex-col md:px-10 md:pt-16 pb-10   md:rounded-[57px]">
+      <div className="w-[619px] lg:[610px] bg-[#f2f6fb] md:bg-white flex flex-col md:px-10 md:pt-16 pb-10   md:rounded-[57px]">
         <div className="flex justify-center">
             <Image src={logo} />
         </div>
@@ -31,7 +31,31 @@ const Login = () => {
         </label> */}
             <input
               className="border-2 border-[#DADEE3] rounded-[12px] h-[63px] text-[24px] px-3"
-              placeholder="Correo electronico"
+              placeholder="RUC"
+              type="text"
+              {...register("email", {
+                required: {
+                  value: true,
+                  message: "El correo es requerido"
+                },
+                pattern: {
+                  value: /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i,
+                  message: "ingrese un email válido "
+                }
+              })}
+            />
+            <p className=" text-[#FF5576]">{errors.email?.message}</p>
+          </div>
+          <div className="flex flex-col">
+            {/* <label
+          htmlFor=""
+          className="text-[24px] md:text-[24px] md:font-[500]"
+        >
+          Correo electronico
+        </label> */}
+            <input
+              className="border-2 border-[#DADEE3] rounded-[12px] h-[63px] text-[24px] px-3"
+              placeholder="Usuario"
               type="text"
               {...register("email", {
                 required: {
