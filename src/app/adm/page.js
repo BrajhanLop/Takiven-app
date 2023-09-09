@@ -105,9 +105,7 @@ const Login = () => {
             </p>
             <hr className="mt-2 border-[#3FD07766] w-[80%] mx-auto mb-2" />
           </div>
-          <button className=" bg-green text-[24px] text-white px-10  py-3 w-[320px] md:w-[350px] rounded-lg mx-auto">
-            Crear cuenta nueva
-          </button>
+
         </form>
       </div>
     </div>
